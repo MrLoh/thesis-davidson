@@ -1,10 +1,12 @@
-Title: "Davidson's Test"
-Subtitle: "Donald Davidson's critique of the Turing Test as an expression of his theory of rationality"
-bibliography: reference.bib
-Abstract: "Test"
------------------------------------------------------
-
---toc
+---
+title: Davidson's Test
+subtitle: Donald Davidson's critique of the Turing Test as an expression of his theory of rationality
+author: Tobias Lohse
+abstract: Sed ut pellentesque turpis. Ut efficitur ac neque in ullamcorper. Integer a malesuada erat. Mauris nec fermentum ex, sit amet fermentum purus. Fusce non tellus semper, iaculis erat eget, fermentum justo. In placerat eros a ipsum aliquam, non ultrices libero vulputate. Nunc ut arcu condimentum, accumsan sem id, rhoncus dui. Phasellus pellentesque elementum dui, nec sagittis libero eleifend vitae. Sed sed mollis enim.
+toc: yes
+numbersections: yes
+bibliography: references.bib
+---
 
 # Introduction
 
@@ -32,7 +34,10 @@ Introduction to Davidson
 - Basic positioning in history and schools
 - Main areas of work
 - Clarification of Focus of the thesis
-- Hint at Donald's interesting Life
+- Hint at Donald's interesting Life [^donalds-life]
+
+
+[^donalds-life]: See some reference for this.
 
 
 
@@ -65,7 +70,7 @@ Why the test is interesting to Davidson
 Turing's proposed test shows that he agrees with Davidson on the fact that linguistic competence is essential to intellect. And I think we also have to interpret Davidson and Turing as agreeing that there is a scientific approach that can describe essential parts of our linguistic competence. In the case of Turing this is evident in his believe that there is a program that allows the computer to win the imitation game. For Davidson it is evident in his proposal of the empiric Unified Theory that can capture the essence of linguistic competence and rationality. We will investigate Davidson's ideas further in [Section 3].
 
 
-"the test is designed to throw light on the nature of thought." [@Davidson1990]
+"the test is designed to throw light on the nature of thought." [@Davidson:1990tt, p. 1]
 
 Where does Davidson agree
 
