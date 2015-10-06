@@ -1,11 +1,15 @@
 ---
 title: Davidson's Test
-subtitle: Donald Davidson's critique of the Turing Test as an expression of his theory of rationality
+subtitle: Donald Davidson's Critique of the Turing Test as an Expression of his Philosophy about Linguistic Competence
 author: Tobias Lohse
-abstract: Sed ut pellentesque turpis. Ut efficitur ac neque in ullamcorper. Integer a malesuada erat. Mauris nec fermentum ex, sit amet fermentum purus. Fusce non tellus semper, iaculis erat eget, fermentum justo. In placerat eros a ipsum aliquam, non ultrices libero vulputate. Nunc ut arcu condimentum, accumsan sem id, rhoncus dui. Phasellus pellentesque elementum dui, nec sagittis libero eleifend vitae. Sed sed mollis enim.
-toc: yes
-numbersections: yes
+keywords: Donald Davidson, Philosophie of Mind, Philosophie of Language, Epistemology, Interpretation, Turing Test
+abstract: In his essay 'Turing's Test' [-@Davidson:1990tt], Donal Davidson
+
+toc: true
+numbersections: true
 bibliography: references.bib
+link-citations: true
+citation-style: my-chicago.csl
 ---
 
 # Introduction
@@ -34,10 +38,7 @@ Introduction to Davidson
 - Basic positioning in history and schools
 - Main areas of work
 - Clarification of Focus of the thesis
-- Hint at Donald's interesting Life [^donalds-life]
-
-
-[^donalds-life]: See some reference for this.
+- Hint at Donald's interesting Life
 
 
 
@@ -51,72 +52,126 @@ Description of Turing Test
 - The state of AI
 
 
+[@Turing:1950cm]
 
 
 
+# Davidson's Discussion of the Turing Test
 
-# Davidson's Critique of the Turing Test
-
-## The Critique
-(E4.5)
+## Relevance of Turing's Test
 
 Why the test is interesting to Davidson
 
 - Test is concerned with the nature of thought
 - Pragmatic approach to the question of thought
 - Empiric criterion for thought
-- Not confined to
+- Not confined to maschines
 
-Turing's proposed test shows that he agrees with Davidson on the fact that linguistic competence is essential to intellect. And I think we also have to interpret Davidson and Turing as agreeing that there is a scientific approach that can describe essential parts of our linguistic competence. In the case of Turing this is evident in his believe that there is a program that allows the computer to win the imitation game. For Davidson it is evident in his proposal of the empiric Unified Theory that can capture the essence of linguistic competence and rationality. We will investigate Davidson's ideas further in [Section 3].
-
-
-"the test is designed to throw light on the nature of thought." [@Davidson:1990tt, p. 1]
+"the test is designed to throw light on the nature of thought." [@Davidson:1990tt, p. 78]
 
 Where does Davidson agree
 
-- There should be an empiric test for thought
+- There should be an empiric test for intellect
+- Linguistic comptetence is essential for intellect
 
-Possibility of General/Strong AI might well be possible
+Turing's proposed test shows that he agrees with Davidson on the fact that linguistic competence is essential to intellect. And I think we also have to interpret Davidson and Turing as agreeing that there is a scientific approach that can describe essential parts of our linguistic competence. In the case of Turing this is evident in his believe that there is a program that allows the computer to win the imitation game. For Davidson it is evident in his proposal of the empiric Unified Theory that can capture the essence of linguistic competence and rationality. We will investigate Davidson's ideas further in [Unified Theory of Understanding].
+
+
+- General/Strong AI might well be possible
+
+See also 'Representation and Interpretation' [@Davidson:1990ri]
 
 - Davidson sees no argument why AI shouldn't be possible
 - AI through Brain simulation should be possible
 
-See also 'Representation and Interpretation' [@Davidson:1990ri]
-
-No need for introspection into working of mind
+- No need for introspection into working of mind
 
 - against Searle's chinese room?
 
 
 
-Rejection of sharp distinction between mental and physical abilities
+## Davidson's Critique of Turing's Test
+
+Rejection of sharp distinction between mental and physical abilities (E4.5)
 
 - There is no sharp distinction between physical (especially sensory) and mental abilities
--
+- Connected to rejection of Cartesion Epistemology
 
 distinction between semantic and syntactic abilities
-(E5.8)
+(+E5.8)
 
-## Davidson's Proposal for a modified Test
-(E4.5)
+## Davidson's Proposal for a Modified Test
 
-History of interaction with the world
+History of interaction with the world (E4.5)
 
 - The ability to determine non predefined meaning is essential for intelligence
 
 
 
-## Distinction between Practical Interpretation and Essential Theory of Interpretation
+## The Distinction between Explanations of Practical Interpretation and an Essential Theory of Interpretation
 
-(E4.8, E5.8)
+distinction between sufficient and necessary conditions of linguistic competence (E4.8, E5.8)
 
-distinction between sufficient and necessary conditions of linguistic competence
+- relation to term linguistic competence and linguistic performence
+
+I use the term *linguistic competence*[^linguistic-competence] here to refer to Davidson's idea of the essential aspect of understanding language vs. the practical understanding of language.
+
+
+
+[^linguistic-competence]: The term linguistic competence was introduced by Chomsky who makes a "fundamental distinction between competence (the speaker-hearer's knowledge of his language) and performance (the actual use of language in concrete situation)" [@Chomsky:2014at, p. 4]. While Davidson  criticizes the idea of linguistic competence as knowledge of a language, he adopts the term for the description of his theory that describes the interpreters essential competence in 'A Nice Derangement of Epitaphs' [-@Davidson:1986nd].
+
+truth conditions as a formal language
 
 Unified Theory, Radical Interpretation
 
 Sucessfull Communication & Anti-Conventionalism & Holims of knowledge
 
 # Necessary Conditions of Understanding
+
+## The Triangular Nature of Knowledge
+
+Distinctiveness of three types of Knowledge (subjective, intersubjective, objective) (E3.14)
+
+Three Questions of Epistemology (E3.14)
+
+- how to know other minds
+- how to know world
+- how to know own mind without evidence
+
+Rejection of skepticism (E3.14, SEP Davidson, E4.1)
+
+Rejection of empiricsit Epistemology (E3.14, E2.1)
+
+- No primacy of names and predicates in the foreground of senses
+- doesn't he contradict that in E2.9 and E4.8?
+
+Rejection of Positivism (reductionism to world knowledge) (E3.14)
+
+Reasons for Irreducibility/anaomalism of Mental to Physical (E3.14, E4.8)
+
+- Irreducibility of knowledge of belief to knowledge of world
+
+- causal nature of the mental (+E1.11, E4.8)
+
+- Missing independent mode of communication about mental theories (+E4.8)
+
+Rejection of Cartesion Etymology (primacy of knowledge of one's own mind) (E3.14, E3.3, E3.13)
+
+Principle of Charity (Coherence and Correspondence)
+(E3.14, E2.9, E3.14)
+
+Reaction to stimuli (E3.14)
+
+- proximal vs. distal stimuli (E5.4)
+
+Meaning as Language (E3.14, E2.2)
+
+- not things in world
+- not entities sui generis
+
+Iscrutability of Reference / Indeterminacy of meaning (Quine Word and Object, E5.3, E2.16, E3.14)
+
+Importance of disctinction between true and false beliefs (E5.8, E3.14, E4.1, SEP Davidson)
 
 ## Social aspect of Language
 (E5.8)
@@ -169,7 +224,30 @@ arguments against conventionalism
 
 language game analogy (+E5.8)
 
-## Ontology & Holism of Knowledge
+# Davidson's Theory of Interpretation
+
+
+
+What is this theory of interpretation
+
+- Anomalous Monism
+- Davidson's Program
+- Radical Interpretation
+- Triangulation
+- Unified theory of Thought, Action, and Meaning
+- Prior and Passing Theories
+- The social Aspect of language
+
+So what is it that I am referring to when I speak about Davidson's theory of interpretation? While this seems like a straight forward question it is a little more complicated because of the distributed nature of Davidson's work.
+
+Davidson's theory can be traced back to his rejection of meaning and idea that interpretation can be described as a process of 'translating' utterances into truth conditions based on assumptions about the believes of the speaker using the principle of Charity, which he develops in 'Truth and Meaning'[^davidsons-program] [@Davidson:1967tm] and 'Radical Interpretation' [@Davidson:1973ri].
+
+
+
+
+[^davidsons-program]: His idea that truth conditions (T-Sentences) are all that is needed to explain interpretation, and any more fundamental notion of meaning is misconceived, has also led to what is known as Davidson's Program: The attempt to give an account of the interpretation of utterances purely with the means of first order logic.
+
+## The Underlying Ontology and Epistemology
 
 Ontology of only objects and events (E3.14, E5.4)
 
@@ -191,8 +269,6 @@ Semantics as a Method for Metaphysics (E5.3)
 - problems: inscrutability, we only think exist
 
 Truth as elementary non-reducible concept (E5.2, E2.I)
-
-# Explanation of Rationality
 
 ## Davidson's Program
 (E2.9, E2.2)
@@ -252,52 +328,6 @@ Prior and passing theory of interpretation
 
 Principle of Charity
 
-## Triangulation
-(E3.14)
-
-Distinctiveness of three types of Knowledge (subjective, intersubjective, objective)
-
-Three Questions of Epistemology
-
-- how to know other minds
-- how to know world
-- how to know own mind without evidence
-
-Rejection of skepticism (+SEP Davidson, E4.1)
-
-Rejection of empiricsit Epistemology (E2.1)
-
-- No primacy of names and predicates in the foreground of senses
-- doesn't he contradict that in E2.9 and E4.8?
-
-Rejection of Positivism (reductionism to world knowledge)
-
-Reasons for Irreducibility/anaomalism of Mental to Physical (+E4.8)
-
-- Irreducibility of knowledge of belief to knowledge of world
-
-- causal nature of the mental (+E1.11, E4.8)
-
-- Missing independent mode of communication about mental theories (+E4.8)
-
-Rejection of Cartesion Etymology (primacy of knowledge of one's own mind) (+E3.3, E3.13)
-
-Principle of Charity (Coherence and Correspondence)
-(E2.9, E3.14)
-
-Reaction to stimuli
-
-- proximal vs. distal stimuli (E5.4)
-
-Meaning as sentences (E2.2)
-
-- not things in world
-- not entities sui generis
-
-Iscrutability of Reference / Indeterminacy of meaning (Quine Word and Object, E5.3, E2.16, E3.14)
-
-Importance of disctinction between true and false beliefs (E5.8, E3.14, E4.1, SEP Davidson)
-
 ## Unified Theory of Thought and Meaning
 (E4.8, E4.10)
 
@@ -333,3 +363,12 @@ Paradox of Irrationality (E4.12)
 Relation to Behaviorism
 
 # Conclusion
+
+## Critique of Davidson's Theory
+
+Bertram's Critique of Davidson's Intentionalism
+
+- Davidson's
+
+[@Bertram:2012ta]
+[@Davidson:1997gp]
