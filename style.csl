@@ -435,17 +435,6 @@
       </if>
     </choose>
   </macro>
-  <macro name="reprint-note">
-    <choose>
-      <if variable="original-date issued" match="all">
-        <choose>
-          <if variable="original-publisher original-publisher-place" match="none">
-            <text value="reprint. " text-case="capitalize-first"/>
-          </if>
-        </choose>
-      </if>
-    </choose>
-  </macro>
   <macro name="publisher">
     <group delimiter=": ">
       <text variable="publisher-place"/>
@@ -593,7 +582,6 @@
             </if>
           </choose>
           <text macro="publisher"/>
-          <text macro="reprint-note"/>
           <text macro="originally-published"/>
         </group>
       </else>
