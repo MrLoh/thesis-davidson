@@ -25,6 +25,7 @@ citecolor: black
 toccolor: black
 urlcolor: black
 
+
 abstract: |
   In his essay 'Turing's Test' [-@Davidson:1990tt], Donal Davidson discusses Alan Turing's famous proposal how to define the goal of Artificial General Intelligence and proposes a modified version that fixes the weaknesses of the original proposal. Davidson's Test illustrates his theory about the essence of linguistic and intellectual competence very well.
 
@@ -35,7 +36,7 @@ keywords: Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Epis
 ---
 
 <!-- Turing’s famous test aims to specify sufficient condition for intelligence on the basis of linguistic abilities. Therefore it is of natural interest to philosophy of language and philosophy of mind. Donald Davidson (1917–2003) has arguably been one of the most interesting contemporary philosophers in these areas. His thoughts are concerned with defining the essence of our ability to interpret the linguistic behaviors of others and for him too this is a condition for our ability to think. However in Turing's Test (1990) Davidson criticizes Turing’s test and tracks its insufficiency down to Turing's premise that physical and intellectual capacities can be separated clearly. For Davidson meaning can not be analyzed independent of world knowledge and the ability to interpret utterances only emerges holistically through interaction with other about experiences in a shared world. He proposes a modified test that allows the judge to observe a history of three-way engagement between the object, a shared world, and other agents in which the object develops its semantics for previously unknown occurrences. I aim to clarify the conditions of this modified test and argue why Davidson would hold these conditions not only as sufficient for intelligence but also as necessary and thus as providing a definition of intelligence. For this I will clarify why Davidson localizes the essence of intelligence in the ability to interpret utterances that can not be interpreted based on a previously acquired set of rules, practices, or conventions; and how Davidson thinks the essence of this ability can nevertheless be formally captured in an empirical unified theory of thought, meaning, and action. -->
-<!--
+
 # Introduction
 
 
@@ -63,7 +64,7 @@ keywords: Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Epis
 - What can Computer Linguistics and Artificial Intelligence learn from Davidson's Test
 
 
- -->
+
 
 
 
@@ -83,7 +84,7 @@ keywords: Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Epis
 
 First we will have to explore what the Turing Test is. Alan Turing (1912-1954) proposed his famous test first in 'Computing Machinery and Intelligence' [-@Turing:1950cm] as a replacement for the question *"Can machines think?"* --- which he deemed to vague to deserve discussion. The test is described as a game: the imitation game.
 
-The imitation game consists of an interrogator that can communicate via a real-time text chat interface with two players. One player is a computer the other a human. The interrogator’s task is to identify the human after a given time. The computer's task is to pretend to be a human[^no-sexism] and the human's task is to help the interrogator identify him correctly. If many interrogators consistently can't tell the computer apart from the human --- as measured against an established baseline[^baseline] --- we ought to take this as an indication that the computer can think. [@Turing:1950cm, p. 433-434]
+The imitation game consists of an interrogator that can communicate via a real-time text chat interface with two players. One player is a computer the other a human. The interrogator’s task is to identify the human after a given time. The computer's task is to pretend to be a human[^no-sexism] and the human's task is to help the interrogator identify him correctly. If many interrogators consistently can't tell the computer apart from the human --- as measured against an established baseline[^baseline] --- we ought to take this as an indication that the computer can think. [@Turing:1950cm, p. 433--434]
 
 
 
@@ -635,4 +636,3 @@ While it currently seems more probable that Turing’s Test and also Davidson’
 
 
 
-\newpage

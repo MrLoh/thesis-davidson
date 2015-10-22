@@ -226,9 +226,10 @@ $endfor$
 
 % Headings
 \usepackage{titlesec}
-\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\section}{\LARGE\bfseries\raggedright}
 \titleformat*{\subsection}{\large\bfseries}
 \titleformat*{\subsubsection}{\small\bfseries\uppercase}
+\titlelabel{\thetitle.\ }
 
 \begin{document}
 $if(title)$

@@ -307,7 +307,7 @@
       <else-if type="legal_case">
         <text variable="volume" prefix=", "/>
         <text variable="container-title" prefix=" "/>
-        <text variable="page" prefix=" "/>
+        <text variable="page" prefix="p. "/>
       </else-if>
       <else-if type="bill book graphic legal_case legislation motion_picture report song" match="any">
         <group prefix=". " delimiter=". ">
@@ -340,7 +340,7 @@
           <if variable="page">
             <group prefix=", ">
               <text variable="volume" suffix=":"/>
-              <text variable="page"/>
+              <text variable="page" prefix="p. "/>
             </group>
           </if>
         </choose>
@@ -364,10 +364,10 @@
       <else-if type="article-journal">
         <choose>
           <if variable="volume issue" match="any">
-            <text variable="page" prefix=": "/>
+            <text variable="page" prefix=": p. "/>
           </if>
           <else>
-            <text variable="page" prefix=", "/>
+            <text variable="page" prefix=", p. "/>
           </else>
         </choose>
       </else-if>
@@ -402,7 +402,7 @@
             <number variable="volume" form="numeric" suffix=":"/>
           </else-if>
         </choose>
-        <text variable="locator"/>
+        <text variable="locator" prefix="p. "/>
       </if>
     </choose>
   </macro>
