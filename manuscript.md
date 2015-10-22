@@ -1,7 +1,13 @@
 ---
-title: Davidson's Test
+title: DAVIDSON'S TEST
 subtitle: Donald Davidson's Critique of the Turing Test as an Expression of his Theory of Intellectual and Linguistic Competence
 author: Tobias Lohse
+date: \today
+
+mainfont: regular.otf
+mainfontoptions: BoldFont = bold.otf,ItalicFont = regular-italic.otf,BoldItalicFont = bold-italic.otf
+geometry: top=1.5cm, bottom=2cm, left=1.5cm, right=1.5cm
+papersize: a4paper
 
 toc: true
 toc-depth: 2
@@ -11,6 +17,7 @@ bibliography: references.bib
 link-citations: true
 citation-style: style.csl
 reference-section-title: References
+nocite: '@*'
 
 template: style.tex
 linkcolor: black
@@ -18,15 +25,17 @@ citecolor: black
 toccolor: black
 urlcolor: black
 
+abstract: |
+  In his essay 'Turing's Test' [-@Davidson:1990tt], Donal Davidson discusses Alan Turing's famous proposal how to define the goal of Artificial General Intelligence and proposes a modified version that fixes the weaknesses of the original proposal. Davidson's Test illustrates his theory about the essence of linguistic and intellectual competence very well.
 
-abstract: In his essay 'Turing's Test' [-@Davidson:1990tt], Donal Davidson
+  Davidson's idea of triangular Epistemology
 
 keywords: Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Epistemology, Interpretation, Turing\ Test, Artificial\ Intelligence
 
 ---
 
 <!-- Turing’s famous test aims to specify sufficient condition for intelligence on the basis of linguistic abilities. Therefore it is of natural interest to philosophy of language and philosophy of mind. Donald Davidson (1917–2003) has arguably been one of the most interesting contemporary philosophers in these areas. His thoughts are concerned with defining the essence of our ability to interpret the linguistic behaviors of others and for him too this is a condition for our ability to think. However in Turing's Test (1990) Davidson criticizes Turing’s test and tracks its insufficiency down to Turing's premise that physical and intellectual capacities can be separated clearly. For Davidson meaning can not be analyzed independent of world knowledge and the ability to interpret utterances only emerges holistically through interaction with other about experiences in a shared world. He proposes a modified test that allows the judge to observe a history of three-way engagement between the object, a shared world, and other agents in which the object develops its semantics for previously unknown occurrences. I aim to clarify the conditions of this modified test and argue why Davidson would hold these conditions not only as sufficient for intelligence but also as necessary and thus as providing a definition of intelligence. For this I will clarify why Davidson localizes the essence of intelligence in the ability to interpret utterances that can not be interpreted based on a previously acquired set of rules, practices, or conventions; and how Davidson thinks the essence of this ability can nevertheless be formally captured in an empirical unified theory of thought, meaning, and action. -->
-
+<!--
 # Introduction
 
 
@@ -54,7 +63,7 @@ keywords: Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Epis
 - What can Computer Linguistics and Artificial Intelligence learn from Davidson's Test
 
 
-
+ -->
 
 
 
@@ -72,15 +81,15 @@ keywords: Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Epis
 - establishing a baseline
 -->
 
-First we will have to explore what the Turing Test is. Turing proposed his famous test first in [-@Turing:1950cm] as a replacement for the question *"Can machines think?"* --- which he deemed to vague to deserve discussion. The test is described as a game: the imitation game.
+First we will have to explore what the Turing Test is. Alan Turing (1912-1954) proposed his famous test first in 'Computing Machinery and Intelligence' [-@Turing:1950cm] as a replacement for the question *"Can machines think?"* --- which he deemed to vague to deserve discussion. The test is described as a game: the imitation game.
 
 The imitation game consists of an interrogator that can communicate via a real-time text chat interface with two players. One player is a computer the other a human. The interrogator’s task is to identify the human after a given time. The computer's task is to pretend to be a human[^no-sexism] and the human's task is to help the interrogator identify him correctly. If many interrogators consistently can't tell the computer apart from the human --- as measured against an established baseline[^baseline] --- we ought to take this as an indication that the computer can think. [@Turing:1950cm, p. 433-434]
 
 
 
-[^no-sexism]: I think it is pretty clear that Davidson misinterprets Turing on the sexist aspect of the test [see @Davidson:1990tt, p. 78]. Turing didn't mean that the interrogator's task would be to decide on the gender, and the computers task to imitate a woman. This becomes pretty clear when Turing says: *"If the man were to try and pretend to be the machine [...]"* [@Turing:1950cm, p. 435] and from all his examples that are focused on how the machine can imitate being a human not a woman. See also [@Copeland:2000tt, p. 526].
+[^no-sexism]: I think it is pretty clear that Davidson misinterprets Turing on the sexist aspect of the test [see @Davidson:1990tt, p. 78]. Turing didn't mean that the interrogator's task would be to decide on the gender, and the computers task to imitate a woman. This becomes pretty clear when Turing says: *"If the man were to try and pretend to be the machine [...]"* [-@Turing:1950cm, p. 435] and from all his examples that are focused on how the machine can imitate being a human not a woman. [See also  @Copeland:2000tt, p. 526.]
 
-[^baseline]: Turing's idea is that a baseline is established by the traditional imitation game, in which a man tries to imitate a woman and the interrogator has to decide on the gender. While this might not be the best way to establish a baseline it means that Davidson's critique that *"Turing does not say what he would make of a computer that was consistently chosen over the [...human] to be the [...human]"* [@Davidson:1990tt, p. 78], is ill conceived, as the computer will always unambiguously fall over or under the baseline within a margin of error.
+[^baseline]: Turing's idea is that a baseline is established by the traditional imitation game, in which a man tries to imitate a woman and the interrogator has to decide on the gender. While this might not be the best way to establish a baseline it means that Davidson's critique that *"Turing does not say what he would make of a computer that was consistently chosen over the [...human] to be the [...human]"* [-@Davidson:1990tt, p. 78], is ill conceived, as the computer will always unambiguously fall over or under the baseline within a margin of error.
 
 ## Interpretations and Versions of the Turing Test
 
@@ -96,17 +105,17 @@ The imitation game consists of an interrogator that can communicate via a real-t
 
 But the interpretations are not as straight forward, as it might seem. The main question is what the Turing Test is supposed to be. There are three main interpretations:
 
-1. The Turing Test is taken as an operational definition --- a sufficient and necessary condition --- of intelligence: Something is intelligent[^intelligence] if and only if it passes the Turing Test. [For Example See @Millar:1973pi]
+1. The Turing Test is taken as an operational definition --- a sufficient and necessary condition --- of intelligence: Something is intelligent[^intelligence] if and only if it passes the Turing Test. [For example see @Millar:1973pi.]
 2. The Turing Test is taken as a sufficient condition of intelligence: Something is intelligent if it passes the Turing Test. But it is not necessary for something to pass the Turing test in order to be intelligent.
-3. The Turing Test is taken "as a potential source of good inductive evidence for" intelligence: If Something passed the Turing Test one would be justified for inductively inferring that it is intelligent. [@Moor:1976at, pp. 249, 251]
+3. The Turing Test is taken *"as a potential source of good inductive evidence for"* intelligence: If Something passed the Turing Test one would be justified for inductively inferring that it is intelligent. [See @Moor:1976at, pp. 249, 251]
 
-The first interpretation and any reading of intelligence in a broader sense are clearly not in line with Turing's ideas, but the interpretation of the imitation game as a test clearly is. This becomes clear from the following section of a radio interview [-@Turing:1952ca], which might well represent the simplest expression of the Turing Test:
+The first interpretation and any reading of intelligence in a broader sense are clearly not in line with Turing's ideas, but the interpretation of the imitation game as a test clearly is. This becomes clear from the following section of a radio interview [-@Turing:1952ca], which represents Turing's simplest expression of the test:
 
-> *“I don’t want to give a definition of thinking [...] I don’t really see that we need to agree on a definition at all. The important thing is to try to draw a line between the properties of a brain, or of a man, that we want to discuss, and those that we don’t. […] I would like to suggest a particular kind of test that one might apply to a machine. You might call it a test to see whether the machine thinks, but it would be better to avoid begging the question, and say that the machines that pass are (let’s say) ‘Grade A’ machines. The idea of the test is that the machine has to try and pretend to be a man, by answering questions put to it, and it will only pass if the pretence is reasonably convincing.”* [@Turing:1952ca, p. 470-471]
+> *“I don’t want to give a definition of thinking [...] I don’t really see that we need to agree on a definition at all. The important thing is to try to draw a line between the properties of a brain, or of a man, that we want to discuss, and those that we don’t. […] I would like to suggest a particular kind of test that one might apply to a machine. You might call it a test to see whether the machine thinks, but it would be better to avoid begging the question, and say that the machines that pass are (let’s say) ‘Grade A’ machines. The idea of the test is that the machine has to try and pretend to be a man, by answering questions put to it, and it will only pass if the pretence is reasonably convincing.”* [@Turing:1952ca, p. 466]
 
 In this simplified version of the test there is no second human player. While this might be limiting for a quantitative analysis, it ensures the focuses on the main question and removes any undue emphasis on strategy. The simplified version that Davidson proposes for discussion is basically identical except for the fact that Davidson proposes that *"the interrogator [...should] be asked to decide whether or not the object is thinking."* [-@Davidson:1990tt, p. 81] If we assume that any bias against the object's ability to think can be removed, this seems to be the clearest expression of Turing's idea and is therefore the version we will refer to in the following.
 
-It also becomes fairly clear that a reading in Moor's third sense does Turing most justice. But where does that leave the relevant of the Turing Test?
+It also becomes fairly clear that a reading in Moor's third sense does Turing most justice. But where does that leave the relevance of the Turing Test?
 
 
 
@@ -129,33 +138,37 @@ The main challenge of the field of so called *Artificial General Intelligence* (
 
 > *"there are two strong arguments why the Turing test is a good format for gathering inductive evidence. First, the Turing test permits direct or indirect testing of virtually all of the activities one would count as evidence for thinking. Secondly, the Turing test encourages severe testing. […] the computer would be tested in detail over a wide range of subjects […and] the interrogator's goal is to find a refuting instance which gives the computer away.”* [@Moor:1976at, pp. 251-252]
 
-Critics mostly fall into two camps. The first point Moor provides is aimed against the first type of critics that suggests the test sets the wrong goal. As Moor argues communication is a very clear framework to investigate all kinds of thinking. A further pragmatic reason for the relevance of the Turing Test I would add is: Natural language communication provides a good gold standard for completely general and seamless interfaces. Many of those critics mistake the question as philosophic while it is best treated definitional. Computer Scientists ought not to be concerned with defining intelligence in general but with a good definition for *"Grade A"* computers --- to use Turing's terminology. In this regard the interpretation of the Turing Test as a framework to gather empiric evidence can be set as a clear definition of the goal of AGI.
+Critics of the Turing Test as a goal for AGI mostly fall into two camps. The first point Moor provides is aimed against the first type of critics that suggests the test sets the wrong goal. As Moor argues, communication is a very clear framework to investigate all kinds of thinking. A further pragmatic reason for the relevance of the Turing Test --- that I would add --- is: Natural language communication provides a good gold standard for completely general and seamless interfaces. Many of those critics mistake the question as philosophic while it is best treated definitional. Computer Scientists ought not to be concerned with defining intelligence in general but with a good definition for *"Grade A"* computers --- to use Turing's terminology. In this regard the interpretation of the Turing Test as a framework to gather empiric evidence can be set as a clear definition of the goal of AGI.
 
 
 The other type of critics questions the adequacy of the test to determine wether its goal is reached. Moor's second point is aimed against that by pointing out how well the test encourages thorough testing. The critics sometimes mistake Turing's predictions as a specification that the Test ought to take only 5 minutes and limited implementations of the Turing Test that favor engineering tricks like the Loebner Prize[^loebner-critique] discredit Turing's intentions. I agree with Copeland's interpretation of Turing: The goal the test sets is a computer that *"plays the imitation game successfully come what may, with no field of human endeavour barred, and for any length of time commensurate with the human lifespan."* [@Copeland:2000tt, p. 530]
 
 
 
-[^agi-tests]: See [@Muehlhauser:2013wa] for a brief overview of operational definitions of AGI, including the coffe-brewing and college test. From a philosophical perspective all those seem rather random and dubious --- certainly much further away from clearly capturing necessary conditions of human-like intellectual competences.
+[^agi-tests]: See @Muehlhauser:2013wa for a brief overview of operational definitions of AGI, including the coffe-brewing and college test. From a philosophical perspective all those seem rather random and dubious --- certainly much further away from clearly capturing necessary conditions of human-like intellectual competences.
 
 [^loebner-critique]: Shieber [-@Shieber:1994lr] criticizes the Loebner prize for its inappropriateness to award advances in natural-language-processing techniques instead of engineering tricks oriented to the exigencies of the restricted task like parrying and insertion of random typing errors. But the setup of the scoring system alone shows how pointless it is to even judge current systems by a direct Turing Test.
 
+<!--
 ### Turing's Three Main Claims about Artificial Intelligence
 
 - Turing supports the fact that a universal computer can simulate every physical process including the brain. (also known as the Turing Principle, Wikipedia)
 - Turing believes that communication is a suitable means to expose the relevant intellectual abilities that determine wether a machine can think.
 - Turing thinks the imitation game specifically is suited to test the communicative abilities of the computer.
+-->
+
+### Turing's three main claims {-}
 
 We have established that:
 
 1. Turing sees communication as suitable to expose the relevant intellectual abilities that determine wether a computer can perform tasks on paar with a human being.
-2. Turing thinks that his test specifically can determine wether a compute possesses such communicative abilities.
+2. Turing thinks that his test specifically can determine wether a computer possesses such communicative abilities.
 
 But there further is a third claim. [@Copeland:2000tt, p. 530]  Which is known as the Turing Principle[^turing-thesis]:
 
 3. Turing believes that universal computers can simulate any physical process including the brain.
 
-This is implicit in [Turing:1950cm] and most clearly expressed in [@Turing:1951cd, p. ???]: *"If it is accepted that real brains, as found in animals, and in particular in men, are a sort of machine it will follow that our digital computer suitably programmed will behave like a brain."*
+This is implicit in @Turing:1950cm and most clearly expressed in @Turing:1951cd, p. 463: *"If it is accepted that real brains, as found in animals, and in particular in men, are a sort of machine it will follow that our digital computer suitably programmed will behave like a brain."*
 
 This is a much more controversial claim of course and --- as Turing is well aware --- he has few arguments and less evidence for it. It is important however to realize this as a separate and fully independent claim from the others.
 
@@ -165,61 +178,73 @@ This is a much more controversial claim of course and --- as Turing is well awar
 
 ## Turing on Machine Learning
 
+<!--
 ### State of Passing the Test
 
-- Loebner Prize
-- Turing's predictions
-- reverse engineering approach to AI with neural networks most successfull
-- Machine Learning
+- Move from AGI to AI and Machine Learning
+- Turing's (wrong) predictions
+- Loebner Prize state
+- 1952 predictions
+- success through NN scale
+-->
 
+Unlike the obsession in popular culture with human-like artificial intelligence might suggest, the interest of Computer Scientists in the last years has been more focused on domain specific intelligence for specific applications (most notably: image recognition, domain specific language processing, and robotics). The field that is concerned which such *weak* AI is referred to as *'Artificial Intelligence'* these days and is most focused on the *Machine Learning* approach. The field that is concerned with human like *strong* AI is the field of Artificial General Intelligence (AGI) that we talked about in the previous section. This shift of focus has mainly been due to a lack of success in AGI.
 
-The last statement is actually quite interesting from a modern perspective as it
+Turing believed that by the turn of the century there would be computers that *"play the imitation game so well that an average interrogator will not have more than 70 per cent chance of making the right identification after five minutes of questioning."* [-@Turing:1950cm, p. 442] Recent winners of the Loebner price [@AISB:lp], which is awarded to the most humanlike chatbot judged by a Turing-inspired test, show that this has not quite come to pass. On the other hand Turing himself said that it would take *"at least 100 years"* [-@Turing:1952ca, p. 434] until a general Turing Test could be passed --- and the goal of AGI reached --- which is still well in the realm of the possible. Turing's wrong prediction of the development can be mainly accredited to his underestimation of the needed processing power for Machine Learning [-@Turing:1950cm, p. 455]. Recent accomplishments in AI with deep neural networks for example have only become feasible because computers are able to run networks with millions of neurons in real time.[^nn-size]
 
-neural networks
-
-
-==> Machine Learning prediction
-
-
-
-
-While Turing believed that by the turn of the century there would be computers that "play the imitation game so well that an average interrogator will not have more than 70 per cent chance of making the right identification after five minutes of questioning." [-@Turing:1950cm, p. 442] Recent winners in the Loebner price [@AISB:lp], which is awarded to the most humanlike chatbot judged by a Turing inspired Test, show how far we still are from Turing's vision --- even though the Loebner price contestant might not represent the state of the art of natural language[^loebner-critique].
-
-Turing's wrong prediction of the development can be mainly accredited to his underestimation of the needed processing power for Machine Learning [-@Turing:1950cm, p. 455]. Recent accomplishments with deep neural networks for example have only become feasible because computers are able to run networks with millions of neurons in real time.[^nn-size]
 
 
 [^nn-size]: Steven Wolfram writes: *"Computers (and especially linear algebra in GPUs) got fast enough that [...] it became practical to train neural networks with millions of neurons, on millions of examples. [...] this suddenly brought large-scale practical applications within reach. [...] I don’t think it’s a coincidence that this happened right when the number of artificial neurons being used came within striking distance of the number of neurons in relevant parts of our brains. [...] if we’re trying to achieve “human-like” image identification [...] then this defines a certain scale of problem, which, it appears, can be solved with a “human-scale” neural network."* [-@Wolfram:2015ii]
 
-### Machine Learning and AGI
-
-- Move from AGI to AI and Machine Learning
-- Simulation of the Brain and Neural Networks
-
-Unlike the obsession in popular culture with human-like artificial intelligence might suggest, the interest of Computer Scientists in the last years has been more focused on domain specific intelligence for specific applications (most notably: image recognition, domain specific language processing, and robotics). The field of *Artificial Intelligence* (AI) is concerned with such weak AI which is contrasted with the term *Artificial General Intelligence* (AGI) which refers to the field concerned with human like strong AI.
-
-
-
-Machine Learning, neural networks, statistical methods
-
-reverse engineering approach to AI with deep neural network has yielded
-
-
-
-
-[^agi-tests]: See [@Muehlhauser:2013wa] for a brief overview of operational definitions of AGI, including the coffe-brewing test and college test.
-
+<!--
 ### Turing on how to device a machine that can pass the test
 
 - child mind with learning ability
 - sensory organs
 - interaction with teacher
 - Helen Keller example
+- reverse engineering approach to AI with neural networks most successfull
+- Machine Learning
+- 4th core claim from Turing
+-->
 
+
+
+### Turing's fourth claim {-}
+
+However Turing's idea about how to build a computer that could pass his test are more interesting than his timeline predictions. His claim that *"the problem [of building a computer that passes the Turing Test] is mainly one of programming"* [-@Turing:1950cm, p. 455] still rings true today.
+
+We have already learned of his idea that computers should be able to simulate the brain [-@Turing:1951cd]. Indeed this reverse engineering approach to AI is the basic idea behind those neural networks that power the most successful image entity-recognition algorithms today and was already investigated by @Turing:1948im [see also @Copeland:1999at]. It seems plausible that we might achieve AGI through brain simulation bevor we deeply understand how the brain works.
+
+Even more interesting Turing also predicted the Machine Learning approach to build intelligent algorithms and saw it's non-deterministic nature as a characteristic feature.
+
+> *"Instead of trying to produce a programme to simulate the adult mind, why not rather try to produce one which simulates the child's? If this were then subjected to an appropriate course of education one would obtain the adult brain. [...] We have thus divided our problem into two parts. The child-programme and the education process. These two remain very closely connected. We cannot expect to find a good child-machine at the first attempt. One must experiment with teaching one such machine and see how well it learns."* [@Turing:1950cm, p. 456]
+>
+> *"An important feature of a learning machine is that its teacher will often be very largely ignorant of quite what is going on inside, although he may still be able to some extent to predict his pupil's behaviour. [...] This is in clear contrast with normal procedure when using a machine to do computations : one's object is then to have a clear mental picture of the state of the machine at each moment in the computation. [...] Processes that are learnt do not produce a hundred per cent certainty of result; if they did they could not be unlearnt."* [@Turing:1950cm, p. 458-459]
+
+This description is very much how modern statistical Machine Learning algorithms work. They consist of an algorithm that describes a mathematical model which is trained with human annotate data (for example a grammar analysis of sentences) and are then able to perform their task on similar data. [See @Schubert:2015cl for an overview about approaches to Natural Language Processing; and @Jurafsky:2015uu for a more technical introduction.] As Turing mentions this is a paradigm shift from classical algorithms which have results that are clearly defined by the programmer and predictable independent of any training data. We might add a fourth core claim:
+
+4. Turing believes that the approach to device intelligent computers must be based on learning algorithms that are trained and do not behave predictable in a classic sense.
+
+We should note that devising intelligent algorithms is a quite different task and involves techniques where an interpretation of the state of the program at each step becomes hard too impossible --- especially in the case of deep neural networks. We will see later why this matters for a Davidsonian perspective.
+
+<!--
 ### Summary and Conclusion
 
 - We are right in taking the simplified version of the test as the purest expression of Turing's idea
 - The tests relevance is mainly that it provides the clearest answer to what AGI is about.
 - Turing has rightly identified the main question of research in AGI to be about how a machine can learn to communicate.
+- independence of the Turing principle from his other more interesting claims.
+- The nature of Machine Learning.
+-->
+
+### Summary {-}
+
+We have seen that a simplified interpretation of the Turing Test as proposed in @Davidson:1990tt is the core of Turing's idea. However we have also seen that an interpretation of the Turing Test as an operational definition or sufficient condition for intelligence is not inline with Turing's writing. Instead I have proposed to follow @Moor:1976at and interpret the test as a framework to collect empiric evidence that a computer can perform human like tasks. We have seen that this can provide a good and clear definition of a special class of computers that are the goal of AGI research.
+
+Furthermore we have established that Turing first of all claims that (1) communication abilities are representative for intellectual abilities in general and (2) that his test is adequate to evaluate those abilities. I have pointed out that his claim (3) that computers can simulate the brain, the Turing principle, which is the main point most philosophers critique is completely independent of the other claims and is the least essential one for Turing
+
+Lastly we have seen that Turing made pathbreaking suggestions about how to device algorithms that could pass his test. Such algorithms (4) need to be able to learn when trained with data and that different from classical algorithms their outcome is not predictable and the states of their operation are not easily interpretable.
 
 
 
@@ -236,7 +261,7 @@ reverse engineering approach to AI with deep neural network has yielded
 - Empiric criterion for thought
 - Not confined to maschines
 
-> *"The whole thinking process is still rather mysterious to us, but I believe that the attempt to make a thinking machine will help us greatly in finding out how we think ourselves."* [@Turing:1951cd, p. ???]
+> *"The whole thinking process is still rather mysterious to us, but I believe that the attempt to make a thinking machine will help us greatly in finding out how we think ourselves."* [@Turing:1951cd, p. 465]
 
 
 *"the test is designed to throw light on the nature of thought."* [@Davidson:1990tt, p. 78]
@@ -611,4 +636,3 @@ While it currently seems more probable that Turing’s Test and also Davidson’
 
 
 \newpage
-

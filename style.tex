@@ -1,9 +1,24 @@
-\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+\documentclass[
+  $if(fontsize)$
+    $fontsize$,
+  $endif$
+  $if(lang)$
+    $babel-lang$,
+  $endif$
+  $if(papersize)$
+    $papersize$,
+  $endif$
+  $for(classoption)$
+    $classoption$$sep$,
+  $endfor$
+  ]{$documentclass$}
+
 $if(fontfamily)$
-\usepackage[$fontfamilyoptions$]{$fontfamily$}
+  \usepackage[$fontfamilyoptions$]{$fontfamily$}
 $else$
-\usepackage{lmodern}
+  \usepackage{lmodern}
 $endif$
+
 $if(linestretch)$
 \usepackage{setspace}
 \setstretch{$linestretch$}
@@ -54,6 +69,7 @@ $if(geometry)$
 $endif$
 \makeatletter
 \@ifpackageloaded{hyperref}{}{%
+\PassOptionsToPackage{hyphens}{url}
 \ifxetex
   \usepackage[setpagesize=false, % page size defined by xetex
               unicode=false, % unicode breaks when used with xetex
@@ -170,39 +186,49 @@ $endif$
 
 $if(title)$
   \title{
-    $title$
+    \vspace{2cm}
+    \newfontfamily{\title}{title.ttf}
+    {\fontsize{56}{56}\selectfont\title $title$}
     $if(subtitle)$
-      \\ \vspace{0.5em}
-      {\large $subtitle$}
+      \\ \vspace{1cm}
+      \parbox{14cm}{
+        \begin{center}
+          {\fontsize{24}{56}\selectfont\bfseries $subtitle$}
+        \end{center}
+      }
     $endif$
   }
 $endif$
 
 $if(author)$
-  \author{
+  \author{{\LARGE\bfseries
     $for(author)$
-      $author$ $sep$ \and
+      \uppercase{$author$} $sep$ \and
     $endfor$
-  }
+  }}
 $endif$
 
-\date{$date$}
+\date{\vspace{-1em} \LARGE\bfseries\MakeUppercase $date$}
 $for(header-includes)$
 $header-includes$
 $endfor$
 
-$if(subparagraph)$
-$else$
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
-$endif$
+% Columns
+\usepackage{multicol}
+\setlength\columnsep{1cm}
+
+% Footnotes
+\setlength{\skip\footins}{1cm}
+\renewcommand*\footnoterule{\hrule\vspace{5pt}}
+
+% Itemize Margins
+\setlength{\leftmargini}{10pt}
+
+% Headings
+\usepackage{titlesec}
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\large\bfseries}
+\titleformat*{\subsubsection}{\small\bfseries\uppercase}
 
 \begin{document}
 $if(title)$
@@ -210,17 +236,18 @@ $if(title)$
 $endif$
 
 $if(abstract)$
+  \vspace{1cm}
   \thispagestyle{empty}
-  \begin{abstract}
+  \begingroup\leftskip=3cm\rightskip=3cm\large
+    \begin{center}\textbf{Abstract}\\\end{center}\vspace{-1em}
     $abstract$
     $if(keywords)$
       \\
-      \begin{center}
-      \textbf{Keywords}\\ \vspace{3pt}
+      \begin{center}\textbf{Keywords}\\\end{center}\vspace{-1em}
       $keywords$
-      \end{center}
+
     $endif$
-  \end{abstract}
+  \endgroup
   \newpage
 $endif$
 
@@ -229,12 +256,14 @@ $for(include-before)$
 $endfor$
 
 $if(toc)$
+  \newgeometry{left=4.5cm, right=4.5cm}
   \thispagestyle{empty}
-  {
-  \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
-  \setcounter{tocdepth}{$toc-depth$}
-  \tableofcontents
-  }
+    {
+      \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
+      \setcounter{tocdepth}{$toc-depth$}
+      \tableofcontents
+    }
+  \restoregeometry
   \newpage
 $endif$
 
@@ -244,7 +273,11 @@ $endif$
 $if(lof)$
 \listoffigures
 $endif$
-$body$
+
+\begin{multicols}{2}
+  $body$
+\end{multicols}
+
 $if(natbib)$
   $if(bibliography)$
     $if(biblio-title)$
