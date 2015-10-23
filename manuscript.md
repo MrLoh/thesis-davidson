@@ -4,48 +4,67 @@ subtitle: Donald Davidson's Critique of the Turing Test as an Expression of his 
 author: Tobias Lohse
 date: \today
 
+papersize: a4paper
 toc: true
 toc-depth: 2
-numbersections: true
 
 bibliography: references.bib
 link-citations: true
 citation-style: style.csl
 nocite: '@*'
 
-papersize: a4paper
-template: style.tex
-
-
 abstract: |
-  In his essay 'Turing's Test' [-@Davidson:1990tt], Donal Davidson discusses Alan Turing's famous proposal how to define the goal of Artificial General Intelligence and proposes a modified version that fixes the weaknesses of the original proposal. Davidson's Test illustrates his theory about the essence of linguistic and intellectual competence very well.
+  In this paper I discuss Donald Davidson's critique [-@Davidson:1990tt] of the Turing Test in which he agrees with Turing [-@Turing:1950cm] that communication is the essential hallmark of human-like intellectual abilities and proposes a modified version of the Turing Test that requires the judge to observe the learning process of the computer through social interactions in a shared world. This modified test serves as an illustration of Davidsons ideas about the nature of our linguistic and intellectual competences, especially his Epistemology of 'Triangulation' of subjective, intersubjective, and objective knowledge [-@Davidson:1991tv] and his empirical 'Unified Theory of Meaning, and Action' [-@Davidson:1980tu]. My discussion aims to expose how we can treat Davidson's Test as an operational definition of his concept of intellectual competence and how it relates to his rejection of other theories of meaning.
 
-  Davidson's idea of triangular Epistemology
+  Furthermore, I argue that Davidson and Turing agree that the essence of communication can be captured in a formal theory and that both saw social interaction in a shared world as essential for human-like intellectual competence; for Davidson this is grounded in his idea of a triangular Epistemology; for Turing it is grounded in his understanding that Machine Learning is needed to achieve Artificial Intelligence. Davidson however goes further by denying that such experience of interaction can simply be encoded in predetermined conventions, and requiring the ability for 'Radical Interpretation' of previously unknown expressions in the very instance of communication. In the end, I give an outlook for the implications of Davidson's thoughts for Machine Learning and Computer Linguistic approaches that would deserve further research.
 
-keywords: Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Epistemology, Interpretation, Turing\ Test, Artificial\ Intelligence
+keywords: |
+  Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Epistemology, Interpretation, Turing\ Test, Artificial\ Intelligence, Computer\ Linguistic
 
 ---
-
-<!-- Turing’s famous test aims to specify sufficient condition for intelligence on the basis of linguistic abilities. Therefore it is of natural interest to philosophy of language and philosophy of mind. Donald Davidson (1917–2003) has arguably been one of the most interesting contemporary philosophers in these areas. His thoughts are concerned with defining the essence of our ability to interpret the linguistic behaviors of others and for him too this is a condition for our ability to think. However in Turing's Test (1990) Davidson criticizes Turing’s test and tracks its insufficiency down to Turing's premise that physical and intellectual capacities can be separated clearly. For Davidson meaning can not be analyzed independent of world knowledge and the ability to interpret utterances only emerges holistically through interaction with other about experiences in a shared world. He proposes a modified test that allows the judge to observe a history of three-way engagement between the object, a shared world, and other agents in which the object develops its semantics for previously unknown occurrences. I aim to clarify the conditions of this modified test and argue why Davidson would hold these conditions not only as sufficient for intelligence but also as necessary and thus as providing a definition of intelligence. For this I will clarify why Davidson localizes the essence of intelligence in the ability to interpret utterances that can not be interpreted based on a previously acquired set of rules, practices, or conventions; and how Davidson thinks the essence of this ability can nevertheless be formally captured in an empirical unified theory of thought, meaning, and action. -->
 
 # Introduction {-}
 
 
 
+
+<!--
 **Overview of Paper**
 - What is the Turing Test and why is it still interesting
 - How can we understand Davidson's Critique of the Turing Test
 - How is Davidson's proposal for a modified test related to his Unified Theory
 - How well does Davidson's Test hold up against objections?
 - What can Computer Linguistics and Artificial Intelligence learn from Davidson's Test
+-->
 
+This paper discuses Donald Davidson's critique [-@Davidson:1990tt] of the Turing Test as an illustration of Davidson's theory of linguistic and intellectual competence. After a short Introduction to Donald Davidson it consists of four main sections.
 
+[**Section 1**][The Turing Test and Its Relevance] explores Turing's original ideas and their relevance. It discusses different interpretations and versions of the Turing Test and establishes wich interpretation I follow. It also contains a discussion of the significance of the test and Turing's ideas about Machine Learning for the field of 'Artificial (General) Intelligence'.
 
+[**Section 2**][Davidson's Critique of the Turing Test] presents the core agreements and points of criticism from Davidson and evaluates in how far they do Turing justice. It ends with a display of Davidson's proposal for a modified test that allows to judge the computer based on an observation of its learning process.
 
+[**Section 3**][Necessary Conditions for Linguistic\ Competence] delves into the necessary conditions Davidson requires from a theory of linguistic competence, starting with a definition of the concept of linguistic competence in Davidson's writing. It discusses the empirical, recursive, and extensional requirements for theories of meaning, the social aspect of language, Davidson's anti-conventionalism, and the triangular nature of cognition and interpretation.
+
+[**Section 4**][Davidson's Theory of Intellectual and\ Linguistic\ Competence] seeks to illuminate Davidson's theory of intellectual and linguistic competence and show in how far Davidson's modified Turing Test might act as an operational definition of the topic of this theory. It also discusses how well Davidson's Test fences against some objections.
+
+[I conclude][Conclusion] with a summary of the core agreements and distinctions between Davidson and Turing and a brief discussion of the implications of Davidson's ideas (especially his empirical theory and anti-conventionalism) for Computer Linguistic and Machine Learning approaches that would deserve further investigation.
 
 
 
 ## Introduction to Donald Davidson {-}
+
+
+
+
+Donald Davidson (1917--2003) "was one of the most important philosophers of the latter half of the twentieth century [...] with a reception and influence that, of American philosophers, is perhaps matched only by that of [his friend, mentor, and colleague] W. V. O. Quine". Even though his thoughts are only exposed through a collection of essays (written from 1963--2001)[^life], his work provides "a single integrated approach to the problems of knowledge, action, language and mind." [@Malpas:2015dd, p. 1; @Lepore:2009d, p. 1]
+
+Davidson's work is concerned with defining the essence of our ability to interpret the linguistic behaviors of others. For Davidson meaning can not be analyzed independent of world knowledge and the ability to interpret utterances only emerges holistically through interaction with other about experiences in a shared world.
+
+[^life]: It is remarkable that a contemporary philosopher of Davidson's calibre only started publishing his relevant papers in his 40s after he had been a professor for over a decade. The publication dates of Davidson's papers ought to be interpreted with care though. His fried and student Ernie Lepore recounts: "[Davidson was] adventurous and daring [...] from early on right up until his death. [...] Donald was without even the slightest speck of careerism from the very start. He traveled the world giving papers in exotic places and often handed them over to local journals upon request. [...M]any of the papers were written somewhat contemporaneously. [...Some were] given much earlier than they were published and relatively around the same time. [...] I possess a mimeographed copy of his quotation paper dated from the early 60’s, long before its 1979 publication." [Lepore:2003me].
+
+    Davidson's life and career are actually quite inspiring, *fascinating*, and unconventional. Davidson started out in the History of Philosophy and ventured into psychology and economy during his studies and as a professor. Certainly it is no coincidence that he was cited by continental and analytical philosophers and even computer scientists alike. To learn more about Davidson's life I would recommend to read Lepore's interesting 'Interview with Donald Davidson' [-@Lepore:2004id] and Davidson's own 'Intellectual Autobiography' [Davidson:1999ia]
+
+
 
 **Historic background to of Davidson's Philosophy**
 - Vienna Circle and Empiricism
@@ -54,19 +73,11 @@ keywords: Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Epis
 - semantic vs. foundational theories of meaning
 - brief overview of players
 
-Donald Davidson (1917--2003) "one of the most important philosophers of the latter half of the twentieth century [...] with a reception and influence that, of American philosophers, is perhaps matched only by that of [his friend, mentor, and college] W. V. O. Quine". Even though his thoughts are only exposed through a collection of essays (written from 1963[^life]--2001), his work provides "a single integrated approach to the problems of knowledge, action, language and mind." [@Malpas:2015dd, p. 1; @Lepore:2009d, p. 1]
+### Historical Context
 
-"Davidson's work has also been an important, if sometimes contentious, point of focus for philosophical interaction between analytic and so-called ‘continental’ thought (particularly in relation to hermeneutic and literary theory" [@Malpas:2015dd, p. 2]
+Language has been an important philosophical topic since Plato, but it especially gained attention in the so-called 'Linguistic Turn' of the 20th century, when it was recognized as a medium for our rational access to the world. Names like Frege, Russel, the early Wittgenstein, and the Vienna Circle stand for the earlier Ideal Language Philosophy and Logical Empiricism which hoped to solve problems of Metaphysics through a definite logical analysis of the meaning of language. But this approach did not turn out so successful, and led by Austin, Ryle, and the late Wittgenstein analytical philosophy started to pay more attention to Ordinary Language, focusing on the importance of social and performative aspects. Quine and Davidson stand at the resolution of this tension with an approach that recognizes linguistic behavior in its context while leveraging the formal methods for their analysis. [@Bertram:2011sz] Through Davidson especially the analytical tradition also became linkable to the 'continental' Hermeneutic traditions again, contributing to the dissolution of the philosophical divide of the 20th century. [@Malpas:2015dd, p. 2]
 
-![Donald Davidson by David Levine from Forum Gallery, New York](donald-davidson.jpg)
-
-
-
-[^life]: It is remarkable that a contemporary philosopher of Davidson's calibre only started publishing his relevant papers in his 40s after he had been a professor for over a decade. The publication dates of Davidson's papers ought to be interpreted with care though. His fried and student Ernie Lepore recounts: "[Davidson was] adventurous and daring [...] from early on right up until his death. [...] Donald was without even the slightest speck of careerism from the very start. He traveled the world giving papers in exotic places and often handed them over to local journals upon request. [...M]any of the papers were written somewhat contemporaneously. [...Some were] given much earlier than they were published and relatively around the same time. [...] I possess a mimeographed copy of his quotation paper dated from the early 60’s, long before its 1979 publication." [Lepore:2003me].
-
-    Davidson's life and career are actually quite inspiring, *fascinating*, and unconventional. Davidson started out in the History of Philosophy and ventured into psychology and economy during his studies and as a professor. Certainly it is no coincidence that he was cited by continental and analytical philosophers and even computer scientists alike. To learn more about Davidson's life I would recommend to read Lepore's interesting 'Interview with Donald Davidson' [-@Lepore:2004id] and Davidson's own 'Intellectual Autobiography' [Davidson:1999ia]
-
-
+![Donald Davidson by David Levine in Forum Gallery, New York](donald-davidson.jpg)
 
 # The Turing Test and Its Relevance
 
@@ -115,7 +126,7 @@ The interpretations are not as straight forward, as it might seem. There are thr
 
 The first interpretation and any reading of intelligence in a broader sense are clearly not in line with Turing's ideas. Turing was not interested in a definition of intelligence but in setting a clear goal for further research. In fact I would argue that the third interpretation from Moor does Turing most justice. This becomes fairly clear from the following section of a radio interview [-@Turing:1952ca], which represents Turing's simplest expression of the test:
 
-> “I *don’t want to give a definition of thinking* [...] I don’t really see that we need to agree on a definition at all. The important thing is to try to *draw a line between the properties of a brain, or of a man, that we want to discuss, and those that we don’t.* […] I would like to suggest a particular kind of test that one might apply to a machine. You might call it a test to see whether the machine thinks, but it would be better to avoid begging the question, and *say that the machines that pass are (let’s say) ‘Grade A’ machines*. The idea of the test is that the machine has to try and pretend to be a man, by answering questions put to it, and it will only pass if the pretence is reasonably convincing.”*[@Turing:1952ca, p. 466, emphasis added]
+> “I *don’t want to give a definition of thinking* [...] I don’t really see that we need to agree on a definition at all. The important thing is to try to *draw a line between the properties of a brain, or of a man, that we want to discuss, and those that we don’t.* […] I would like to suggest a particular kind of test that one might apply to a machine. You might call it a test to see whether the machine thinks, but it would be better to avoid begging the question, and *say that the machines that pass are (let’s say) ‘Grade A’ machines*. The idea of the test is that the machine has to try and pretend to be a man, by answering questions put to it, and it will only pass if the pretence is reasonably convincing.” [@Turing:1952ca, p. 466, emphasis added]
 
 Turing clearly describes the imitation game as a test that defines a special *class of computers*, but not as one that defines thinking/intelligence. It is also implicit that he sees the *ability to communicate* as quintessential for human-like intellectual abilities.
 
@@ -159,7 +170,7 @@ The other type of critic questions the adequacy of the test to determine whether
 - Turing thinks the imitation game specifically is suited to test the communicative abilities of the computer.
 -->
 
-### Turing's three main claims {-}
+### Turing's three main claims
 
 Following Copeland [-@Copeland:2000tt, p. 530], we can establish the following two main claims of Turing from our previous discussion:
 
@@ -209,7 +220,7 @@ Turing believed that by the turn of the century there would be computers that "p
 
 
 
-### Turing's fourth main claim {-}
+### Turing's fourth main claim
 
 However, Turing's idea about *how* to build a computer that could pass his test are more interesting than his timeline predictions. His claim that "the problem [of building a computer that passes the Turing Test] is mainly one of programming" [-@Turing:1950cm, p. 455] still rings true today.
 
@@ -221,7 +232,7 @@ Even more interesting is that Turing also predicted the Machine Learning approac
 >
 > "An important feature of a learning machine is that its teacher will often be very largely ignorant of quite what is going on inside, although he may still be able to some extent to predict his pupil's behaviour. [...] This is in clear contrast with normal procedure when using a machine to do computations : one's object is then to have a clear mental picture of the state of the machine at each moment in the computation. [...] Processes that are learnt do not produce a hundred per cent certainty of result; if they did they could not be unlearnt." [@Turing:1950cm, p. 458-459]
 
-This description is very much how modern statistical Machine Learning algorithms work. They consist of an algorithm that describes a mathematical model which is trained with human-annotate data (for example, a grammar analysis of sentences) and are then able to perform their task on similar data. [See @Schubert:2015cl for an overview about approaches to Natural Language Processing; and @Jurafsky:2015uu for a more technical introduction.] As Turing mentions, this is a paradigm shift from classical algorithms which have results that are clearly defined by the programmer and predictable independent of any training data. We might add a fourth core claim:
+This description is very much how modern statistical Machine Learning algorithms work. They consist of an algorithm that describes a mathematical model which is trained with human-annotated data (for example, a grammar analysis of sentences) and are then able to perform their task on similar data. [See @Schubert:2015cl for an overview about approaches to Natural Language Processing; and @Jurafsky:2015uu for a more technical introduction.] As Turing mentions, this is a paradigm shift from classical algorithms which have results that are clearly defined by the programmer and predictable independent of any training data. We might add a fourth core claim:
 
 4. Turing believes that the approach to device intelligent computers must be based on learning algorithms that are trained and do not behave predictable in a classic sense.
 
@@ -236,7 +247,7 @@ Note that devising intelligent algorithms is a quite different task and involves
 - The nature of Machine Learning.
 -->
 
-### Summary {-}
+### Summary
 
 We have seen that a simplified interpretation of the Turing Test as proposed by @Davidson:1990tt reveals the core of Turing's idea. However, we have also seen that an interpretation of the Turing Test as an operational definition or sufficient condition for intelligence is not in line with Turing's writing. Instead, I have proposed to follow @Moor:1976at and interpret the test as a framework to collect empirical evidence to show that a computer can perform human-like tasks. We have seen that this can provide a good and clear definition of a special class of computers that are the goal of AGI research.
 
@@ -265,6 +276,9 @@ In this section I will first discuss the relevance of the Turing Test for Philos
 - Pragmatic approach to the question of thought
 - Empiric criterion for thought
 - Not confined to maschines
+
+[ ] **Find quote from Davidson's Introduction to the essay volume**
+
 
 > *"The whole thinking process is still rather mysterious to us, but I believe that the attempt to make a thinking machine will help us greatly in finding out how we think ourselves."* [@Turing:1951cd, p. 465]
 
@@ -327,7 +341,7 @@ Turing's proposed test shows that he agrees with Davidson on the fact that lingu
 - but he doesn't do justice to Turing's thoughts on Machine Learning that would deserve a discussion in his paper
 - His emphasis on a history of causal interaction with the world is partly satisfied by machine learning
 
-### Appropriateness of the Critique {-}
+### Appropriateness of the Critique
 
 
 ## Davidson's Proposal for a Modified Test
@@ -343,7 +357,13 @@ Turing's proposed test shows that he agrees with Davidson on the fact that lingu
 
 
 
-# Necessary Conditions for Linguistic Competence
+# Necessary Conditions for Linguistic\ Competence
+
+
+
+
+
+
 
 ## The Distinction between Linguistic Competence and Performance
 
@@ -505,12 +525,19 @@ I use the term *linguistic competence*[^linguistic-competence] here to refer to 
 
 Turing discusses an interesting objection to his test that is related to Anomalous Monism [-@Turing:1950cm, p 452f]. If our behavior is not ruled by strict laws but a computer is. How could it ever simulate our behavior. Turing argues that this is simply an assumptions (and even if who says that the mental states of a computer could for example not supervene on the sates of its neural network). Turing uses cryptography as an example for a process where a computer can produce output which can not be tracked back to its originating rules (but this of course is a practical limitation not a theoretical one, since all cryptographic functions can be reversed with infinite processing power.)
 
-This raises and important question wether the anomalism of the mental is connected to our linguistic competences (or maybe just to our effectiveness?) and how computers/the unified theory could account for it. ***(need to reread in three varieties of knowledge)***
+This raises and important question wether the anomalism of the mental is connected to our linguistic competences (or maybe just to our effectiveness?) and how computers/the unified theory could account for it.
+[ ] **Reread in three varieties of knowledge to see what this means**
 
 **Summary**
 
 
-# Davidson's Theory of Intellectual and Linguistic Competence
+# Davidson's Theory of Intellectual and\ Linguistic\ Competence
+
+
+
+
+
+
 
 ## Sources for Davidson's Theory of Intellectual and Linguistic Competence
 
@@ -534,7 +561,7 @@ Davidson's theory can be traced back to his rejection of meaning and idea that i
 
 [^davidsons-program]: His idea that truth conditions (T-Sentences) are all that is needed to explain interpretation, and any more fundamental notion of meaning is misconceived, has also led to what is known as Davidson's Program: The attempt to give an account of the interpretation of utterances purely with the means of first order logic.
 
-## Outline of the Unified Theory
+## Outline of the Unified Theory of Meaning and Action
 
 **Decision Theory **
 
@@ -590,13 +617,22 @@ Davidson's theory can be traced back to his rejection of meaning and idea that i
 
 # Conclusion {-}
 
+
+
+
+
+
+
+
 ## Prospects of Davidson's Pragmatic Theory {-}
+
 
 
 
 While Davidson is skeptical about the possibility of explaining our linguistic performance. He believes that there is a pragmatic and empirical theory about the essence of linguistic competence.
 
 ## Implications for Artificial Intelligence and Computer Linguistics {-}
+
 
 
 
@@ -629,6 +665,16 @@ While it currently seems more probable that Turing’s Test and also Davidson’
 
 
 
+
+# Acknowledgements {-}
+
+Many thanks to ... for reading this paper ...
+
+### Colophon
+
+This paper was written with [Gingko](https://gingkoapp.com) in [Pandoc Markdown](http://pandoc.org) and typeset using [XeTeX](http://xetex.sourceforge.net) in Gotham Narrow. My research process is inspired by Luhmann's Zettelkasten methodology, using [Evernote](https://evernote.com). If you are interested, you can find an article about my research and writing process on my blog (http://MrLoh.se/2015/10/research-and-scientific-writing-process).
+
+# References {-}
 
 
 

@@ -192,11 +192,7 @@ $endif$
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-$if(numbersections)$
-\setcounter{secnumdepth}{5}
-$else$
-\setcounter{secnumdepth}{0}
-$endif$
+
 $if(dir)$
 \ifxetex
   % load bidi as late as possible as it modifies e.g. graphicx
@@ -256,11 +252,21 @@ $endfor$
 \setlength{\leftmargini}{10pt}
 
 % Headings
+\setcounter{secnumdepth}{2}
 \usepackage{titlesec}
-\titleformat*{\section}{\LARGE\bfseries\raggedright}
-\titleformat*{\subsection}{\large\bfseries}
+\titleformat{\section}{\LARGE\bfseries\raggedright}{\thesection\;\raggedleft}{3em}{\hspace{-3em}}{}
+\titleformat{name=\section,numberless}{\LARGE\bfseries\raggedright}{}{3em}{\hspace{-3em}}{}
+\titleformat{\subsection}[block]{\large\bfseries}{\thesubsection\;}{0em}{}{}
 \titleformat*{\subsubsection}{\small\bfseries\uppercase}
 \titlelabel{\thetitle.\ }
+
+% Hyphenation
+\emergencystretch=\maxdimen
+\hyphenpenalty=1000
+\hbadness=100
+\exhyphenpenalty=10000
+\lefthyphenmin=4
+\righthyphenmin=4
 
 \begin{document}
 $if(title)$
