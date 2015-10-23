@@ -4,11 +4,6 @@ subtitle: Donald Davidson's Critique of the Turing Test as an Expression of his 
 author: Tobias Lohse
 date: \today
 
-mainfont: regular.otf
-mainfontoptions: BoldFont = bold.otf,ItalicFont = regular-italic.otf,BoldItalicFont = bold-italic.otf
-geometry: top=1.5cm, bottom=2cm, left=1.5cm, right=1.5cm
-papersize: a4paper
-
 toc: true
 toc-depth: 2
 numbersections: true
@@ -16,14 +11,10 @@ numbersections: true
 bibliography: references.bib
 link-citations: true
 citation-style: style.csl
-reference-section-title: References
 nocite: '@*'
 
+papersize: a4paper
 template: style.tex
-linkcolor: black
-citecolor: black
-toccolor: black
-urlcolor: black
 
 
 abstract: |
@@ -37,7 +28,7 @@ keywords: Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Epis
 
 <!-- Turing’s famous test aims to specify sufficient condition for intelligence on the basis of linguistic abilities. Therefore it is of natural interest to philosophy of language and philosophy of mind. Donald Davidson (1917–2003) has arguably been one of the most interesting contemporary philosophers in these areas. His thoughts are concerned with defining the essence of our ability to interpret the linguistic behaviors of others and for him too this is a condition for our ability to think. However in Turing's Test (1990) Davidson criticizes Turing’s test and tracks its insufficiency down to Turing's premise that physical and intellectual capacities can be separated clearly. For Davidson meaning can not be analyzed independent of world knowledge and the ability to interpret utterances only emerges holistically through interaction with other about experiences in a shared world. He proposes a modified test that allows the judge to observe a history of three-way engagement between the object, a shared world, and other agents in which the object develops its semantics for previously unknown occurrences. I aim to clarify the conditions of this modified test and argue why Davidson would hold these conditions not only as sufficient for intelligence but also as necessary and thus as providing a definition of intelligence. For this I will clarify why Davidson localizes the essence of intelligence in the ability to interpret utterances that can not be interpreted based on a previously acquired set of rules, practices, or conventions; and how Davidson thinks the essence of this ability can nevertheless be formally captured in an empirical unified theory of thought, meaning, and action. -->
 
-# Introduction
+# Introduction {-}
 
 
 
@@ -54,7 +45,7 @@ keywords: Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Epis
 
 
 
-## Introduction to Donald Davidson
+## Introduction to Donald Davidson {-}
 
 **Historic background to of Davidson's Philosophy**
 - Vienna Circle and Empiricism
@@ -597,15 +588,15 @@ Davidson's theory can be traced back to his rejection of meaning and idea that i
 
 **Wirkungsgeschichte**
 
-# Conclusion
+# Conclusion {-}
 
-## Prospects of Davidson's Pragmatic Theory
+## Prospects of Davidson's Pragmatic Theory {-}
 
 
 
 While Davidson is skeptical about the possibility of explaining our linguistic performance. He believes that there is a pragmatic and empirical theory about the essence of linguistic competence.
 
-## Implications for Artificial Intelligence and Computer Linguistics
+## Implications for Artificial Intelligence and Computer Linguistics {-}
 
 
 

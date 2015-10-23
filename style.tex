@@ -13,6 +13,8 @@
   $endfor$
   ]{$documentclass$}
 
+\usepackage[top=1.5cm, bottom=2cm, left=1.5cm, right=1.5cm]{geometry}
+
 $if(fontfamily)$
   \usepackage[$fontfamilyoptions$]{$fontfamily$}
 $else$
@@ -67,9 +69,13 @@ $endif$
   \fi
   \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
   \newcommand{\euro}{€}
-$if(mainfont)$
-    \setmainfont[$mainfontoptions$]{$mainfont$}
-$endif$
+
+  \setmainfont[
+    BoldFont = bold.otf,
+    ItalicFont = regular-italic.otf,
+    BoldItalicFont = bold-italic.otf
+  ]{regular.otf}
+
 $if(sansfont)$
     \setsansfont[$sansfontoptions$]{$sansfont$}
 $endif$
@@ -91,9 +97,7 @@ $endif$
 \usepackage{microtype}
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-$if(geometry)$
-\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
-$endif$
+
 \makeatletter
 \@ifpackageloaded{hyperref}{}{%
 \PassOptionsToPackage{hyphens}{url}
@@ -116,9 +120,9 @@ $endif$
             pdfauthor={$author-meta$},
             pdftitle={$title-meta$},
             colorlinks=true,
-            citecolor=$if(citecolor)$$citecolor$$else$blue$endif$,
-            urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
-            linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
+            citecolor=$if(citecolor)$$citecolor$$else$black$endif$,
+            urlcolor=$if(urlcolor)$$urlcolor$$else$black$endif$,
+            linkcolor=$if(linkcolor)$$linkcolor$$else$black$endif$,
             pdfborder={0 0 0}
             $if(hidelinks)$,hidelinks,$endif$}
 \urlstyle{same}  % don't use monospace font for urls
