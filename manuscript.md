@@ -41,6 +41,13 @@ keywords: Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Epis
 
 
 
+**Overview of Paper**
+- What is the Turing Test and why is it still interesting
+- How can we understand Davidson's Critique of the Turing Test
+- How is Davidson's proposal for a modified test related to his Unified Theory
+- How well does Davidson's Test hold up against objections?
+- What can Computer Linguistics and Artificial Intelligence learn from Davidson's Test
+
 
 
 
@@ -49,29 +56,24 @@ keywords: Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Epis
 
 ## Introduction to Donald Davidson
 
-<!-- **Historic background to of Davidson's Philosophy**
+**Historic background to of Davidson's Philosophy**
 - Vienna Circle and Empiricism
 - Wittgenstein and the social aspect of language
 - Quine and the new non-empiricist analytical philosophy
 - semantic vs. foundational theories of meaning
-- brief overview of players -->
+- brief overview of players
+
+Donald Davidson (1917--2003) "one of the most important philosophers of the latter half of the twentieth century [...] with a reception and influence that, of American philosophers, is perhaps matched only by that of [his friend, mentor, and college] W. V. O. Quine". Even though his thoughts are only exposed through a collection of essays (written from 1963[^life]--2001), his work provides "a single integrated approach to the problems of knowledge, action, language and mind." [@Malpas:2015dd, p. 1; @Lepore:2009d, p. 1]
+
+"Davidson's work has also been an important, if sometimes contentious, point of focus for philosophical interaction between analytic and so-called ‘continental’ thought (particularly in relation to hermeneutic and literary theory" [@Malpas:2015dd, p. 2]
+
+![Donald Davidson by David Levine from Forum Gallery, New York](donald-davidson.jpg)
 
 
 
+[^life]: It is remarkable that a contemporary philosopher of Davidson's calibre only started publishing his relevant papers in his 40s after he had been a professor for over a decade. The publication dates of Davidson's papers ought to be interpreted with care though. His fried and student Ernie Lepore recounts: "[Davidson was] adventurous and daring [...] from early on right up until his death. [...] Donald was without even the slightest speck of careerism from the very start. He traveled the world giving papers in exotic places and often handed them over to local journals upon request. [...M]any of the papers were written somewhat contemporaneously. [...Some were] given much earlier than they were published and relatively around the same time. [...] I possess a mimeographed copy of his quotation paper dated from the early 60’s, long before its 1979 publication." [Lepore:2003me].
 
-
-## Overview of the Paper
-
-<!-- **Overview of Paper**
-- What is the Turing Test and why is it still interesting
-- How can we understand Davidson's Critique of the Turing Test
-- How is Davidson's proposal for a modified test related to his Unified Theory
-- How well does Davidson's Test hold up against objections?
-- What can Computer Linguistics and Artificial Intelligence learn from Davidson's Test -->
-
-
-
-
+    Davidson's life and career are actually quite inspiring, *fascinating*, and unconventional. Davidson started out in the History of Philosophy and ventured into psychology and economy during his studies and as a professor. Certainly it is no coincidence that he was cited by continental and analytical philosophers and even computer scientists alike. To learn more about Davidson's life I would recommend to read Lepore's interesting 'Interview with Donald Davidson' [-@Lepore:2004id] and Davidson's own 'Intellectual Autobiography' [Davidson:1999ia]
 
 
 
@@ -87,16 +89,21 @@ keywords: Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Epis
 - establishing a baseline
 -->
 
-Alan Turing (1912-1954) first proposed his famous test in 'Computing Machinery and Intelligence' [-@Turing:1950cm]. The thesis of his paper is that the question "Can machines think?" --- which he deemed too vague to deserve discussion --- can be replaced with the question wether a computer can pass a specified test (that is now known as the 'Turing Test'). This test is described as a game: the imitation game.
+Alan Turing (1912--1954) first proposed his famous test in 'Computing Machinery and Intelligence' [-@Turing:1950cm]. The thesis of his paper is that the question "Can machines think?" --- which he deemed too vague to deserve discussion --- can be replaced with the question wether a computer can pass a specified test (that is now known as the 'Turing Test'). This test is described as a game: the imitation game.
 
 The imitation game consists of an *interrogator* who can communicate via a real-time text chat interface with two players. One player is a *computer*, the other a *human*. The interrogator’s task is to identify the human after a given time. The computer's task is to pretend to be a human[^no-sexism] and trick the interrogator into wrongly identifying it as the human. The human's task is to help the interrogator to make the correct identification. If many interrogators consistently[^baseline] can't tell the computer apart from the human the computer wins the game and passes the test. [@Turing:1950cm, p. 433--434]
 
-In the following I discuss different interpretations of the Turing Test and establish which interpretation and version of the test I take as the basis for our discussion. Furthermore I argue for the relevance of this interpretation of the test and work out 4 main claims from Turing's discussion of his test. In doing so I emphasize some of Turing's visionary ideas on how a computer must be programmed to pass the test, that have implications for Davidson's discussion of the test.
 
 
 [^no-sexism]: I think it is pretty clear that Davidson [-@Davidson:1990tt, p. 78] misinterprets Turing when he suggests that Turing wants the computer to play the literal imitation game and pretend to be a *woman* and that the interrogator's task would be to decide on the gender. This becomes pretty clear when Turing says: "If the man were to try and pretend to be the machine [...]" [-@Turing:1950cm, p. 435] and from all his examples that are focused on how the machine can imitate being a *human* not a woman. [See also  @Copeland:2000tt, p. 526.]
 
 [^baseline]: Turing's idea is that a baseline is established by the traditional imitation game, in which a man tries to imitate a woman and the interrogator has to decide on the gender. While this might not be the best way to establish a baseline, it means that Davidson's critique that "Turing does not say what he would make of a computer that was consistently chosen over the [...human] to be the [...human]" [-@Davidson:1990tt, p. 78], is ill-conceived, as the computer will always unambiguously fall over or under the baseline within a margin of error.
+
+<!--
+**Overview of this Section**
+-->
+
+In the following I discuss different interpretations of the Turing Test and establish which interpretation and version of the test I take as the basis for my discussion. Furthermore, I argue for the relevance of this interpretation of the test and work out 4 main claims from Turing's discussion of his test. In doing so I specifically emphasize some of Turing's visionary ideas on how a computer must be programmed to pass the test, that have implications for Davidson's discussion of the test.
 
 ## Interpretations and Versions of the Turing Test
 
@@ -163,7 +170,7 @@ The other type of critic questions the adequacy of the test to determine whether
 
 ### Turing's three main claims {-}
 
-Following [@Copeland:2000tt, p. 530], we can establish the following two main claims of Turing from our previous discussion:
+Following Copeland [-@Copeland:2000tt, p. 530], we can establish the following two main claims of Turing from our previous discussion:
 
 1. Turing sees communication as suitable to expose the relevant intellectual abilities that determine wether a computer can perform tasks on paar with a human being.
 2. Turing thinks that his test *specifically* can determine wether a computer possesses such communicative abilities.
@@ -244,13 +251,21 @@ We have seen that a simplified interpretation of the Turing Test as proposed by 
 
 Furthermore, we have established that Turing claims that (1) communication abilities are representative of intellectual abilities in general and (2) that his test is adequate to evaluate those abilities. I have pointed out that his claim (3) that computers can simulate the brain (the Turing Principle), which is the main point most philosophers critique, is completely independent of the other claims and is the least essential one for Turing.
 
-Lastly, we have seen that Turing had pioneering ideas about how to devise algorithms which could pass his test. Such algorithms (4) need to be able to learn when trained with data and, different from classical algorithms, their outcome is not predictable and the states of their operation are not easily interpretable.
+Lastly, we have seen that Turing had pioneering ideas about how to devise algorithms which could pass his test. Such algorithms (4) need to be able to learn when trained with data and, different from classical algorithms, their outcome is not predictable independent of their 'experience' and the states of their operation are not easily interpretable.
 
 
 
 
 
 # Davidson's Critique of the Turing Test
+
+
+
+<!--
+**Overview of this section**
+-->
+
+In this section I will first discuss the relevance of the Turing Test for Philosophy of Mind and for Davidson specifically. I will then argue where Davidson agrees with Turing, where his criticism of Turing applies, and in how far I think this criticism does Turing justice. The section ends in an exposition of Davidson's proposal for a modified Turing Test.
 
 ## Relevance of Turing's Test for Davidson
 
@@ -272,9 +287,21 @@ Lastly, we have seen that Turing had pioneering ideas about how to devise algori
 
 
 
-**Where does Davidson agree**
+**Communication is essential for intelligence**
+- Davidson agrees with Turing's first claim (while he rejects the second)
+- Justification by Davidson's Epistemology (and Metaphysics)
+
+related to his Metaphysics[^metaphysics] and Epistemology --- which we will discuss in more detail later.
+
+
+
+
+[^metaphysics]: related to his metaphysics and ontology. Rejection of propositions as entities (therefore also emphasis on distal stimuli)
+
+## Davidson's Critique of the Turing's Test
+
+**Where does Davidson agree (discuss four claims)**
 - There should be an empiric test for intellect
-- Linguistic comptetence is essential for intellect
 - General/Strong AI might well be possible
   - Davidson sees no argument why AI shouldn't be possible
   - AI through Brain simulation should be possible
@@ -292,9 +319,7 @@ Turing's proposed test shows that he agrees with Davidson on the fact that lingu
 
 
 
-## Davidson's Critique of the Turing's Test
-
-**The core argument: knowledge comes from interaction in shared world**
+**Davidson's core criticism: knowledge comes from interaction in shared world**
 - Rejection of sharp distinction between mental and physical (especially sensory) abilities (E4.5)
 - distinction between semantic and syntactic abilities
 (+E5.8)
@@ -327,7 +352,7 @@ Turing's proposed test shows that he agrees with Davidson on the fact that lingu
 
 
 
-# Conditions for Linguistic Competence
+# Necessary Conditions for Linguistic Competence
 
 ## The Distinction between Linguistic Competence and Performance
 

@@ -19,6 +19,33 @@ $else$
   \usepackage{lmodern}
 $endif$
 
+% Floatable Figure
+\makeatletter
+\renewenvironment{figure}[1][\fps@figure]{
+  \edef\@tempa{\noexpand\@float{figure}[H]}
+  \@tempa\centering
+}{
+  \end@float
+}
+\makeatother
+\usepackage[font=footnotesize,labelsep=endash]{caption}
+
+
+
+\usepackage{scrextend}
+\deffootnote[3em]{0.5em}{1em}{\thefootnotemark\;– }
+\makeatletter
+\@ifdefinable{\org@makefntext}{%
+  \let\org@makefntext\@makefntext
+  \renewcommand*{\@makefntext}{%
+    \addtolength{\hsize}{-0.5em}%
+    \org@makefntext
+  }%
+}
+\makeatother
+
+
+
 $if(linestretch)$
 \usepackage{setspace}
 \setstretch{$linestretch$}
@@ -134,15 +161,15 @@ $if(tables)$
 \usepackage{longtable,booktabs}
 $endif$
 $if(graphics)$
-\usepackage{graphicx,grffile}
-\makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+  \usepackage{graphicx,grffile,float}
+  \makeatletter
+  \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+  \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+  \makeatother
+  % Scale images if necessary, so that they will not overflow the page
+  % margins by default, and it is still possible to overwrite the defaults
+  % using explicit options in \includegraphics[width, height, ...]{}
+  \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 $endif$
 $if(links-as-notes)$
 % Make links footnotes instead of hotlinks:
@@ -239,7 +266,7 @@ $endif$
 $if(abstract)$
   \vspace{1cm}
   \thispagestyle{empty}
-  \begingroup\leftskip=3cm\rightskip=3cm\large
+  \begingroup\leftskip=3cm\rightskip=3cm
     \begin{center}\textbf{Abstract}\\\end{center}\vspace{-1em}
     $abstract$
     $if(keywords)$
