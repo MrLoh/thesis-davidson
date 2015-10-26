@@ -245,7 +245,7 @@ $endfor$
 \setlength\columnsep{1cm}
 
 % Footnotes
-\setlength{\skip\footins}{1cm}
+\setlength{\skip\footins}{0.5cm}
 \renewcommand*\footnoterule{\hrule\vspace{5pt}}
 
 % Itemize Margins
@@ -262,11 +262,11 @@ $endfor$
 
 % Hyphenation
 \emergencystretch=\maxdimen
-\hyphenpenalty=1000
+\hyphenpenalty=500
 \hbadness=100
-\exhyphenpenalty=10000
-\lefthyphenmin=4
-\righthyphenmin=4
+\exhyphenpenalty=100000
+\lefthyphenmin=3
+\righthyphenmin=3
 
 \begin{document}
 $if(title)$
