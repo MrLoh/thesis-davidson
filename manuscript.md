@@ -85,7 +85,7 @@ To give a very brief overview of Davidson's philosophy:
 - brief overview of players
 -->
 
-Language has been a philosophical topic since Plato, but it especially gained attention in the so-called 'Linguistic Turn' of the 20th century, when it was recognized as the medium for our rational access to the world. Names like Frege, Russel, the early Wittgenstein, and the Vienna Circle stand for the earlier Ideal Language Philosophy and Logical Empiricism which hoped to solve problems of Metaphysics through a *definite logical analysis* of meaning. However, This approach did not turn out very successful. Led by Austin, Ryle, and the late Wittgenstein analytical philosophy paid more attention to Ordinary Language, focusing on the importance of *social and performative aspects*. Quine and Davidson stand at the resolution of this tension with an approach that recognizes linguistic behavior in its context while leveraging the formal methods for their analysis. [@Bertram:2011sz] Through Davidson the analytical tradition also became linkable to the 'continental' Hermeneutic traditions, contributing to the dissolution of the philosophical divide of the 20th century. [@Malpas:2015dd, p. 2]
+Language has been a philosophical topic since Plato, but it especially gained attention in the so-called 'Linguistic Turn' of the 20th century, when it was recognized as the medium for our rational access to the world. Names like Frege, Russel, the early Wittgenstein, and the Vienna Circle stand for the earlier Ideal Language Philosophy and Logical Empiricism which hoped to solve problems of Metaphysics through a *definite logical analysis* of meaning. However, This approach did not turn out very successful. Led by Austin, Ryle, and the late Wittgenstein analytical philosophy paid more attention to Ordinary Language, focusing on the importance of *social and performative aspects*. Quine and Davidson stand at the resolution of this tension with an approach that recognizes linguistic behavior in its context while leveraging the formal methods for their analysis [@Bertram:2011sz]. Through Davidson the analytical tradition also became linkable to the 'continental' Hermeneutic traditions, contributing to the dissolution of the philosophical divide of the 20th century. [@Malpas:2015dd, p. 2]
 
 # The Turing Test and Its Relevance {#section1}
 
@@ -107,7 +107,7 @@ The imitation game consists of an *interrogator* who can communicate via a real-
 
 [^no-sexism]: I think it is pretty clear that Davidson [-@Davidson:1990tt, p. 78] misinterprets Turing when he suggests that Turing wants the computer to play the literal imitation game and pretend to be a *woman* and that the interrogator's task would be to decide on the gender. This becomes pretty clear when Turing says: "If the man were to try and pretend to be the machine [...]" [-@Turing:1950cm, p. 435] and from all his examples that are focused on how the machine can imitate being a *human* not a woman. [See also  @Copeland:2000tt, p. 526.]
 
-[^baseline]: Turing's idea is that a baseline is established by the traditional imitation game, in which a man tries to imitate a woman and the interrogator has to decide on the gender. While this might not be the best way to establish a baseline, it means that Davidson's critique that "Turing does not say what he would make of a computer that was consistently chosen over the [...human] to be the [...human]" [-@Davidson:1990tt, p. 78], is ill-conceived, as the computer will always unambiguously fall over or under the baseline within a margin of error.
+[^baseline]: Turing's idea is that a baseline is established by the traditional imitation game, in which a man tries to imitate a woman and the interrogator has to decide on the gender. While this might not be the best way to establish a baseline, it means that Davidson's critique that "Turing does not say what he would make of a computer that was consistently chosen over the [...human] to be the [...human]" [-@Davidson:1990tt, p. 78], is ill-conceived, as the computer will unambiguously fall over or under the baseline within a margin of error.
 
 <!--
 - Overview of this Section
@@ -115,7 +115,8 @@ The imitation game consists of an *interrogator* who can communicate via a real-
 
 In the following I discuss different interpretations of the Turing Test and establish which interpretation and version of the test I take as the basis for my discussion. Furthermore, I argue for the relevance of this interpretation of the test and work out 4 main claims from Turing's discussion of his test. In doing so I specifically emphasize some of Turing's visionary ideas on how a computer must be programmed to pass the test, that have implications for Davidson's discussion of the test.
 
-## Interpretations and Versions of the Turing Test
+## Interpretations and Versions of the Turing Test {#test-interpretations}
+
 
 
 
@@ -137,13 +138,14 @@ The first interpretation and any reading of intelligence in a broader sense are 
 
 Turing clearly describes the imitation game as a test that defines a special *class of computers*, but not as one that defines thinking/intelligence. It is also implicit that he sees the *ability to communicate* as quintessential for human-like intellectual abilities.
 
-The quotation also gives a simplified version of the test, in so far as it removes the second human player. While this might be limiting for a quantitative analysis, it ensures the focus on the main question and removes any undue emphasis on strategy. Davidson proposes the same simplification in his discussion [-@Davidson:1990tt]. He goes even further in proposing that "the interrogator [...should simply] be asked to decide whether or not the object is thinking" [-@Davidson:1990tt, p. 81]. If we assume that any bias against the object's ability to think can be removed (which makes sense for this philosophical discussion), this seems to be the clearest expression of Turing's idea. Therefore, I will follow Davidson and refer to this simplified version in the following.
+The quotation also gives a simplified version of the test, in so far as it removes the second human player. While this might be limiting for a quantitative analysis, it ensures the focus on the main question and removes any undue emphasis on strategy. Davidson proposes the same simplification in his discussion [-@Davidson:1990tt]. He goes even further in proposing that since "we might count an object as thinking even if it were easily distinguishable from a person. [...T]he interrogator [...should simply] be asked to decide whether or not the object is thinking" [-@Davidson:1990tt, p. 81]. If we assume that any bias against the object's ability to think can be removed (which makes sense for this philosophical discussion), this seems to be the clearest expression of Turing's idea. Therefore, I will follow Davidson and refer to this simplified version in the following.
 
 
 
-[^intelligence]: The term 'intelligence' is adopted here purely in reference to Artificial Intelligence. Turing mostly uses the term 'thinking' and Davidson [-@Davidson:1995ct] mostly uses the term 'rationality' to refer to the concept that this thesis is concerned with. I will introduce and explicate the term intellectual competence for this concept in [section 4.1](#linguistic-competence).
+[^intelligence]: The term 'intelligence' is adopted here purely in reference to Artificial Intelligence. Turing mostly uses the term 'thinking' and Davidson [-@Davidson:1995ct] mostly uses the term 'rationality' to refer to the concept that this thesis is concerned with. I will introduce and explicate the term intellectual competence for this concept in \autoref{linguistic-competence}.
 
-## Relevance of the Test and the Turing Principle
+## Relevance of the Test and the Turing Principle {#relevance}
+
 
 
 
@@ -167,7 +169,7 @@ The other type of critic questions the adequacy of the test to determine whether
 
 [^agi-tests]: See @Muehlhauser:2013wa for a brief overview of operational definitions of AGI, including the Coffe-Brewing and College Test. From a philosophical perspective all those seem rather random and dubious --- certainly much further away from clearly capturing necessary conditions of human-like intellectual competences.
 
-[^loebner-critique]: Shieber [-@Shieber:1994lr] criticizes the Loebner prize for its inappropriateness to award advances in natural-language-processing techniques instead of engineering tricks oriented to the exigencies of the restricted task like parrying and insertion of random typing errors. But the setup of the scoring system alone shows how pointless it is to even judge current systems by a direct Turing Test.
+[^loebner-critique]: @Shieber:1994lr criticizes the Loebner Prize for its inappropriateness to award advances in natural-language-processing techniques instead of engineering tricks oriented to the exigencies of the restricted task like parrying and insertion of random typing errors. The setup of the scoring system alone shows how pointless it is to even judge current systems by a direct Turing Test. He argues that a subjective award modeled after the Nobel Prizes would make significantly more sense.
 
 ### Turing's three main claims
 <!--
@@ -192,7 +194,8 @@ It is important to highlight that this claim is not central in Turing's writing 
 
 [^turing-thesis]: This is also known as the 'Church–Turing–Deutsch Principle' and represents an extension of the well-known Church-Turing Thesis to artificial intelligence.
 
-## Turing on Machine Learning
+## Turing on Machine Learning {#turing-ml}
+
 
 <!--
 - Move from AGI to AI and Machine Learning
@@ -225,7 +228,7 @@ Turing believed that by the turn of the century there would be computers that "p
 
 However, Turing's idea about *how* to build a computer that could pass his test are more interesting than his timeline predictions. His claim that "the problem [of building a computer that passes the Turing Test] is mainly one of programming" [-@Turing:1950cm, p. 455] still rings true today.
 
-We have already learned of his idea that computers should be able to simulate the brain [-@Turing:1951cd]. Indeed this reverse engineering approach to AI is the basic idea behind the neural networks which power the most successful image entity-recognition algorithms today and was already investigated by @Turing:1948im [see also @Copeland:1999at]. It seems plausible that we might achieve AGI through brain simulation before we deeply understand how the brain works.
+We have already learned of his idea that computers should be able to simulate the brain [-@Turing:1951cd]. Indeed this reverse engineering approach to AI is the basic idea behind the neural networks which power the most successful image entity-recognition algorithms today. @Turing:1948im pioneered  this approach with his B-type unorganized machine which consisted of neurons that are trained through an 'education' process, and he proved that they were equivalent with digital computers [see also @Copeland:1999at]. It is plausible that we might achieve AGI through brain simulation before we even deeply understand how the brain works.
 
 Even more interesting is that Turing also predicted the Machine Learning approach to build intelligent algorithms and saw its non-deterministic nature as a characteristic feature:
 
@@ -235,7 +238,7 @@ Even more interesting is that Turing also predicted the Machine Learning approac
 
 This description is very much how modern statistical Machine Learning algorithms work. They consist of an algorithm that describes a mathematical model which is trained with human-annotated data (for example, a grammar analysis of sentences) and are then able to perform their task on similar data. [See @Schubert:2015cl for an overview about approaches to Natural Language Processing; and @Jurafsky:2015uu for a more technical introduction.] As Turing mentions, this is a paradigm shift from classical algorithms which have results that are clearly defined by the programmer and predictable independent of any training data. We might add a fourth core claim:
 
-4. Turing believes that the approach to device intelligent computers must be based on learning algorithms that are trained and do not behave predictable in a classic sense.
+4. Turing believes that the approach to device intelligent computers should be based on learning algorithms that are trained and do not behave predictable in a classic sense.
 
 Note that devising intelligent algorithms is a quite different task and involves techniques where an interpretation of the state of the program at each step becomes difficult or even impossible --- especially in the case of deep neural networks. And where the outcome is not just dependent on the set of rules specified in the programming but also on the 'experience' gathered in the program during its learning process. We will see later why this matters for a Davidsonian perspective.
 
@@ -266,9 +269,10 @@ Lastly, we have seen that Turing had pioneering ideas about how to devise algori
 - Overview of this section
 -->
 
-In this section I will first discuss the relevance of the Turing Test for Philosophy of Mind and for Davidson specifically. I will then argue where Davidson agrees with Turing, where his criticism of Turing applies, and in how far I think this criticism does Turing justice. The section ends in an exposition of Davidson's proposal for a modified Turing Test.
+In this section I will first discuss the relevance of the Turing Test for Philosophy of Mind and for Davidson specifically. I will then argue where Davidson agrees with Turing, where his criticism of Turing applies, and in how far I think this criticism does Turing justice. The section ends in an exposition of Davidson's proposal for a modified Turing Test that provides a necessary condition for thought.
 
-## Relevance of Turing's Test for\ Davidson's\ Philosophy\ of\ Mind
+## Relevance of Turing's Test for\ Davidson's\ Philosophy\ of\ Mind {#relevance-philmind}
+
 
 
 <!--
@@ -284,15 +288,13 @@ I have argued that the Turing Test is misunderstood as a definition or sufficien
 
 > "The whole thinking process is still rather mysterious to us, but I believe that the attempt to make a thinking machine will help us greatly in finding out how we think ourselves." [@Turing:1951cd, p. 465]
 
-So the Turing Test and the related task of constructing a machine which can pass it, is a practical device to learn more about the nature of thought and communication. This resonates very much with Davidson's philosophy. For the essential paradigm shift of his philosophy about language is following Quine's rejection of Carnap's Logical Empiricism[^empiricism]. The objective of a theory of meaning for Davidson "is sought not in reductive analyses [of the meaning of expressions], but rather in showing how evidence can be marshalled in support of a theory of interpretation for a speaker." [@Lepore:2009d, p. 9] Philosophy is not an a priori discipline like mathematics but simply a more general empirical discipline. "'Language is a social art' [...and] evidence for its acquisition and deployment must be intersubjective, and, hence, recoverable from overt behaviour" [@Lepore:2009d, p. 22--23]. Therefore the search for a definition of meaning or of intelligence is rather uninteresting. It is replaced by the pragmatic search for an empirical theory that is judged by its successful application.
+So the Turing Test and the related task of constructing a machine which can pass it, is a practical device to learn more about the nature of thought and communication. This resonates very much with Davidson's philosophy. For the essential paradigm shift of his philosophy about language is following Quine's rejection of Carnap's Logical Empiricism[^empiricism]. The objective of a theory of meaning for Davidson "is sought not in reductive analyses [of the meaning of expressions], but rather in showing how evidence can be marshalled in support of a theory of interpretation for a speaker." [@Lepore:2009d, p. 9] Philosophy is not an a priori discipline but simply a more general empirical discipline. "'Language is a social art' [...and] evidence for its acquisition and deployment must be intersubjective, and, hence, recoverable from overt behaviour" [@Lepore:2009d, p. 22--23]. Therefore the search for a definition of meaning or of intelligence is rather uninteresting. It is replaced by the pragmatic search for an empirical theory of rationality that is judged by its successful application.
 
-From this angle the task of programming a machine which can pass the Turing Test, becomes essentially the same as that of devising and testing an empirical theory of interpretation. At least if we accept that such a theory of interpretation could be expressed recursively. Then judging a computer as passing the test is not so different from judging a person. Moor argues:
+From this angle the task of programming a machine which can pass the Turing Test, seems closely related to that of devising and testing an empirical theory of interpretation. At least if we accept that the essence of such a theory of interpretation could be expressed recursively. Judging a computer as passing the test is not so different from judging a person as rational being after all. Moor argues:
 
 > “I believe that another human being thinks because his ability to think is part of a theory I have to explain his actions. [...T]he evidence for the theory comes from the outward behavior of the person. [...T]here is no reason why knowledge of computer thinking can not arise in the same way. I can use the computer's behavior as evidence in assessing my theory about its information processing.” [@Moor:1976at, p. 251]
 
-Davidson and Turing agree that we can devise a scientific theory that describes the essential parts of our linguistic competence. In the case of Turing this is evident in his believe that there is a program that allows the computer to win the imitation game. For Davidson it is evident in the proposal of his Unified Theory which can capture the essence of linguistic competence and rationality --- this is discussed further in [section 4](#section 4).
-
-So we have seen why *Davidson* finds Turing's Test particularly interesting. *I* have chosen his critique for discussion here, since it clearly relates to Computer Science and because it "opens the way for Davidson's own view into the nature of thought" [Cavell:2004i, p. xvii].
+Davidson and Turing agree that we can devise a scientific theory that describes the essential parts of our linguistic competence. In the case of Turing this is evident in his believe that there is a program that allows the computer to win the imitation game. For Davidson it is evident in the proposal of his Unified Theory which can capture the essence of linguistic competence and rationality. However there are some important distinctions between the nature of these approaches that will be discussed in the following sections [3](#section3) and [4](#section4).
 
 
 
@@ -309,52 +311,83 @@ So we have seen why *Davidson* finds Turing's Test particularly interesting. *I*
 - Davidsons critique ignores Turing's fourth claim but the content of his critique is actually related to it, as we will see later.
 -->
 
-What we have discussed so far depends on accepting Turing's first claim that communication abilities are representative of intellectual abilities. As mentioned in the introduction, Davidson agrees since he "sees our nature as linguistic beings as the key to the possibility of thought" [@Lepore:2009d, p. 1]. This believe springs from his metaphysics[^metaphysics] and from his Epistemology. The later will be examined in more detail in [section 3.5](#triangulation). However, Davidson emphasizes the interrogator's judgement as the essential point:
+What we have discussed so far depends on accepting Turing's first claim that communication abilities are representative of intellectual abilities. As mentioned in the introduction, Davidson agrees since he "sees our nature as linguistic beings as the key to the possibility of thought" [@Lepore:2009d, p. 1]. This believe springs from his metaphysics[^metaphysics] and from his Epistemology. The later will be examined in more detail in \autoref{triangulation}. However, Davidson emphasizes the interrogator's judgement as the essential point:
 
 > "Turing was right, in my opinion, in taking as the only test for the presence of thought and meaning the interpretive powers and abilities of a human interpreter." [@Davidson:1990tt, p.86]
 
-The second claim is what Davidson discusses and criticizes extensively and which I will discuss in the next subsection.
+As we will discuss in \autoref{davidsons-test} Davidson very intentionally changes the emphasis here, since he argues that the ability to be interpreted is not a sufficient, but a necessary condition for attributing thought --- introspection into the working of the mind for example is *not* a sufficient condition for Davidson. [@Davidson:1990ri]
 
-The third claim is not of particular interest to Davidson, but because of his naturalistic ontology[^ontology] he agrees: "A person is a physical object which [...] functions according to physical laws. So [...] there is no reason why an artificial object could not think" [-@Davidson:1990ri, p. 87].
+The third claim (Turing's Principle) is not of particular interest to Davidson, but because of his naturalistic ontology[^ontology] he agrees: "A person is a physical object which [...] functions according to physical laws. So [...] there is no reason why an artificial object could not think[... . The real question is:] how much like us must an artifact be, and in what ways, to qualify as having thoughts?" [-@Davidson:1990ri, p. 87].
 
-The fourth claim is something Davidson does not pay much attention to. It is only mentioned in his last footnote where he claims that Turing "views this simply as an economical way of producing a device with mature thoughts; he does not see it as the only way" [-@Davidson:1990tt, p.86]. As outlined in the previous section, I think this is overestimating Turing's interest in sufficient conditions for intelligence and underestimating his importance in pioneering those ideas in Machine Learning which take up a third of his essay [@Turing:1950cm, pp. 454--460]. This is relevant because Turing's fourth claim is closely related to Davidson's own critique --- probably the reason why Davidson mentions it at the footnote at the end of his essay.
+The second claim (the ability of the test) is what Davidson discusses and criticizes extensively. The fourth claim (the importance of Machine Learning) is something Davidson does not pay much attention to, but that is closely related to his critique. Both are the topic of the next subsection.
+
+So we have seen why *Davidson* finds Turing's Test particularly interesting. *I* have chosen his critique for discussion here, since it clearly relates to Computer Science and because it "opens the way for Davidson's own view into the nature of thought" [@Cavell:2004i, p. xvii].
 
 
-[^metaphysics]: Davidson argues that: "If we have the semantics of a language right, the objects we assign to the expressions of the language must exist" [@Davidson:1993mm, p. 40]. Since we need to get semantics pretty right to be able to communicate. This will in turn also mean, that if we can communicate, we get it pretty right what things are in the world and in which relation they stand to each other. And this certainly seems to be a sufficient condition for intelligence. Davidson's argument for his claim is based on the fact that we must get things mostly right about the world, if we are intelligible as rational beings at all.
 
-[^ontology]: Davidson's ontology consists only of objects and events [-@Davidson:1991tv]. He rejects the need for any propositions of proximal stimuli in the mind [-@Davidson:1990mt]. The content of propositional knowledge is directly caused by the objects and events the world is made up of.
+[^metaphysics]: Davidson argues that: "If we have the semantics of a language right, the objects we assign to the expressions of the language must exist" [@Davidson:1993mm, p. 40]. Since being able to communicate successfully means getting semantics pretty right. This will in turn also mean, that if we can communicate successfully, we must get it pretty right what things are in the world and in which relation they stand to each other. And this certainly seems to be a sufficient condition for intelligence. Davidson's argument for his claim that semantics is a method for metaphysics [-@Davidson:1993mm] is based on the fact that we must get things mostly right about the world, if we are intelligible as rational beings at all.
 
-## Davidson's Critique of the Turing's Test
+[^ontology]: Davidson's ontology takes only objects and events as basic entities [-@Davidson:1991tv]. He rejects the need for any propositions of proximal stimuli as entities in the mind [-@Davidson:1990mt]. The content of propositional knowledge is directly caused by the distal objects and events the world is made up of.
+
+## Davidson's Critique of the Turing's Test {#davidsons-critique}
+
 <!--
-**Davidson's core criticism: knowledge comes from interaction in shared world**
-- No need for introspection into working of mind (against Searle's chinese room)
-- Rejection of sharp distinction between mental and physical (especially sensory) abilities (E4.5)
+- No need for introspection into working of mind
 - distinction between semantic and syntactic abilities
-(+E5.8)
-- Relation to Agreement between Descartes and Turing
-  - Both come from the idea that knowledge is simply in the head
+- Rejection of sharp distinction between mental and physical (especially sensory) abilities
+- Relation to Agreement between Descartes and Turing who both come from the idea that knowledge is simply in the head
 - Even Turing's Helen Keller example lacks as she was interacting with the world through touch.
 - Connected to rejection of Cartesion Epistemology
-- relation to French (1990)
 -->
 
 Davidson finds Turing's Test inadequate to show that an object is thinking. Not because communication is not a sufficient criterion for intellectual competence for Davidson as we have discussed. Neither because a test would require an introspection into the workings of the mind. Davidson explicitly says that it is not inadequate because it "restricts the available evidence to what can be observed from the outside" [-@Davidson:1990tt, p.83]. But because it does not enable the interrogator to observe a history of three-way engagement between the object, a shared world, and other minds in which the object develops its semantics.
 
+This is related to the "fundamental difference between semantics, which relates words to the world, and syntax, which does not" [@Davidson:1990ri, p. 94, he adopts the terminology from Tarski]. For Davidson, the essential requirement for though or intelligence is to assign meaning to words, to relate them to the world. But he argues that the interrogator in the Turing Test can not guarantee that the computer is able to do that:
 
-**Does Davidson's Critique Do Justice to Turing?**
+>"[T]he interrogator [...] has no clue to the semantics of the object. There is no way he can determine the connection between the words that appear on the object's screen and events and things in the world. Of course there must be some connection; there is no other way to account for the intelligibility of the object's English. [...But i]t is perfectly possible that the connection between words and things was established by someone who programmed the object, and then provided purely syntactic connections between words for the object to wield. In this case it is the programmer who [...] has given meaning to the words [...], but the object doesn't mean anything, and there is no reason to take it to be thinking.
+>
+> In order to discover whether the object has any semantics, the interrogator must learn more about the connections between the output of the object and the world [...], through observing relevant causal interactions between the speaker, the world, and the speaker's audience. [...T]he interrogator [must be allowed] to watch the object interact with the world." [@Davidson:1990tt, p. 83]
+
+The interpreter can only determine wether the computer means something by its words if he or she can tell what the computer means by them. Therefore "any evidence that thinking is going on will have to be evidence that particular thoughts are present" [-@Davidson:1990tt, p. 80]. While it is clear that thoughts have caused the computer's interaction, the test framework is not giving the interrogator a chance to determine how any thought has come to the computers knowledge, only that is hat.
+
+Davidson accredits this failure to the fact that "Turing wanted his test to draw ‘... a fairly sharp line between the physical and the intellectual capacities of man’ (p. 434). There is no such line" [@Davidson:1990tt, p. 84]. Turing was wrong that the ‘body’ of the object does not matter. Even though the details of the sense organs and organs to convey emotions may not matter the existence of such organs can not be reduced to a purely textual communication. Turing has a somewhat Cartesian[^descartes] approach to thought. He might not prescribe to an ontological mind-body dualism, but he tends to view thoughts as independent from sensory access to the world and only dependent on being able to communicate. “The example of [the deaf blind] Helen Keller shows that education can take place provided that communication in both directions between teacher and pupil can take place” [@Turing:1950cm, p. 456]. He overlooks that Helen Keller for one had been able to see and hear for her first 19 months and, more importantly, only learned to communicate when her teacher, Anne Sullivan, correlated her signs to Helen's feeling of touch [@Wikipedia:2015hk]. So this example might serve more to illustrate Davidson's holistic approach to Epistemology. The ability to interact with the world in any way and a history of such interactions and communications about those experiences with others, is essential for developing a semantics.
+
+> "It is unclear exactly what kind of history is necessary for various kinds of thinking or meaning [...]. But our intuitions are clear enough in many cases. You can't remember the Civil War if you were born long after it ended, no matter how much you have heard about it. You don't know a person you have never seen or talked to or corresponded with; and you don't understand a language if there are not numerous connections between your use of words and experiences like such knowings and rememberings." [@Davidson:1990tt, p. 85]
+
+The interrogator needs to observe the computer's history of engagement with the world, then “even the mind of an artifact can [...] be understood; it just takes [...] long enough for some history to be observed, since it cannot be inferred.” [-@Davidson:1990tt, p. 86]
+
+
+
+[^descartes]: In fact Descartes somewhat preconceived Turing's test in his 'Discourse on the Method'. He claims: machines "could never use words or other signs arranged in such a manner as is competent to us in order to declare our thoughts to others" [@Descartes:1637dm, part V].
+
+### Fairness of the Critique
+<!--
 - Davidson has a good point
 - but he doesn't do justice to Turing's thoughts on Machine Learning that would deserve a discussion in his paper
 - His emphasis on a history of causal interaction with the world is partly satisfied by machine learning
+-->
 
-### Appropriateness of the Critique
+So Davidson's main critique is that Turing's idea of a sharp line between physical and intellectual abilities is ill-conceived and Turing doesn't see the importance of interaction in a shared world as essential for (1) developing thoughts and for (2) judging intellectual abilities.
+
+While the second critique is certainly justified, since the computer is hidden from the interrogator, the first point is debatable in light of Turing's work about Machine Learning. In his last footnote, Davidson claims that Turing "views this [learning] simply as an economical way of producing a device with mature thoughts; he does not see it as the only way" [-@Davidson:1990tt, p.86]. As outlined in the previous section, I think this is overestimating Turing's interest in presenting a sufficient condition for intelligence and underestimating his interest in actually building of a certain grade of computer. Turing's ideas on Machine Learning take up a third of his essay [@Turing:1950cm, pp. 454--460]. And most of his research from 1948-1952 was not focused on the test, that became so famous, but on approaches to build learning computers and simulating neural networks. He actually outlines ideas how a computer with an indexed memory can be constructed that relates past experiences to new situations using associative connections and evaluation based on reactions of its teacher and later based on self constructed norms [see @Turing:1951im, p. 257--258]. This seems closer to Davidson's requirement of having a history of interaction in a shared world than he gives credit for.
+
+## Davidson's Proposal for a Modified Test {#davidsons-test}
 
 
-## Davidson's Proposal for a Modified Test
-
-**Observe a History of interaction with the world**
 - The ability to determine non predefined meaning is essential for intelligence
 
 
+
+### Davidson's Test as a necessary condition
+
+- The test is a necessary condition for the presence of though
+
+"syntax can provide a unique description of each true sentence, [...] but it can't classify sentences as true or false. [...] If we knew no more than the program, we would have no reason to say the device had any information, or that any aspect of or event in the device represented anything outside the device."
+
+
+The test is a necessary condition for the presence of though
+
+> "[T]he only way to tell if an artificial device [...] has [thoughts...] and the ability to perceive and interact with the world as a person does, is to attempt to interpret the behavior of the device in the same way we do the behavior of a person. [...U]nderstanding the program and physics of a device [...on the other hand] is not [...sufficient for] understanding the thought [...] of that device." [@Davidson:1990ri, p. 99]
 
 
 
@@ -367,6 +400,13 @@ Davidson finds Turing's Test inadequate to show that an object is thinking. Not 
 
 
 
+
+
+
+## Supervenience and the Normative Nature of the Mental {#supervenience}
+
+
+- how does Davidson counter the brain in a vat
 
 
 
