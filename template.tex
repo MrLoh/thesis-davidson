@@ -31,6 +31,7 @@ $endif$
 }
 \makeatother
 \usepackage[font=footnotesize,labelsep=endash]{caption}
+\setlength{\abovecaptionskip}{0pt}
 
 
 
@@ -256,7 +257,7 @@ $endfor$
 \usepackage{titlesec}
 \titleformat{\section}{\LARGE\bfseries\raggedright}{\thesection\;\raggedleft}{3em}{\hspace{-3em}}{}
 \titleformat{name=\section,numberless}{\LARGE\bfseries\raggedright}{}{3em}{\hspace{-3em}}{}
-\titleformat{\subsection}[block]{\large\bfseries}{\thesubsection\;}{0em}{}{}
+\titleformat{\subsection}{\large\bfseries\raggedright}{\thesubsection\;}{3em}{\hspace{-3em}}{}
 \titleformat*{\subsubsection}{\small\bfseries\uppercase}
 \titlelabel{\thetitle.\ }
 
