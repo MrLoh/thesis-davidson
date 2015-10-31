@@ -70,7 +70,8 @@ $endif$
   \fi
   \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
   \newcommand{\euro}{€}
-
+  % \usepackage[math]{iwona}
+  \usepackage{eulervm}
   \setmainfont[
     BoldFont = bold.otf,
     ItalicFont = regular-italic.otf,
@@ -255,8 +256,8 @@ $endfor$
 % Headings
 \setcounter{secnumdepth}{2}
 \usepackage{titlesec}
-\titleformat{\section}{\LARGE\bfseries\raggedright}{\thesection\;\raggedleft}{3em}{\hspace{-3em}}{}
-\titleformat{name=\section,numberless}{\LARGE\bfseries\raggedright}{}{3em}{\hspace{-3em}}{}
+\titleformat{\section}{\LARGE\bfseries\raggedright}{\thesection\;\raggedleft}{4em}{\hspace{-4em}}{}
+\titleformat{name=\section,numberless}{\LARGE\bfseries\raggedright}{}{4em}{\hspace{-4em}}{}
 \titleformat{\subsection}{\large\bfseries\raggedright}{\thesubsection\;}{3em}{\hspace{-3em}}{}
 \titleformat{name=\subsection,numberless}{\large\bfseries\raggedright}{}{3em}{\hspace{-3em}}{}
 \titleformat*{\subsubsection}{\small\bfseries\uppercase}
