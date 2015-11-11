@@ -37,7 +37,7 @@ keywords: |
 
 This paper discuses Donald Davidson's critique [-@Davidson:1990tt] of the Turing Test as an illustration of Davidson's theory of linguistic and intellectual competence. After a short Introduction to Donald Davidson it consists of three main sections.
 
-[**Section 1**](#section1) explores Turing's original ideas and their relevance. It discusses different interpretations and versions of the Turing Test and establishes wich interpretation I follow. It also contains a discussion of the significance of the test and Turing's ideas about Machine Learning for the field of Artificial (General) Intelligence.
+[**Section 1**](#section1) explores Turing's original ideas and their relevance. It discusses different interpretations and versions of the Turing Test and establishes which interpretation I follow. It also contains a discussion of the significance of the test and Turing's ideas about Machine Learning for the field of Artificial (General) Intelligence.
 
 [**Section 2**](#section2) presents and evaluates where Davidson agrees and disagrees with Turing. It also presents Davidson's modified version of the Turing Test which allows to judge the computer based on an observation of its learning process. I argue that this test acts as a definition for intelligence and expression of Davidsons theory of linguistic and intellectual competence.
 
@@ -68,7 +68,7 @@ To give a very brief overview of Davidson's philosophy:
 
 
 
-[^life]: It is remarkable that a contemporary philosopher of Davidson's calibre only started publishing his relevant papers in his 40s after he had been a professor for over a decade. The publication dates of Davidson's papers ought to be interpreted with care though. His fried and student Ernie Lepore recounts: "[Davidson was] adventurous and daring [...] from early on right up until his death. [...] Donald was without even the slightest speck of careerism from the very start. He traveled the world giving papers in exotic places and often handed them over to local journals upon request. [...M]any of the papers were written somewhat contemporaneously. [...Some were] given much earlier than they were published and relatively around the same time. [...] I possess a mimeographed copy of his quotation paper dated from the early 60’s, long before its 1979 publication." [Lepore:2003me].
+[^life]: It is remarkable that a contemporary philosopher of Davidson's calibre only started publishing his relevant papers in his 40s after he had been a professor for over a decade. The publication dates of Davidson's papers ought to be interpreted with care though. His friend and student Ernie Lepore recounts: "[Davidson was] adventurous and daring [...] from early on right up until his death. [...] Donald was without even the slightest speck of careerism from the very start. He traveled the world giving papers in exotic places and often handed them over to local journals upon request. [...M]any of the papers were written somewhat contemporaneously. [...Some were] given much earlier than they were published and relatively around the same time. [...] I possess a mimeographed copy of his quotation paper dated from the early 60’s, long before its 1979 publication." [Lepore:2003me].
 
     Davidson's life and career are actually quite inspiring, *fascinating*, and unconventional. Davidson started out in the History of Philosophy and ventured into psychology and economy during his studies and as a professor. Certainly it is no coincidence that he was cited by continental and analytical philosophers and even computer scientists alike. To learn more about Davidson's life I recommend to read Lepore's 'Interview with Donald Davidson' [-@Davidson:2004id] and Davidson's own 'Intellectual Autobiography' [Davidson:1999ia]
 
@@ -179,7 +179,7 @@ The other type of critic questions the adequacy of the test to determine whether
 Following Copeland [-@Copeland:2000tt, p. 530], we can establish the following two main claims of Turing from our previous discussion:
 
 1. Turing sees communication as suitable to expose the relevant intellectual abilities that determine wether a computer can perform tasks on paar with a human being.
-2. Turing thinks that his test *specifically* can determine wether a computer possesses such communicative abilities.
+2. Turing thinks that his test *specifically* can determine whether a computer possesses such communicative abilities.
 
 But there is also a third claim which is known as the Turing Principle[^turing-thesis]:
 
@@ -187,7 +187,8 @@ But there is also a third claim which is known as the Turing Principle[^turing-t
 
 This might be most clearly expressed in Turing's lecture on 'Can Digital Computers Think?': "If it is accepted that real brains [...] are a sort of machine it will follow that our digital computer suitably programmed will behave like a brain" [@Turing:1951cd, p. 463]. This is a much more controversial claim and --- as Turing was well aware --- he had few arguments and even less evidence for it.
 
-It is important to highlight that this claim is not central in Turing's writing and that it is separate and fully *independent* from the others claims. Nevertheless, it is the main point many philosophers  have attacked. [The most famous example is probably @Searle:1980mb.] This is often tied to the misinterpretation of the Turing Test as a definition or sufficient condition for intelligence in a philosophical sense. I am not particularly interested in the discussion of this third claim here.
+It is important to highlight that this claim is not central in Turing's writing and that it is separate and fully *independent* from the others claims. Nevertheless, it is a point philosophers have attacked. [The most famous example probably being @Searle:1980mb.] This is often tied to the misinterpretation of the Turing Test as a definition or sufficient condition for intelligence in a philosophical sense. I am not particularly interested in the discussion of this third claim here.
+
 
 
 [^turing-thesis]: This is also known as the 'Church–Turing–Deutsch Principle' and represents an extension of the well-known Church-Turing Thesis to artificial intelligence.
@@ -252,7 +253,7 @@ Note that devising intelligent algorithms is a quite different task and involves
 
 We have seen that a simplified interpretation of the Turing Test as proposed by @Davidson:1990tt reveals the core of Turing's idea. However, we have also seen that an interpretation of the Turing Test as an operational definition or sufficient condition for intelligence is not in line with Turing's writing. Instead, I have proposed to follow @Moor:1976at and interpret the test as a framework to collect empirical evidence to show that a computer can perform human-like tasks. We have seen that this can provide a good and clear definition of a special class of computers that are the goal of AGI research.
 
-Furthermore, we have established that Turing claims that (1) communication abilities are representative of intellectual abilities in general and (2) that his test is adequate to evaluate those abilities. I have pointed out that his claim (3) that computers can simulate the brain (the Turing Principle), which is the main point most philosophers critique, is completely independent of the other claims and is the least essential one for Turing.
+Furthermore, we have established that Turing claims that (1) communication abilities are representative of intellectual abilities in general and (2) that his test is adequate to evaluate those abilities. I have pointed out that his claim (3) that computers can simulate the brain (the Turing Principle) is completely independent of the other claims and not very essential for Turing.
 
 Lastly, we have seen that Turing had pioneering ideas about how to devise algorithms which could pass his test. Such algorithms (4) need to be able to learn when trained with data and, different from classical algorithms, their outcome is not predictable independent of their 'experience' and the states of their operation are not easily interpretable.
 
@@ -453,7 +454,7 @@ At the end I have given a characterization of Davidson's Test that requires not 
 
 
 
-The goal of this section is to ground all the arguments from before in an understanding of the main characteristics of Davidson's view of ([3.1](#supervenience)) the relation between the mental and the physical, ([3.2](#triangulation)) his epistemology, and ([3.3](#interpretation)) his theory of interpretation. After this I am going to discuss how those understandings come together in his unified theory of intellectual and linguistic competence and relate to Davidson's Test. Wrapping up with a discussion how Davidson's view might fit into the more recent discussion between connectionism and the classical representational and computational theory of mind.
+The goal of this section is to relate Davidson's arguments which we have touched on in his discussion of the Turing Test to the main characteristics of his view of ([3.1](#supervenience)) the relation between the mental and the physical, ([3.2](#triangulation)) his epistemology, and ([3.3](#interpretation)) his theory of interpretation. After this I am going to discuss how those understandings come together in his unified theory of intellectual and linguistic competence and relate to Davidson's Test. Wrapping up with a discussion how Davidson's view might fit into the more recent discussion between connectionism and the classical representational and computational theory of mind.
 
 ## The Meaning of Programs and Anomalous Monism {#supervenience}
 
@@ -461,40 +462,43 @@ The goal of this section is to ground all the arguments from before in an unders
 - connect to Davidson's argument about the programming of a machine.
 -->
 
-We will not tackle Davidson's view of the relation between the mental and the physical heads on, but follow his approach in 'Representation and Interpretation' [-@Davidson:1990ri]. Davidson starts out with the question "how much like us [a computer] must [...] be, and in what ways, to qualify as having thoughts" [-@Davidson:1990ri, p.88]. But after establishing that a computer "cannot have thoughts unless it can learn and has learned from causal interactions with the world" [-@Davidson:1990ri, p.88] and that "what must be added to computers [...] to insure that they are capable of thought" [-@Davidson:1990ri, p.89] --- that they know *what* they are talking about --- is "a very rich conceptual system" [-@Davidson:1990ri, p. 90]. This is of course related to the holistic approach to semantics that we have discussed in \autoref{davidsons-test}. Davidson's main question for the rest of the essay now becomes *how* we can judge that a computer has such a rich conceptual system. Davidson starts by ruling out that knowledge of the operation of the system is sufficient for this judgement:
+We will investigate Davidson's view of the relation between the mental and the physical following his essay 'Representation and Interpretation' [-@Davidson:1990ri]. Davidson starts out with the question "how much like us [a computer] must [...] be, and in what ways, to qualify as having thoughts" [-@Davidson:1990ri, p.88]. As we have seen in \autoref{davidsons-test}, he holds that a computer "cannot have thoughts unless it can learn and has learned from causal interactions with the world" [-@Davidson:1990ri, p.88]. So "what must be added to computers [...] to insure that they are capable of thought" [-@Davidson:1990ri, p.89] --- that they know *what* they are talking about --- is "a very rich conceptual system" [-@Davidson:1990ri, p. 90]. Davidson's main question for the rest of the essay now becomes *how* we can judge that a computer has such a rich conceptual system. Davidson starts by ruling out that knowledge of the operation of the system is sufficient for this judgement:
 
 > "It may seem obvious that if an artificial object thinks and acts enough like a person, someone who knows how the object was designed and built would be able to describe and explain the mental states and actions of the object. But this does not follow, for there is no reason to suppose that there are definitional or nomological connections between the concepts used by the designer and the psychological concepts to be described and explained. This should be clear if we imagine that the builder has simply copied, molecule by molecule, some real person. [...] So one sort of ‘complete’ understanding does not necessarily imply another." [@Davidson:1990ri, p. 90]
 
 The problem is one of *mental representation*. The "representation of an object or a fact [...in] the program cannot automatically be interpreted as a representation of that object or fact for the device" [-@Davidson:1990ri, p. 91] --- in its 'mind'. Davidson argues that indeed the representations differ. If an object or event falls under a certain mental concept there must not be an equivalent concept in the program or in a physical description. He gives the following analogy: "Suppose, following folk advice, I am attempting to go to sleep by counting sheep. Every now and then, at random, a goat slips into the file. In my drowsy state I find I cannot remember the classificatory words ‘sheep’ and ‘goat’. Nevertheless I have no trouble identifying each animal: there is animal number one, animal number two, and so on. In my necessarily finite list, I can specify the class of sheep and the class of goats: the sheep are animals 1, 2, 4, 5, 6, 7, 8, and 12; the goats are animals 3, 9, 10, and 11. But these classifications are no help if I want to frame interesting laws or hypotheses that go beyond the observed cases, for example, that goats have horns. I can pick out any particular sheep or goat in my animal numbering system, but I cannot, through conceptual poverty, tell the sheep from the goats generally. So it may be with the mental and the physical. Each mental event, taken singly, may have (must have, if I am right) a physical description, but the mental classifications may elude the physical vocabularies." [-@Davidson:1990ri, p. 92]
 
-The program is purely syntactic, it can give explanations of its concepts in terms of other concepts it has, but it cannot specify anything about semantics, about references of its concepts, about relations of its concepts to objects or events in the world. "There is the language in which each animal can be picked out, but which lacks the concepts needed for classifying the animals as sheep or goats; similarly, syntax can provide a unique description of each true sentence, [...] but it can't classify sentences as true or false. [...] If we knew no more than the program, we would have no reason to say [...] that any aspect of or event in the device represented anything outside the device" [-@Davidson:1990ri, p. 91]. Physics work in the same way, when it appeals to strict laws which are only "drawing on concepts from the same conceptual domain and upon which there is no improving in point of precision and comprehensiveness. [...] Physical theory promises to provide a comprehensive closed system guaranteed to yield a standardized, unique description of every physical event couched in a vocabulary amenable to law" [-@Davidson:1970me, p. 223--224]. Just like the program a complete physics is precise and contains no ceteris paribus (other things being equal) clauses in its explanations and it does not appeal to any concepts outside of its realm[^qm-observers].
+The program of a computer is purely syntactic, it can give explanations of its concepts in terms of other concepts it has, but it cannot specify anything about semantics, about references of its concepts, about relations of its concepts to objects or events in the world. "There is the language in which each animal can be picked out, but which lacks the concepts needed for classifying the animals as sheep or goats; similarly, syntax can provide a unique description of each true sentence, [...] but it can't classify sentences as true or false. [...] If we knew no more than the program, we would have no reason to say [...] that any aspect of or event in the device represented anything outside the device" [-@Davidson:1990ri, p. 91]. Physics work in the same way, when it appeals to strict laws. Such strict laws are only "drawing on concepts from the same conceptual domain and upon which there is no improving in point of precision and comprehensiveness. [...] Physical theory promises to provide a comprehensive closed system guaranteed to yield a standardized, unique description of every physical event" [-@Davidson:1970me, p. 223--224]. Just like the program a complete physics is precise and contains no ceteris paribus (other things being equal) clauses in its explanations and it does not appeal to any concepts outside of its realm[^qm-observers]. Therefore its semantics, its relation to the world is not given in the physical model or theory itself. Only our interpretation of physics gives its terms a semantic. This is realized through experimental practices in which we compare the predictions of the model to our observations using set standards[^units]. We can try to describe the procedures of experiments as precisely as possible but not in the vocabulary of physics, they will always contain instructions in mental terms.
 
-This is different for theories involving mental events where "an event is mental if and only if it has a mental description [...that involves terms like believing, intending, desiring, knowing, perceiving, remembering, and so on], the distinguishing feature of the mental is [...] what Brentano called intentionality” [-@Davidson:1970me, p. 211]. The distinguishing feature of such events is that they are dispositional predicates which are causal in nature: "if Cain killed Abel, he must have done something that caused Abel's death, and if he killed Abel intentionally, he must have been caused to act by a desire for Abel's death. Beliefs, desires, and intentions are themselves causal dispositions" [-@Davidson:1990ri, p. 95]. Such causal dispositions do not feature in physics: "it is a sign of progress in a science that it rids itself of causal concepts. The dissolving of some salt is explained, up to a point, by saying that salt is soluble and this salt was placed in water; but one could predict the dissolving on the basis of far more general knowledge if one knew the mechanism, what it is about the constitution of the salt that accounts for its dissolving. When the mechanism is known, the explanation will not call on the causal concept of solubility" [-@Davidson:1990ri, p. 96]. This is also related to the semantical nature of our mind. In "specifying the contents of a memory, [we are forced] to refer to causes normally outside the person, [...giving] a causal explanation of a belief [...and] a semantic interpretation of it" [-@Davidson:1990ri, p. 96]. In this way mental representation is externalistic, it refers to terms outside of its descriptive scope.
+This is different for theories involving mental events; where "an event is mental if and only if it has a mental description [...that involves terms like believing, intending, desiring, knowing, perceiving, remembering, and so on], the distinguishing feature of the mental is [...] what Brentano called intentionality” [-@Davidson:1970me, p. 211]. Mental properties are dispositional predicates which are causal in nature: "if Cain killed Abel, he must have done something that caused Abel's death, and if he killed Abel intentionally, he must have been caused to act by a desire for Abel's death. Beliefs, desires, and intentions are themselves causal dispositions" [-@Davidson:1990ri, p. 95]. Such causal dispositions do not feature in physics: "it is a sign of progress in a science that it rids itself of causal concepts. The dissolving of some salt is explained, up to a point, by saying that salt is soluble and this salt was placed in water; but one could predict the dissolving on the basis of far more general knowledge if one knew the mechanism, what it is about the constitution of the salt that accounts for its dissolving. When the mechanism is known, the explanation will not call on the causal concept of solubility" [-@Davidson:1990ri, p. 96]. This is also related to the semantical nature of our mind. In "specifying the contents of a memory, [we are forced] to refer to causes normally outside the person, [...giving] a causal explanation of a belief [...and] a semantic interpretation of it" [-@Davidson:1990ri, p. 96]. In this way mental representation is externalistic, it refers to terms outside of its descriptive scope.
 
-So we have seen that physics and programs provide comprehensive theories that are purely syntactical and thus refer to no external concepts which allow them to be expressed in strict laws which eliminate causal dispositions. We have seen that mental concepts on the other hand are semantic in an essential way and are expressed as causal dispositions. Thus we can conclude that mental predicates can not occur in strict laws [See @McLaughlin:2013am, p. 417-423]. This is what Davidson calls the Anomalism of the Mental: "there are no strict [...] laws on the basis of which mental events can be predicted and explained" [@Davidson:1970me, p. 208].[^turing-rules]
+So we have seen that physics and programs provide comprehensive theories that are purely syntactical and thus refer to no external concepts which allow them to be expressed in strict laws which eliminate causal dispositions. We have seen that mental concepts on the other hand are semantic in an essential way and are expressed as causal dispositions and that such causal dispositions need to be eliminated to describe something in a complete physics as strict laws. Thus we can conclude that mental predicates can not occur in strict laws [See @McLaughlin:2013am, p. 417-423]. This is what Davidson calls the Anomalism of the Mental: "there are no strict [...] laws on the basis of which mental events can be predicted and explained" [@Davidson:1970me, p. 208].[^turing-rules]
 
 But [other than @McLaughlin:2013am seems to suggest] this is not the final argument Davidson has in mind, because externalism, ceteris paribus laws, and causal dispositions "could also be said to distinguish the concepts of many of the special sciences such as biology, [...] there must be something more basic or foundational" [@Davidson:1991tv, p. 217]. Otherwise we would assume that "knowledge of the program of a device that successfully mimics the workings of the mind, will explain the mechanisms that support or constitute thought" [@Davidson:1990ri, p. 96--97] just like physics can explain the causal disposition of solubility.
 
-> "It is only when we can see a creature (or ‘object’) as largely rational by our own lights that we can intelligibly ascribe thoughts to it at all [...]. This means that when anyone [...] ascribes thoughts to others, he necessarily employs his own norms in making the ascriptions. There is no way he can check whether his norms are shared by someone else without first assuming that [the other is intelligible and] in large part they are [...shared. I]f the subject under study is to remain thought and intelligence, a normative methodology cannot be avoided." [@Davidson:1990ri, p. 97--98]
+> "It is only when we can see a creature (or 'object') as largely rational by our own lights that we can intelligibly ascribe thoughts to it at all [...]. This means that when anyone [...] ascribes thoughts to others, he necessarily employs his own norms in making the ascriptions. There is no way he can check whether his norms are shared by someone else without first assuming that [the other is intelligible and] in large part [...his norms] are [...shared. I]f the subject under study is to remain thought and intelligence, a normative methodology cannot be avoided." [@Davidson:1990ri, p. 97--98]
 >
 > "We depend on our linguistic interactions with others to yield agreement on [...] the sort of structures in nature that allow us to represent those structures in [...] numbers. We cannot in the same way agree on the structure of the sentences or thoughts [...], for the attempt [...] sends us back to the very process of interpretation [...]. It is here, I suggest, that we come to the ultimate springs of the difference between understanding minds and understanding the world as physical. A community of minds is the basis of knowledge; it provides the measure of all things. It makes no sense to question the adequacy of this measure, or to seek a more ultimate standard." [@Davidson:1991tv, p. 218]
 
-Interpretation of mental concepts is essentially normative, it requires us to assume a basic shared understanding of the world without which we cant interpret others. We must assume others are largely coherent in their thoughts and corresponding to the same stimuli in the world as we are. This irreducibly normative character does not appear in physics or programs but it is this character which allows us to render any intelligible picture of the world. Physics and programs can't give an account of their semantics, only our evaluation of their predictive powers puts them in a relation to the world. The concept of causality allows us to bridge the gap between these explanatory schemes, its looseness is necessary to overcome the distance between the normative and formal explanations [see -@Davidson:1990ri, p. 98]. The ability to put things in relation to the world only emerges through our communication with others (we will discuss this more in the next \autoref{triangulation}). The mental is irreducible in so far as it constitutes the basis of our very ability to make the world intelligible through such communication about a shared world.
+The interpretation of mental concepts is essentially normative, it requires us to assume a basic shared understanding of the world without which we cant interpret others. We must assume others are largely coherent in their thoughts and corresponding to the same stimuli in the world as we are. This irreducibly normative character does not appear in physics or programs but it is this character which allows us to render any intelligible picture of the world. Physics and programs can't give an account of their semantics, only our evaluation of their predictive powers through experiments puts them in a relation to the world. The concept of causality allows us to bridge the gap between these explanatory schemes. Its causal looseness is necessary to overcome the distance between the normative and formal explanations [see -@Davidson:1990ri, p. 98]. The ability to put things in relation to the world only emerges through our communication with others (we will discuss this more in the next \autoref{triangulation}). The mental is irreducible in so far as it constitutes the basis of our very ability to make the world intelligible through such communication about a shared world.
+
 
 
 [^qm-observers]: This is assuming a complete physics of the world, which the practical science of physics strives to reach. In the science of physics of course there are still many issues like the inability of quantum mechanics to define in physical terms what an observation is that leads to the collapse of the wave function. But the fact that this is seen as a huge deficiency of the theory by most physicists illustrates this description of a complete physics --- independent of wether it is achievable or not.
 
 [^turing-rules]: In his section 2.(8) about the 'Argument from Informality of Behaviour' Turing discusses a somewhat related argument that there is no "definite set of rules of conduct" [-@Turing:1950cm, p. 452] which govern the behavior of a person and that therefore a deterministic computer could not simulate a person's behavior. As Turing points out this argument (which he is not deriving directly from any other literature, but establishing himself in this crude way) fails because it is beside the point and has no evidence for its claim. But unlike Oppy and Dowe [-@Oppy:2011tt, p. 21, a fairly poor entry in the Stanford Encyclopedia of Philosophy] suggest the argument could easily be made strong if we suppose a mind-body dualism, causal influence of the mind on the body, and one of the various arguments like the one given here that there are no strict rules governing mental processes.
 
+[^units]: Units are the bridges between the variables in the physical model and our observable reality. There definitions give a semantics to the model. But there definitions are externalistic. This becomes clearest if we look at the definition of the basic SI unit 'kilogram' which is currently still defined by a weight lying around in a vault in Paris --- not by the number of atoms of it, but by the object that we can *use* in comparative experiments.
+
 ### Supervenience and Anomalous Monism
 
 
 
-We have seen that Davidson argues at length for the anomalism of the mental --- mental events don't feature in strict laws and are thus irreducible to the physical. But we have also already seen that Davidson agrees with Turing that brains might act similarly to computers and that it should be generally possible to make thinking computers. In fact, Davidson rejects any cartesian mind body dualism. "The mental and the physical share *ontologies*, but not [...] classificatory concepts" [-@Davidson:1990ri, p. 92].[^spinoza] Davidson labels this combination of ontological monism and agreement to the principle of the anomalism of the mental 'Anomalous Monism' in 'Mental Events' [-@Davidson:1970me], where he introduced this view. This view rests on the type-token-distinction: "each particular mental event [token] is identical with a particular physical event [token, but...] there are no strict psychophysical laws [...and therefore] no mental event type is a physical event type" [@Lepore:2009d, p. 17].[^fodor] So while the behavior can be completely explained on a physical level, since mental events are identified with physical events which are governed by strict laws. The physical explanation or the understanding of the program does not offer any insights for a mental explanation since the physical event tokens don't fall under any mental types. "Knowing the program is enough to explain why the device produces the marks or sounds or pictures it does given an input described in similarly abstract terms. This knowledge does not touch on questions [...] of reference to the outside world" [@Davidson:1990ri, p. 93]. To make sense of the explanation by relating it to the world we need a mental level.
+We have seen that Davidson argues at length for the anomalism of the mental --- mental events don't feature in strict laws and are thus irreducible to the physical. But we have also already seen that Davidson agrees with Turing that brains might act similarly to computers and that it should be generally possible to make thinking computers. In fact, Davidson rejects any cartesian mind body dualism. "The mental and the physical share *ontologies*, but not [...] classificatory concepts" [-@Davidson:1990ri, p. 92].[^spinoza] Davidson labels this combination of ontological monism and agreement to the principle of the anomalism of the mental 'Anomalous Monism' [see 'Mental Events' -@Davidson:1970me]. This view rests on the type-token-distinction: "each particular mental event [token] is identical with a particular physical event [token, but...] there are no strict psychophysical laws [...and therefore] no mental event type is a physical event type" [@Lepore:2009d, p. 17].[^fodor] So while the behavior can be completely explained on a physical level --- since mental event tokens are identified with physical event tokens which are governed by strict laws --- the physical explanation or the understanding of the program does not offer any insights for a mental explanation --- since the physical event tokens don't fall under any mental event type. "Knowing the program is enough to explain why the device produces the marks or sounds or pictures it does given an input described in similarly abstract terms. This knowledge does not touch on questions [...] of reference to the outside world" [@Davidson:1990ri, p. 93]. To make sense of the explanation by relating it to the world we need a mental scheme.
 
 > "Anomalous monism resembles materialism in its claim that all events are physical, but rejects the thesis [...] that mental phenomena can be given purely physical explanations. [...] Although the position I describe denies there are psychophysical laws, it is consistent with the view that mental characteristics are [...] dependent, or supervenient, on physical characteristics. Such supervenience might be taken to mean that [...] an object cannot alter in some mental respect without altering in some physical respect. Dependence or supervenience of this kind does not entail reducibility through law or definition" [@Davidson:1970me, p. 214]
 
-Davidson's idea of the supervenience[^supervenience] and irreducibility of the mental to the physical has been highly discussed[^discussion] and very influential. As mentioned before it also provides the basis for the claim that "the only way to tell if an artificial device [... can think], is to attempt to interpret the behavior of the device [...because] interpretation involves the use of normative concepts [... which] have no role in the understanding of a syntactically specified program" [-@Davidson:1990ri, p. 99]. So a behavioral test like Turing's and Davidson's Test is a necessary condition to judge anything as intelligent, be it a person, an animal, or an object.
+Davidson's idea of the supervenience[^supervenience] and irreducibility of the mental to the physical has been highly discussed[^discussion] and was and is very influential. As mentioned before it also provides the basis for the claim that "the only way to tell if an artificial device [... can think], is to attempt to interpret the behavior of the device [...because] interpretation involves the use of normative concepts [... which] have no role in the understanding of a syntactically specified program" [-@Davidson:1990ri, p. 99]. So a behavioral test like Turing's and Davidson's Test is a necessary condition to judge anything as intelligent, be it a person, an animal, or an object.
 
 
 
@@ -509,62 +513,63 @@ Davidson's idea of the supervenience[^supervenience] and irreducibility of the m
 ## Triangulating Knowledge of a Shared World {#triangulation}
 
 
+<!--
 - Connect to questions from 'What Thought Requires'.
 - Interdependency of three varieties of Knowledge
-- Importance of disctinction between true and false beliefs (E5.8, E3.14, E4.1, SEP Davidson)
-- Principle of Charity (Coherence and Correspondence)
-(E3.14, E2.9, E3.14)
-- Reaction to stimuli (E3.14)
-  - proximal vs. distal stimuli (E5.4)
-- Iscrutability of Reference / Indeterminacy of meaning (Quine Word and Object, E5.3, E2.16, E3.14)
-- The Underlying Ontology and Metaphysics
-  - Ontology of only objects and events (E3.14, E5.4)
-  - Directness of knowledge of world
-    - no intermediary entities (5.3, E5.4, E3.10)
-    - no mentales, language only through communication, meaning given causally by objects events (E5.9)
-  - Truth as elementary non-reducible concept (E5.2, E2.I)
+- Importance of disctinction between true and false beliefs
+- Reaction to stimuli
+- externalism and proximal vs. distal stimuli
+- iscrutability of reference
+-->
 
-"Adding a second person [...] narrows down the relevant cause to the nearest cause common to two agents who are triangulating the cause by jointly observing an object and each other's reactions. The two observers don't share neural firings or incoming photons; the nearest thing they share is the object prompting both to react in ways the other can note. […] Triangulation also creates the space needed for error, not by deciding what is true in any particular case, but by making objectivity dependent on intersubjectivity." [@Davidson:2001wt, p. 142--143]
+Similarly to the previous section we are going to examine Davidson's epistemology from a discussion that starts with another question that arises from the Turing test. This time, it is not the question *how* we can judge the computer, but *what* it is that would make a computer think. Davidson takes this rout in 'What Thought Requires' [-@Davidson:2001wt]:
 
-
-
-
-
-> “So we need to ask what would turn calculation, in the sense in which [...] a computer can calculate, into thought? […] Some non-human animals can learn a great deal, but they do not learn that something is true. […Only] a creature with propositional attitudes is equipped to fit a new concept into a complex scheme in which concepts have logical and other relations to one another. […S]ome degree of holism goes with having concepts.
+> "So we need to ask what would turn calculation, in the sense in which [...] a computer can calculate, into thought? […] Some non-human animals can learn a great deal, but they do not learn that something is true. […Only] a creature with propositional attitudes is equipped to fit a new concept into a complex scheme in which concepts have logical and other relations to one another. […S]ome degree of holism goes with having concepts.
 >
-> [T]he fundamental distinction [lies] between a mindless disposition to respond differentially to the members of a class of stimuli, and a disposition to respond to those items as members of that class. […] A creature that cannot entertain the thought that it may be wrong has no concepts, no thoughts. To this extent, the possibility of thought depends on the idea of objective truth, of there being a way things are which is not up to us. […] What is needed is something that can provide a standard against which an individual can check his or her reactions, and only other individuals can do this. […] Adding a second person helps on both counts. It narrows down the relevant cause to the nearest cause common to two agents who are triangulating the cause by jointly observing an object and each other's reactions. The two observers don't share neural firings or incoming photons; the nearest thing they share is the object prompting both to react in ways the other can note. […] Triangulation also creates the space needed for error, not by deciding what is true in any particular case, but by making objectivity dependent on intersubjectivity. ” [@Davidson:2001wt, p. 138--137 & 141--143]
+> [T]he fundamental distinction [lies] between a mindless disposition to respond differentially to the members of a class of stimuli, and a disposition to respond to those items *as* members of that class. [...] A creature that cannot entertain the thought that it may be wrong has no concepts, no thoughts. To this extent, the possibility of thought depends on the idea of objective truth, of there being a way things are which is not up to us. [...] What is needed is something that can provide a standard against which an individual can check his or her reactions, and only other individuals can do this. Adding a second person helps [...to pick out the relevant cause and to explain error]. It narrows down the relevant cause to the nearest cause common to two agents who are triangulating the cause by jointly observing an object and each other's reactions. The two observers don't share neural firings or incoming photons; the nearest thing they share is the object prompting both to react in ways the other can note. [...] Triangulation also creates the space needed for error, not by deciding what is true in any particular case, but by making objectivity dependent on intersubjectivity." [@Davidson:2001wt, p. 138--137 & 141--143]
 
-Principle of Coherence
-connection to Theory of action [see @Lepore:2009d, p. 12]
+Davidson answers the question what distinguishes our ability to think from the ability to simply do very complex tasks like computers with the fact that we have concepts that occur in a holistic way. It is the concept of error that is the key to thought. The concept or error allows us to distinguish between pure conditioned responses (which can’t be wrong, just like the calculations of a computer) and the right application of a concept. This requires semantics for a language which can distinguish between what we think and what is in the world. The core of the concept of semantics is the truth predicate; the idea that our thoughts and sentences can be true *or false*. This is also called the idea of objective truth --- of a truth that lies beyond ones own judgement. This is the quintessential question of natural language philosophy raised by Wittgenstein: "what is the difference between using words correctly and merely thinking that one is using them correctly?" [@Davidson:1994sa, p. 116]
 
+The answer in Wittgenstein's famous argument against the possibility of a private language [-@Wittgenstein:1952pu, $\!$ 256--282] is that language necessarily has a social aspect without which semantics can't be explained. Davidson relates to this. His essential argument is that to make the distinction between true and false believes a social background is required. Only because we hear different opinions we can call our own concepts into doubt.[^autism] The social norm that solves the problem is not given by conventions or shared practices, but by correlating reactions to a shared environment through a communication process.
 
+> "As Wittgenstein says, by yourself you can't tell the difference between the situations seeming the same and being the same. [...] If you and I can each correlate the other's responses with the occurrence of a shared stimulus, however, [...] it provides each of us with a ground for distinguishing the cases in which it fails. Failed natural inductions can now be taken as revealing a difference between getting it right and getting it wrong [...]. A grasp [...] of the distinction between thinking something is so and its being so, depends on the norm that can be provided only by interpersonal communication" [@Davidson:1994sa, p. 125]
 
-See [@Lepore:2009d, p. 19--20] for the importance of Triangulation
+Not even a physicalist account of thought can achieve that since it can't solve the problem of the inscrutability of reference [@Quine:1960wo, ch. 2] --- the unclarity what the relevant causal origin of a concept is (the object, the light, the stimulated neurons, ...). Davidson solves the problem by locating "the relevant cause of a speaker's thought [...] at the intersection of the two lines that can be drawn [...from] the speaker [...and] the interpreter [...to] the object or event in the world they are responding to and communicating about" [@Bernecker:2013te, p. 445]. Davidson fittingly calls this process of finding the intersection in the world between two points of view triangulation. Since triangulation identifies the relevant cause of a though in the distal stimulus in the world rather than in a proximal stimulus in our head [see @Davidson:1990mt], it is a type of content externalism.
 
-
-
-
-
-### Three Types of Knowledge
-
-- The basic problem of Epistemology
-  - Distinctiveness of three types of Knowledge (subjective, intersubjective, objective)
-  - Three Questions of Epistemology
-    - how to know other minds
-    - how to know world
-    - how to know own mind without evidence
-- Rejection of other Epistemologies
-  - Rejection of Positivism (reductionism to world knowledge) (E3.14)
-  - Rejection of empiricsit Epistemology (E3.14, E2.1)
-    - No primacy of names and predicates in the foreground of senses
-    - doesn't he contradict that in E2.9 and E4.8?
-  - Rejection of Cartesion Etymology (primacy of knowledge of one's own mind) (E3.14, E3.3, E3.13)
-    - Rejection of skepticism (E3.14, SEP Davidson, E4.1)
+[^autism]: Some have argued that autistic speakers show that having the idea of objective truth and interpreting others is not essential for the ability to think and speak. There is empirical evidence that "autistic speakers allegedly fail false belief tests, which are designed to test their ability to attribute false beliefs to others [...and] actual cases of autistic speakers not capable of attributing beliefs to others have reportedly been found." Since those autists are clearly capable of language and thought, it is argued that the social aspect of language is unnecessary. It remains very unclear how convincing the evidence from such tests is and what alternative picture of language without a social environment and the idea of objective truth could possibly look like.  [For a brief introduction to the discussion and overview of the literature, see @Verheggen:2013t, p. 466 & 469.]
 
 
 
 
 
+### Three Varieties of Knowledge
+<!--
+- Distinctiveness of three types of Knowledge
+- Three Questions of Epistemology: how to know other minds, how to know world, how to know own mind without evidence
+- Rejection of positivist epistemology (reductionism to world knowledge)
+- Rejection of cartesian epistemology (primacy of knowledge of one's own mind) and skepticism.
+
+- No primacy of names and predicates in the foreground of senses (doesn't he contradict that in E2.9 and E4.8?)
+- Principle of Charity (Coherence and Correspondence)
+- Defence against circular nature of explanation
+-->
+
+
+
+This triangulation process is Davidson's epistemology. It can be captured as a relationship between three types of knowledge: (subjective) knowledge of the contents of ones own mind, (intersubjective) knowledge of the contents of other minds, and (objective) knowledge of the world. All three types of knowledge differ: Other than the knowledge of my own mind, knowledge of the world and other minds "depends on the functioning of my sense organs, and this causal dependence on the senses makes my beliefs [...] open to a sort of uncertainty" [@Davidson:1991tv, p. 205]. My knowledge of the world is often "simply caused directly by the events and objects around me. But my knowledge [...] of other minds is never immediate in this sense" [-@Davidson:1991tv, p. 205] it is only accessible through interpretation of behavior. The "three varieties of knowledge are concerned with aspects of the same reality; where they differ is in the mode of access to reality [..., but how can] the same world [be] known to us in three such different ways" [-@Davidson:1991tv, p. 205 & 208]? This question lies at the heart of what Davidson identifies as the three main questions of epistemology: How can the mind have (1) knowledge about the natural world and (2) the content of another minds; and how can one (3) know the content of one's own mind without resort to evidence? [-@Davidson:1991tv, p. 208]
+
+Question 1 and 2 stem from the cartesian idea that knowledge of my own mind has conceptual priority over the others which leads to skepticism. Question 3 is raised by the positivists that answer it by reducing all knowledge to knowledge of world. But both accounts fail, since the three types are irreducible and none has conceptual priority. In Davidson's answer of triangulation all three questions are answered simultaneously. The content of propositional knowledge is directly caused by the objects and events the world is made up of. We come by this content through triangulating between our stimulus and that of another person caused by the same object or event in our shared world. We have access to other peoples stimuli only through interpretation of their (often verbal) reactions to those stimuli. Therefore all three types of knowledge are interdependent and none has priority above the others. My propositional knowledge (3) is dependent on interpretation of reactions to stimuli from a shared world. Knowledge about someone else's propositions (2) must be gauged by my own propositional knowledge. And knowledge about the world (1) is only possible through interpersonal communication.[^circularity] The three form a triangle of interdependence. This leads Davidson to a denial of cartesian skepticism and positivist behavioral reductionism.
+
+> "Until a base line has been established by communication with someone else, there is no point in saying one's own thoughts or words have a propositional content. [...T]he triangulation which is essential to thought requires that those in communication recognize that they occupy positions in a shared world. So knowledge of other minds and knowledge of the world are mutually dependent[. ...]
+>
+> [A]ttributing thoughts to others is a matter of matching the verbal and other behavior of others to our own propositions  
+[...]. Knowledge of our own minds and knowledge of the minds of others are thus mutually dependent. [...]
+>
+> The nature of interpretation guarantees both that a large number of our simplest perceptual beliefs are true, and that the nature of these beliefs is known to others. [...A]ny particular belief [...] about the world around us may be false. What cannot be the case is that our general picture of the world and our place in it is mistaken, for it is this picture which informs the rest of our beliefs and makes them intelligible [...]." [@Davidson:1991tv, p. 213]
+
+Let us turn to the last conclusion Davidson draws here. Interpretation is under-determined: to know wether a speaker holds a sentence true or not, we need to know what he means by it, which requires us to triangulate which in turn only works if we can determine wether he holds the sentence true. To break this circle we have to appeal to a norm of communication. Davidson claims that only an interpersonal standard of consistency and correspondence (the principles of charity) can achieve this. "The Principle of Coherence prompts the interpreter to discover a degree of logical consistency in the thought of the speaker; the Principle of Correspondence prompts the interpreter to take the speaker to be responding to the same features of the world that the interpreter would be responding to under similar circumstances" [-@Davidson:1991tv, p. 211]. The former ensures that a holistic interpretation is possible and the later allows us to create the bridge of triangulation between beliefs and references. Those principles are essential for interpretation and therefore also for knowledge. They make it "constitutive of what it is to be a speaker that one is mostly right about the external world, one's own thoughts, and what one's words mean. The importance of this conclusion can hardly be overemphasized. If it is right, then we have a transcendental guarantee of knowledge of our own minds, the minds of others [...], and the external world. We secure this without having to explain how it is that we justify our beliefs on the basis of evidence, for knowledge in each of these domains emerges as a fundamental condition on having the capacity to speak and think at all." [@Lepore:2009d, p. 20]
+
+[^circularity]: Some have argued that Davidson's account of thought in triangulation is circular since language presupposes thought [for example @Bernecker:2013te and @Bridges:2006dt]. Davidson himself is "under no illusion that [he] can provide anything like an analysis; [...] for a non-circular answer would tell us how to account for intensionality in non-extensional terms" [@Davidson:1997sl, p. 139] which he sees as impossible as we have seen in \autoref{supervenience}. Nevertheless the account is instructive. "It is obviously not just the narrow vicious circle that says that there is language and thought only when there is language and thought. It is rather the rich and complex circle that encompasses language, thought (each of which depending on there being fixed meanings), possession of the concept of objective truth, and linguistic triangulation. I should say it is an instructive circle, each part of which is such that, if it is absent, the whole circle breaks down. [...Therefore] it seems to me that the story is compelling and that within the intensional realm, progress has been made" [@Verheggen:2013t, p. 468]. So the critique is somewhat beside the point. The relevance of any theory does not follow from its ability to reduce terms but from its ability to account for empirical data (otherwise String Theory would be accepted). Davidson's account is relevant because it fits well with many of our experiences how we gain knowledge and is therefore an attractive alternative to cartesian idealism or positivist reductionism.
 
 
 
@@ -575,22 +580,6 @@ See [@Lepore:2009d, p. 19--20] for the importance of Triangulation
 
 
 
-
-
-### The Social Aspect of Language {#social-language}
-
-- The Primacy of Ideolect
-  - relevance of interpretation rather than meaning (+E2.2)
-    - see similarities to Gadamer's Hermeneutics of Wirkungsgeschichte (Bertram 2012)
-  - Relevance of Intention in communication (+E5.10)
-  - Arguments for primacy of ideoloect over language
-    - Malapropisms and the like (E5.7)
-- Why is language necessarily Social
-  - Wittgenstein's norm of actually getting it right in language
-    - also see language game analogy in anti conventionalism (2.18)
-    - and importance of disctinction between true and false beliefs in triangulation (E3.14)
-  - Truth only determined trough communication
-    - see also Plato, socrates (E5.16)
 
 
 
@@ -624,14 +613,6 @@ Descision theory: Sprang from his early times at Stanford when collaborating wit
 
 See also [@Rescorla:2013rc] for discussion of unified theory
 
-### The recursive and empirical nature of interpretation
-
-- No a priori knowledge about language(-learning), only empirical knowledge
-- Finite set of linguistic primitives gives rise to infinite linguistic expressions
-- Representation of Meaning/Linguistic Content: Meaning as Language (E3.14, E2.2) (not things in world, not entities sui generis)
-
-
-
 'Theories of Meaning and Learnable Languages' [@Davidson:1965tm]
 
 in first order logic[^action]
@@ -640,9 +621,53 @@ in first order logic[^action]
 
 
 
+### The recursive and empirical nature of interpretation
+
+- No a priori knowledge about language(-learning), only empirical knowledge
+- Finite set of linguistic primitives gives rise to infinite linguistic expressions
+- Representation of Meaning/Linguistic Content: Meaning as Language (E3.14, E2.2) (not things in world, not entities sui generis)
 
 
-### Anti-Conventionalism
+
+### What is Meaning: Interpretationism and Externalism
+
+- Davidson rejects that we need meaning, it ought to be replaced with translation
+- His interpretationism seems to not sit well with his externalism, but the test provides a solution
+- Meaning is not primary to communication, but the other way round. (see next section)
+- Davidson rejects Putnams physical externalism with Anomalous monism, thoughts are in the head (see Bernecker)
+- Davidson rejects Burge's social externalism with his anti-conventionalism
+
+"an externalist view [...] is a straightforward consequence of his interpretationist stance, together with the view that evidence is [given by] distal, not proximal stimuli" [@Hahn:2003sa, p. 35]
+
+
+Interpretationism: there is only a gradual, not a type difference between the interpretation of a believe and holding a believe. In that sense meanings are expressions, not things in the world. [@Schwitzgebel:2006b]
+
+How does such interpretationism sit with triangular externalism? We might have to "treat them as independently necessary and jointly sufficient conditions for having thoughts. Having thoughts requires not only that one is interpreted, but also that one learned words in the right sort of way" [@Bernecker:2013te, p. 447]
+
+[^swampman]
+
+"The only other way we can bring in causal history is as simply an extra condition not on interpretability, but on having thoughts. Being interpreted is not sufficient for having thoughts; the subject’s language must also have been learned in the right way. But this, congenial as it might be to someone like Burge perhaps, seems deeply antithetical to Davidson’s insis- tence that the third-person interpretive stance is all there is to the attribution of meanings and thoughts: that it is constitutive of them." [@Hahn:2003sa, p. 45]
+
+Other than Hahn suggests this interpretation is explicitly the one Davidson takes in 'Turing's Test'.
+
+
+[^swampman]: The discussion about these issues often takes Davidson's Swampman example [-@Davidson:1987ko] as a starting point. I will not go any deeper into the example since Davidson himself later regretted using it since it caused more confusion than anything else: "As with Swampman, I regret these sorties into science fiction [...] the case can be made without [such sorties], and better" [-@Davidson:1999rg, p. 192].
+
+> "The intention to be taken to mean what one wants to be taken to mean is [...] clearly the only aim that is common to all verbal behavior […]. Success in communicating propositional contents [...] is what we need to understand before we ask about the nature of meaning or of language […]. Meaning [...] gets its life from those situations in which someone intends that his words will be understood in a certain way, and they are. […] Where understanding matches intent we can, if we please, speak of ‘the’ meaning; but it is understanding that gives life to meaning, not the other way around." [@Davidson:1994sa, p. 121--122]
+
+
+
+- The Underlying Ontology and Metaphysics
+  - Ontology of only objects and events (E3.14, E5.4)
+  - Directness of knowledge of world
+    - no intermediary entities (5.3, E5.4, E3.10)
+    - no mentales, language only through communication, meaning given causally by objects events (E5.9)
+  - Truth as elementary non-reducible concept (E5.2, E2.I)
+
+
+
+
+### The Social Aspect of Language beyond Conventions
 
 - arguments against conventionalism:
   - impossibility of public sign for sincerity
@@ -657,7 +682,22 @@ in first order logic[^action]
 
 
 
-### The Distinction between Linguistic Competence and Performance {#linguistic-competence}
+The Social Aspect of Language {#social-language}
+
+- The Primacy of Ideolect
+  - relevance of interpretation rather than meaning (+E2.2)
+    - see similarities to Gadamer's Hermeneutics of Wirkungsgeschichte (Bertram 2012)
+  - Relevance of Intention in communication (+E5.10)
+  - Arguments for primacy of ideoloect over language
+    - Malapropisms and the like (E5.7)
+- Why is language necessarily Social
+  - Wittgenstein's norm of actually getting it right in language
+    - also see language game analogy in anti conventionalism (2.18)
+    - and importance of disctinction between true and false beliefs in triangulation (E3.14)
+  - Truth only determined trough communication
+    - see also Plato, socrates (E5.16)
+
+### Distinction between Linguistic Competence and Performance {#linguistic-competence}
 
 - Distinction between sufficient and necessary conditions of linguistic competence
   - relation to term linguistic competence and linguistic performence
