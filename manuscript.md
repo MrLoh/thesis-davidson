@@ -259,8 +259,6 @@ Lastly, we have seen that Turing had pioneering ideas about how to devise algori
 
 
 
-
-
 # Davidson's Critique of the Turing Test {#section2}
 
 
