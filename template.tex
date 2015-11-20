@@ -21,6 +21,9 @@ $else$
   \usepackage{lmodern}
 $endif$
 
+\usepackage{etoolbox}
+\patchcmd{\quote}{\rightmargin\leftmargin}{\leftmargin 1em}{}{}
+
 % Floatable Figure
 \makeatletter
 \renewenvironment{figure}[1][\fps@figure]{
@@ -32,7 +35,6 @@ $endif$
 \makeatother
 \usepackage[font=footnotesize,labelsep=endash]{caption}
 \setlength{\abovecaptionskip}{0pt}
-
 
 
 \usepackage{scrextend}
@@ -47,6 +49,13 @@ $endif$
 }
 \makeatother
 
+$if(endnotes)$
+    \usepackage{endnotes}
+    \let\footnote=\endnote
+    \renewcommand\enoteformat{\theenmark\;– }
+    \def\enotesize{\normalsize}
+    \renewcommand\enoteheading{}
+$endif$
 
 
 $if(linestretch)$
@@ -316,7 +325,7 @@ $if(lof)$
 $endif$
 
 \begin{multicols}{2}
-  $body$
+      $body$
 \end{multicols}
 
 $if(natbib)$

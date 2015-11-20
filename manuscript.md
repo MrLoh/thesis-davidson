@@ -7,6 +7,7 @@ date: \today
 papersize: a4paper
 toc: true
 toc-depth: 2
+endnotes: true
 
 bibliography: references.bib
 link-citations: true
@@ -52,7 +53,7 @@ This paper discuses Donald Davidson's critique [-@Davidson:1990tt] of the Turing
 
 
 
-Donald Davidson (1917--2003) "was one of the most important philosophers of [action, language, and mind in] the latter half of the twentieth century [...] with a reception and influence that, of American philosophers, is perhaps matched only by that of [his friend, mentor, and colleague] W. V. O. Quine" [@Malpas:2015dd, p. 1].  His thoughts are exposed through a collection of very densely written essays (published from 1963--2001)[^life] which "form a mosaic out of which emerges a unified and surprisingly elegant overall view of the mind and its relation to the world. It sees our *nature as linguistic beings* as the key to the possibility of thought, to the objectivity of the world [...], and to how the [irreducably mental] mind moves us to action in a [physical] world" [@Lepore:2009d, p. 1, emphasis added]
+Donald Davidson (1917--2003) "was one of the most important philosophers of [action, language, and mind in] the latter half of the twentieth century [...] with a reception and influence that, of American philosophers, is perhaps matched only by that of [his friend, mentor, and colleague] W. V. O. Quine" [@Malpas:2015dd, p. 1].  His thoughts are exposed through a collection of very densely written essays (published from 1963--2001)[^life] which "form a mosaic out of which emerges a unified and surprisingly elegant overall view of the mind and its relation to the world. It sees our *nature as linguistic beings* as the key to the possibility of thought, to the objectivity of the world [...], and to how the [irreducably mental] mind moves us to action in a [physical] world" [@Lepore:2009d, p. 1, emphasis added].
 
 To give a very brief overview of Davidson's philosophy:
 
@@ -64,7 +65,7 @@ To give a very brief overview of Davidson's philosophy:
 - He rejects Conventionalism [-@Davidson:1984cc] based on his argument for the primacy of ideolect, placing the social aspect of language in Epystemology [-@Davidson:1994sa].
 - Rejecting positivist and cartesian Epistemology, he sees knowledge of self, world, and others as interdependent [-@Davidson:1991tv].
 - His Unified Theory [-@Davidson:1980tu] aims to captures the essence [-@Davidson:1995ct] of mind, language, and action.
-- He compares his philosophy to Spinoza [-@Davidson:1999sc] and Plato and Gadamer [-@Davidson:1997gp].
+- He discusses similarities between his philosophy and that of Spinoza [-@Davidson:1999sc] and Plato and Gadamer [-@Davidson:1997gp].
 
 
 
@@ -84,7 +85,7 @@ To give a very brief overview of Davidson's philosophy:
 - brief overview of players
 -->
 
-Language has been a philosophical topic since Plato, but it especially gained attention in the so-called 'Linguistic Turn' of the 20th century, when it was recognized as the medium for our rational access to the world. Names like Frege, Russel, the early Wittgenstein, and the Vienna Circle stand for the earlier Ideal Language Philosophy and Logical Empiricism which hoped to solve problems of Metaphysics through a *definite logical analysis* of meaning. However, This approach did not turn out very successful. Led by Austin, Ryle, and the late Wittgenstein analytical philosophy paid more attention to Ordinary Language, focusing on the importance of *social and performative aspects*. Quine and Davidson stand at the resolution of this tension with an approach that recognizes linguistic behavior in its context while leveraging the formal methods for their analysis [@Bertram:2011sz]. Through Davidson the analytical tradition also became linkable to the 'continental' Hermeneutic traditions, contributing to the dissolution of the philosophical divide of the 20th century. [@Malpas:2015dd, p. 2]
+Language has been a philosophical topic since Plato, but it especially gained attention in the so-called 'Linguistic Turn' of the 20th century, when it was recognized as the medium for our rational access to the world. Names like Frege, Russel, the early Wittgenstein, and the Vienna Circle stand for the earlier Ideal Language Philosophy and Logical Empiricism which hoped to solve problems of Metaphysics through a *definite logical analysis* of meaning. However, This approach did not turn out very successful. Led by Austin, Ryle, and the late Wittgenstein analytical philosophy paid more attention to Ordinary Language, focusing on the importance of *social and performative aspects*. Quine and Davidson stand at the resolution of this tension with an approach that recognizes linguistic behavior in its context while leveraging the formal methods for their analysis [@Bertram:2011sz]. Through Davidson the analytical tradition also became linkable to the 'continental' Hermeneutic traditions, contributing to the dissolution of the philosophical divide of the 20th century [@Malpas:2015dd, p. 2].
 
 # The Turing Test and Its Relevance {#section1}
 
@@ -156,7 +157,7 @@ The quotation also gives a simplified version of the test, in so far as it remov
 
 Where does it leave the relevance of the Turing Test, if we follow Moor and interpret it merely as a framework to gather evidence for human-like intelligence? For Computer Scientists it might be *prudent* to follow Turing and ignore the philosophical question of a definition of intelligence and instead take the Turing Test as a definition of a certain class of computers. In this way the Turing Test can give a clear goal to the field of 'Artificial General Intelligence' (AGI), for which the unclarity about a clear definition of its topic is a core challenge. Unlike other propositions for an operational definition[^agi-tests] of AGI, the Turing Tests provides a clear and well-justified empirical goal. In his analysis Moor argues why the Turing Test is well apt for that:
 
-> "[T]here are two strong arguments why the Turing test is a good format for gathering inductive evidence. First, the Turing test permits direct or indirect testing of virtually all of the activities one would count as evidence for thinking. Secondly, the Turing test encourages severe testing. […T]he computer would be tested in detail over a wide range of subjects […and] the interrogator's goal is to find a refuting instance which gives the computer away.” [@Moor:1976at, pp. 251--252]
+> "There are two strong arguments why the Turing test is a good format for gathering inductive evidence. First, the Turing test permits direct or indirect testing of virtually all of the activities one would count as evidence for thinking. Secondly, the Turing test encourages severe testing. [...] The computer would be tested in detail over a wide range of subjects [...and] the interrogator's goal is to find a refuting instance which gives the computer away.” [@Moor:1976at, pp. 251--252]
 
 Critics of the Turing Test as a goal for AGI mostly fall into two camps. The first point Moor provides is aimed against the first type of critic who suggests the test sets the wrong goal. As Moor argues, communication is a very clear framework to investigate all kinds of thinking. A further practical reason for the relevance of the Turing Test --- that I would add --- is that natural language communication provides a 'gold standard' for completely natural and seamless computer user interfaces. Many of those critics mistake the question as philosophical while it is best treated as definitional. Computer Scientists ought not to be concerned with defining intelligence in general but with a good definition for "Grade A" computers --- to use Turing's terminology. In this regard, the interpretation of the Turing Test as a framework to gather empirical evidence can be set as a clear definition of the goal of AGI.
 
@@ -259,6 +260,8 @@ Lastly, we have seen that Turing had pioneering ideas about how to devise algori
 
 
 
+
+
 # Davidson's Critique of the Turing Test {#section2}
 
 
@@ -290,7 +293,7 @@ So the Turing Test and the related task of constructing a machine which can pass
 
 From this angle the task of programming a machine which can pass the Turing Test, seems closely related to that of devising and testing an empirical theory of intelligence. At least if we accept that the essence of such a theory could be expressed recursively. Judging a computer as passing the test is not so different from judging a person as rational being after all. Moor argues:  
 
-> “I believe that another human being thinks because his ability to think is part of a theory I have to explain his actions. [...T]he evidence for the theory comes from the outward behavior of the person. [...T]here is no reason why knowledge of computer thinking can not arise in the same way. I can use the computer's behavior as evidence in assessing my theory about its information processing.” [@Moor:1976at, p. 251]
+> “I believe that another human being thinks because his ability to think is part of a theory I have to explain his actions. [...] The evidence for the theory comes from the outward behavior of the person. [...] There is no reason why knowledge of computer thinking can not arise in the same way. I can use the computer's behavior as evidence in assessing my theory about its information processing.” [@Moor:1976at, p. 251]
 
 Davidson and Turing agree that we can devise a scientific theory that describes the essential parts of our linguistic competence. In the case of Turing this is evident in his believe that there is a program that allows the computer to win the imitation game. For Davidson it is evident in the proposal of his Unified Theory which can capture the essence of linguistic competence and rationality. However there are some important distinctions between the nature of these approaches that will be highlighted in \autoref{supervenience}.
 
@@ -344,9 +347,9 @@ Davidson finds Turing's Test inadequate to show that an object is thinking. Not 
 
 This is related to the "fundamental difference between semantics, which relates words to the world, and syntax, which does not" [@Davidson:1990ri, p. 94, he adopts the terminology from Tarski]. For Davidson, the essential requirement for though or intelligence is to assign meaning to words, to relate them to the world. But he argues that the interrogator in the Turing Test can not guarantee that the computer is able to do that:
 
->"[T]he interrogator [...] has no clue to the semantics of the object. There is no way he can determine the connection between the words that appear on the object's screen and events and things in the world. Of course there must be some connection; there is no other way to account for the intelligibility of the object's English. [...But i]t is perfectly possible that the connection between words and things was established by someone who programmed the object, and then provided purely syntactic connections between words for the object to wield. In this case it is the programmer who [...] has given meaning to the words [...], but the object doesn't mean anything, and there is no reason to take it to be thinking.
+>"The interrogator [...] has no clue to the semantics of the object. There is no way he can determine the connection between the words that appear on the object's screen and events and things in the world. Of course there must be some connection; there is no other way to account for the intelligibility of the object's English. [...But] it is perfectly possible that the connection between words and things was established by someone who programmed the object, and then provided purely syntactic connections between words for the object to wield. In this case it is the programmer who [...] has given meaning to the words [...], but the object doesn't mean anything, and there is no reason to take it to be thinking.
 >
-> In order to discover whether the object has any semantics, the interrogator must learn more about the connections between the output of the object and the world [...], through observing relevant causal interactions between the speaker, the world, and the speaker's audience. [...T]he interrogator [must be allowed] to watch the object interact with the world." [@Davidson:1990tt, p. 83]
+> In order to discover whether the object has any semantics, the interrogator must learn more about the connections between the output of the object and the world [...], through observing relevant causal interactions between the speaker, the world, and the speaker's audience. [...] The interrogator [must be allowed] to watch the object interact with the world." [@Davidson:1990tt, p. 83]
 
 The interpreter can only determine wether the computer means something by its words if he or she can tell what the computer means by them. Therefore "any evidence that thinking is going on will have to be evidence that particular thoughts are present" [-@Davidson:1990tt, p. 80]. While it is clear that thoughts have caused the computer's interaction, the test framework is not giving the interrogator a chance to determine how any thought has come to the computers knowledge, only that it has.
 
@@ -387,9 +390,9 @@ Davidson in fact, does not simply critique the test, but he proposes a modified 
 
 > "The Test must be modified [...]. The object must be brought into the open so that its causal connections with the rest of the world as well as with the interrogator can be observed by the interrogator.
 >
-> Can the interrogator now tell what the object thinks? The answer is that it depends [...]. Let us suppose the interrogator finds that the object uses words just as he does [...and] infers (let us suppose correctly) that the object's linguistic dispositions are similar to his own in relevant ways. In the case of a person, the interrogator would be justified in assuming that these dispositions were acquired in the usual way: in the basic cases, by past causal intercourse with things and circumstances of the sort to which the person is now disposed to respond. [...] But the assumption is not justified in the case of a computer: [...] The computer which has never experienced a dog and has no memory of dogs can't mean dog by the word ‘dog’ [...]. Thought and meaning require a history of a particular sort. [...U]nless we [...] can observe it in action over time, we have no basis for guessing how a computer came to have the dispositions it has.
+> Can the interrogator now tell what the object thinks? The answer is that it depends [...]. Let us suppose the interrogator finds that the object uses words just as he does [...and] infers (let us suppose correctly) that the object's linguistic dispositions are similar to his own in relevant ways. In the case of a person, the interrogator would be justified in assuming that these dispositions were acquired in the usual way: in the basic cases, by past causal intercourse with things and circumstances of the sort to which the person is now disposed to respond. [...] But the assumption is not justified in the case of a computer: [...] The computer which has never experienced a dog and has no memory of dogs can't mean dog by the word ‘dog’ [...]. Thought and meaning require a history of a particular sort. [...] Unless we [...] can observe it in action over time, we have no basis for guessing how a computer came to have the dispositions it has.
 >
-> It is unclear exactly what kind of history is necessary [...]. But our intuitions are clear enough in many cases. You [...] don't understand a language if there are not numerous connections between your use of words and experiences[. ...] It may seem that minds are, after all, inscrutable if no present observation of their operation can reveal what they are thinking. But of course this does not follow. [...E]ven the mind of an artefact can, if it has one, be understood; it just takes longer, long enough for some history to be observed, since it cannot be inferred." [@Davidson:1990tt, pp. 84--86]
+> It is unclear exactly what kind of history is necessary [...]. But our intuitions are clear enough in many cases. You [...] don't understand a language if there are not numerous connections between your use of words and experiences[. ...] It may seem that minds are, after all, inscrutable if no present observation of their operation can reveal what they are thinking. But of course this does not follow. [...] Even the mind of an artefact can, if it has one, be understood; it just takes longer, long enough for some history to be observed, since it cannot be inferred." [@Davidson:1990tt, pp. 84--86]
 
 Davidson's rejection of the "sharp line between the physical and the intellectual capacities" [-@Davidson:1990tt, p. 84] should not be misinterpreted as a rejection of the possibility to devise a test at all. In his follow up essay 'Representation and Interpretation' [-@Davidson:1990ri] he comes back to the question "what could we detach from a person and still count him or her as a thinking creature" (p. 87). And agrees with Turing that origin, building material, and size and shape for example are irrelevant. In so far, Turing was on the right track with his test, he only went too far in detaching the history from a person. The ability to determine non predefined meaning --- to connect symbols with objects and events in the world --- is essential for intelligence and it depends on a rich base of experiences of causal interactions with these events and objects.
 
@@ -417,7 +420,7 @@ We will see in how far this test is an expression of Davidson's theory of lingui
 
 So we have a definition of Davidson's Test, it remains to explain how it is to be interpreted. Davidson takes the Turing Test as aiming "to discover whether a sufficient condition for thought is satisfied; the condition is not claimed to be necessary" [@Davidson:1990tt, p. 81]. So we can certainly interpret Davidson's Test as a sufficient condition for intelligence. But Davidson seems to go even further:
 
-> "[T]he *only* way to tell if an artificial device [...] has [thoughts...] and the ability to perceive and interact with the world as a person does, is to attempt to *interpret the behavior* of the device in the same way we do the behavior of a person. [...U]nderstanding the program and physics of a device [...on the other hand] is *not* [...sufficient for] understanding the thought [...] of that device." [@Davidson:1990ri, p. 99, emphasis added]
+> "The *only* way to tell if an artificial device [...] has [thoughts...] and the ability to perceive and interact with the world as a person does, is to attempt to *interpret the behavior* of the device in the same way we do the behavior of a person. [...] Understanding the program and physics of a device [...on the other hand] is *not* [...sufficient for] understanding the thought [...] of that device." [@Davidson:1990ri, p. 99, emphasis added]
 
 It seems to me, that this is interpreted correctly as the claim that Davidson's Test provides not only a sufficient, but also a necessary condition --- and therefore constitutes an operational definition of intelligence. Interpreting the behavior of a person is nothing else for Davidson than interpreting its utterances (or some other communications with semantic content). This follows from the fact that the interpretation of the semantic content of an expression requires the interpreter to have a theory about the believes and semantics of the person and this theory must be based on the behavioral evidence the interpreter has. We will investigate this theory of interpretation from Davidson in more detail in \autoref{interpretation}.
 
@@ -522,9 +525,9 @@ Davidson's idea of the supervenience[^supervenience] and irreducibility of the m
 
 Similarly to the previous section we are going to examine Davidson's epistemology from a discussion that starts with another question that arises from the Turing test. This time, it is not the question *how* we can judge the computer, but *what* it is that would make a computer think. Davidson takes this rout in 'What Thought Requires' [-@Davidson:2001wt]:
 
-> "So we need to ask what would turn calculation, in the sense in which [...] a computer can calculate, into thought? […] Some non-human animals can learn a great deal, but they do not learn that something is true. […Only] a creature with propositional attitudes is equipped to fit a new concept into a complex scheme in which concepts have logical and other relations to one another. […S]ome degree of holism goes with having concepts.
+> "So we need to ask what would turn calculation, in the sense in which [...] a computer can calculate, into thought? [...] Some non-human animals can learn a great deal, but they do not learn that something is true. [...Only] a creature with propositional attitudes is equipped to fit a new concept into a complex scheme in which concepts have logical and other relations to one another. [...]Some degree of holism goes with having concepts.
 >
-> [T]he fundamental distinction [lies] between a mindless disposition to respond differentially to the members of a class of stimuli, and a disposition to respond to those items *as* members of that class. [...] A creature that cannot entertain the thought that it may be wrong has no concepts, no thoughts. To this extent, the possibility of thought depends on the idea of objective truth, of there being a way things are which is not up to us. [...] What is needed is something that can provide a standard against which an individual can check his or her reactions, and only other individuals can do this. Adding a second person helps [...to pick out the relevant cause and to explain error]. It narrows down the relevant cause to the nearest cause common to two agents who are triangulating the cause by jointly observing an object and each other's reactions. The two observers don't share neural firings or incoming photons; the nearest thing they share is the object prompting both to react in ways the other can note. [...] Triangulation also creates the space needed for error, not by deciding what is true in any particular case, but by making objectivity dependent on intersubjectivity." [@Davidson:2001wt, p. 138--137 & 141--143]
+> The fundamental distinction [lies] between a mindless disposition to respond differentially to the members of a class of stimuli, and a disposition to respond to those items *as* members of that class. [...] A creature that cannot entertain the thought that it may be wrong has no concepts, no thoughts. To this extent, the possibility of thought depends on the idea of objective truth, of there being a way things are which is not up to us. [...] What is needed is something that can provide a standard against which an individual can check his or her reactions, and only other individuals can do this. Adding a second person helps [...to pick out the relevant cause and to explain error]. It narrows down the relevant cause to the nearest cause common to two agents who are triangulating the cause by jointly observing an object and each other's reactions. The two observers don't share neural firings or incoming photons; the nearest thing they share is the object prompting both to react in ways the other can note. [...] Triangulation also creates the space needed for error, not by deciding what is true in any particular case, but by making objectivity dependent on intersubjectivity." [@Davidson:2001wt, p. 138--137 & 141--143]
 
 Davidson answers the question what distinguishes our ability to think from the ability to simply do very complex tasks like computers with the fact that we have concepts that occur in a holistic way. It is the concept of error that is the key to thought. The concept or error allows us to distinguish between pure conditioned responses (which can’t be wrong, just like the calculations of a computer) and the right application of a concept. This requires semantics for a language which can distinguish between what we think and what is in the world. The core of the concept of semantics is the truth predicate; the idea that our thoughts and sentences can be true *or false*. This is also called the idea of objective truth --- of a truth that lies beyond ones own judgement. This is the quintessential question of natural language philosophy raised by Wittgenstein: "what is the difference between using words correctly and merely thinking that one is using them correctly?" [@Davidson:1994sa, p. 116]
 
@@ -532,9 +535,15 @@ The answer in Wittgenstein's famous argument against the possibility of a privat
 
 > "As Wittgenstein says, by yourself you can't tell the difference between the situations seeming the same and being the same. [...] If you and I can each correlate the other's responses with the occurrence of a shared stimulus, however, [...] it provides each of us with a ground for distinguishing the cases in which it fails. Failed natural inductions can now be taken as revealing a difference between getting it right and getting it wrong [...]. A grasp [...] of the distinction between thinking something is so and its being so, depends on the norm that can be provided only by interpersonal communication" [@Davidson:1994sa, p. 125]
 
-Not even a physicalist account of thought can achieve that since it can't solve the problem of the inscrutability of reference [@Quine:1960wo, ch. 2] --- the unclarity what the relevant causal origin of a concept is (the object, the light, the stimulated neurons, ...). Davidson solves the problem by locating "the relevant cause of a speaker's thought [...] at the intersection of the two lines that can be drawn [...from] the speaker [...and] the interpreter [...to] the object or event in the world they are responding to and communicating about" [@Bernecker:2013te, p. 445]. Davidson fittingly calls this process of finding the intersection in the world between two points of view triangulation. Since triangulation identifies the relevant cause of a though in the distal stimulus in the world rather than in a proximal stimulus in our head [see @Davidson:1990mt], it is a type of content externalism.
+Moreover[^two-arguments], Davidson argues that not even a physicalist account of thought can achieve that since it can't solve the problem of the inscrutability of reference [@Quine:1960wo, ch. 2] --- the unclarity what the relevant causal origin of a concept is (the object, the light, the stimulated neurons, ...). Davidson solves the problem by locating "the relevant cause of a speaker's thought [...] at the intersection of the two lines that can be drawn [...from] the speaker [...and] the interpreter [...to] the object or event in the world they are responding to and communicating about" [@Bernecker:2013te, p. 445]. Davidson fittingly calls this process of finding the intersection in the world between two points of view triangulation.
+
+Since triangulation identifies the relevant cause of a though in the distal stimulus in the world rather than in a proximal stimulus in our head [see @Davidson:1990mt], it is a type of externalism. Different from Putnam's [-@Putnam:1975mm] physical externalism and Burge's [-@Burge:1979im] social externalism which try to identify the semantics of certain types of mental content and which Davidson rejects [-Davidson:1987ko, -@Davidson:1994sa], his externalism is not concerned with the contents of any specific thoughts, but claims that interaction in a shared world is a necessary condition for having thoughts at all. This externalism has therefore been labeled "transcendental externalism" [@Bridges:2006dt, p. 291].
+
+
 
 [^autism]: Some have argued that autistic speakers show that having the idea of objective truth and interpreting others is not essential for the ability to think and speak. There is empirical evidence that "autistic speakers allegedly fail false belief tests, which are designed to test their ability to attribute false beliefs to others [...and] actual cases of autistic speakers not capable of attributing beliefs to others have reportedly been found." Since those autists are clearly capable of language and thought, it is argued that the social aspect of language is unnecessary. It remains very unclear how convincing the evidence from such tests is and what alternative picture of language without a social environment and the idea of objective truth could possibly look like.  [For a brief introduction to the discussion and overview of the literature, see @Verheggen:2013t, p. 466 & 469.]
+
+[^two-arguments]: It has been suggested that two main arguments for triangulation can be extracted from Davidson's writing. The first one, "the argument from error", is the one trying to solve the origin of the idea of objective truth which I have just sketched; the second one, the "argument from object-directedness", tries to solve the problem of the inscrutability of reference which I am about to outline now [@Bridges:2006dt, p. 292]. My aim here is not to reconstruct these arguments, but to plausibilize Davidson's triangulation idea. For an introduction to some of the main problems of Davidson's arguments see @Bernecker:2013te and @Bridges:2006dt and for some defenses see @Verheggen:2013t.
 
 
 
@@ -558,16 +567,17 @@ This triangulation process is Davidson's epistemology. It can be captured as a r
 
 Question 1 and 2 stem from the cartesian idea that knowledge of my own mind has conceptual priority over the others which leads to skepticism. Question 3 is raised by the positivists that answer it by reducing all knowledge to knowledge of world. But both accounts fail, since the three types are irreducible and none has conceptual priority. In Davidson's answer of triangulation all three questions are answered simultaneously. The content of propositional knowledge is directly caused by the objects and events the world is made up of. We come by this content through triangulating between our stimulus and that of another person caused by the same object or event in our shared world. We have access to other peoples stimuli only through interpretation of their (often verbal) reactions to those stimuli. Therefore all three types of knowledge are interdependent and none has priority above the others. My propositional knowledge (3) is dependent on interpretation of reactions to stimuli from a shared world. Knowledge about someone else's propositions (2) must be gauged by my own propositional knowledge. And knowledge about the world (1) is only possible through interpersonal communication.[^circularity] The three form a triangle of interdependence. This leads Davidson to a denial of cartesian skepticism and positivist behavioral reductionism.
 
-> "Until a base line has been established by communication with someone else, there is no point in saying one's own thoughts or words have a propositional content. [...T]he triangulation which is essential to thought requires that those in communication recognize that they occupy positions in a shared world. So knowledge of other minds and knowledge of the world are mutually dependent[. ...]
+> "Until a base line has been established by communication with someone else, there is no point in saying one's own thoughts or words have a propositional content. [...] The triangulation which is essential to thought requires that those in communication recognize that they occupy positions in a shared world. So knowledge of other minds and knowledge of the world are mutually dependent[. ...]
 >
-> [A]ttributing thoughts to others is a matter of matching the verbal and other behavior of others to our own propositions  
-[...]. Knowledge of our own minds and knowledge of the minds of others are thus mutually dependent. [...]
+> Attributing thoughts to others is a matter of matching the verbal and other behavior of others to our own propositions [...]. Knowledge of our own minds and knowledge of the minds of others are thus mutually dependent. [...]
 >
-> The nature of interpretation guarantees both that a large number of our simplest perceptual beliefs are true, and that the nature of these beliefs is known to others. [...A]ny particular belief [...] about the world around us may be false. What cannot be the case is that our general picture of the world and our place in it is mistaken, for it is this picture which informs the rest of our beliefs and makes them intelligible [...]." [@Davidson:1991tv, p. 213]
+> The nature of interpretation guarantees both that a large number of our simplest perceptual beliefs are true, and that the nature of these beliefs is known to others. [...] Any particular belief [...] about the world around us may be false. What cannot be the case is that our general picture of the world and our place in it is mistaken, for it is this picture which informs the rest of our beliefs and makes them intelligible [...]." [@Davidson:1991tv, p. 213]
 
-Let us turn to the last conclusion Davidson draws here. Interpretation is under-determined: to know wether a speaker holds a sentence true or not, we need to know what he means by it, which requires us to triangulate which in turn only works if we can determine wether he holds the sentence true. To break this circle we have to appeal to a norm of communication. Davidson claims that only an interpersonal standard of consistency and correspondence (the principles of charity) can achieve this. "The Principle of Coherence prompts the interpreter to discover a degree of logical consistency in the thought of the speaker; the Principle of Correspondence prompts the interpreter to take the speaker to be responding to the same features of the world that the interpreter would be responding to under similar circumstances" [-@Davidson:1991tv, p. 211]. The former ensures that a holistic interpretation is possible and the later allows us to create the bridge of triangulation between beliefs and references. Those principles are essential for interpretation and therefore also for knowledge. They make it "constitutive of what it is to be a speaker that one is mostly right about the external world, one's own thoughts, and what one's words mean. The importance of this conclusion can hardly be overemphasized. If it is right, then we have a transcendental guarantee of knowledge of our own minds, the minds of others [...], and the external world. We secure this without having to explain how it is that we justify our beliefs on the basis of evidence, for knowledge in each of these domains emerges as a fundamental condition on having the capacity to speak and think at all." [@Lepore:2009d, p. 20]
+Let us turn to the last conclusion Davidson draws here. Interpretation is under-determined: to know wether a speaker holds a sentence true or not, we need to know what he means by it, which requires us to triangulate which in turn only works if we can determine wether he holds the sentence true. To break this circle we have to appeal to a norm of communication. Davidson claims that only an interpersonal standard of consistency and correspondence (sometimes also called Principles of Charity) can achieve this. "The Principle of Coherence prompts the interpreter to discover a degree of logical consistency in the thought of the speaker; the Principle of Correspondence prompts the interpreter to take the speaker to be responding to the same features of the world that the interpreter would be responding to under similar circumstances" [-@Davidson:1991tv, p. 211]. The former ensures that a holistic interpretation is possible and the later allows us to create the bridge of triangulation between beliefs and references. Those principles are essential for interpretation and therefore also for knowledge. They make it "constitutive of what it is to be a speaker that one is mostly right about the external world, one's own thoughts, and what one's words mean. The importance of this conclusion can hardly be overemphasized. If it is right, then we have a transcendental guarantee of knowledge of our own minds, the minds of others [...], and the external world. We secure this without having to explain how it is that we justify our beliefs on the basis of evidence, for knowledge in each of these domains emerges as a fundamental condition on having the capacity to speak and think at all." [@Lepore:2009d, p. 20]
 
-[^circularity]: Some have argued that Davidson's account of thought in triangulation is circular since language presupposes thought [for example @Bernecker:2013te and @Bridges:2006dt]. Davidson himself is "under no illusion that [he] can provide anything like an analysis; [...] for a non-circular answer would tell us how to account for intensionality in non-extensional terms" [@Davidson:1997sl, p. 139] which he sees as impossible as we have seen in \autoref{supervenience}. Nevertheless the account is instructive. "It is obviously not just the narrow vicious circle that says that there is language and thought only when there is language and thought. It is rather the rich and complex circle that encompasses language, thought (each of which depending on there being fixed meanings), possession of the concept of objective truth, and linguistic triangulation. I should say it is an instructive circle, each part of which is such that, if it is absent, the whole circle breaks down. [...Therefore] it seems to me that the story is compelling and that within the intensional realm, progress has been made" [@Verheggen:2013t, p. 468]. So the critique is somewhat beside the point. The relevance of any theory does not follow from its ability to reduce terms but from its ability to account for empirical data (otherwise String Theory would be accepted). Davidson's account is relevant because it fits well with many of our experiences how we gain knowledge and is therefore an attractive alternative to cartesian idealism or positivist reductionism.
+Understanding the importance and function of triangulation makes it clear why communication outside of a shared world does not allow us to say much about the nature of understanding of a speaker. Only through observing the interdependent three fold  relationship between interpreter, speaker, *and the world* we can tell anything about the semantics of a speaker. Davidson's emphasis in his test on the importance of observing the computer interact in a shared world in order to judge its intelligence, is rooted in this conviction about epistemology.
+
+[^circularity]: Some have argued that Davidson's account of thought in triangulation is circular since language presupposes thought [for example see @Bernecker:2013te, @Bridges:2006dt]. Davidson himself is "under no illusion that [he] can provide anything like an analysis; [...] for a non-circular answer would tell us how to account for intensionality in non-extensional terms" [@Davidson:1997sl, p. 139] which he sees as impossible as we have seen in \autoref{supervenience}. Nevertheless the account is instructive. "It is obviously not just the narrow vicious circle that says that there is language and thought only when there is language and thought. It is rather the rich and complex circle that encompasses language, thought (each of which depending on there being fixed meanings), possession of the concept of objective truth, and linguistic triangulation. I should say it is an instructive circle, each part of which is such that, if it is absent, the whole circle breaks down. [...Therefore] it seems to me that the story is compelling and that within the intensional realm, progress has been made" [@Verheggen:2013t, p. 468]. So the critique is somewhat beside the point. The relevance of any theory does not follow from its ability to reduce terms but from its ability to account for empirical data (otherwise String Theory would be accepted). Davidson's account is relevant because it fits well with many of our experiences how we gain knowledge and is therefore an attractive alternative to cartesian idealism or positivist reductionism.
 
 
 
@@ -588,52 +598,201 @@ Let us turn to the last conclusion Davidson draws here. Interpretation is under-
 ## From Prior to Passing Theories of Interpretation {#interpretation}
 
 
-- Sources of Davidson's theory
-  - Davidson's Program
-  - Radical Interpretation from Quine adopted
-  - Triangulation
-  - Prior and Passing Theories
-  - The social Aspect of language
-  - Unified theory of Thought, Action, and Meaning
+<!--
+- Davidson's interest in linguistic competence vs. practice
+- The basic concept: from Prior and Passing Theories
+- Relation to Radical Interpretation (from Quine's Radical Translation adopted)
+-->
 
 
 
-So what is it that I am referring to when I speak about Davidson's theory of interpretation? While this seems like a straight forward question it is a little more complicated because of the distributed nature of Davidson's work.
+Now we finally come to the heart piece of Davidson's philosophy: his theory of interpretation. I will first give a rough sketch of the main idea of the theory and then discuss its anti-conventionalism and the formalizations Davidson proposes and how those seemingly contradictory accounts might be reconciled.
 
-Davidson's theory can be traced back to his rejection of meaning and idea that interpretation can be described as a process of 'translating' utterances into truth conditions based on assumptions about the believes of the speaker using the principle of Charity, which he develops in 'Truth and Meaning'[^davidsons-program] [@Davidson:1967tm] and 'Radical Interpretation' [@Davidson:1973ri].
+Davidson's interest lies not in "the (empirical) question how we actually go about understanding a speaker [...but in] the (philosophical) question what is necessary and sufficient for such understanding" [@Davidson:1994sa, p. 111]. He does not aim to give a full account of how we interpret others in everyday practice nor "to provide useful hints to real linguists, or to criticize their methods [...or] yield an insight into [...] first-language acquisition" [@Davidson:1995ct, p. 131]. He is concerned with the essence of our linguistic abilities that allows us to interpret propositional content and gets to the core of what our mind can do. I adopt the term *linguistic competence*[^linguistic-competence] as opposed to linguistic *practice* to refer to this. A theory of linguistic competence is a model that can give an account how interpretation of propositional contents of others can be described under some idealized conditions. In his early writing Davidson refers to this using the term 'Radical Interpretation', which originates from Quine's [-@Quine:1960wo] account of radical translation --- a *hypothetical* situation in which an interpreter figures out how to understand the previously completely unknown 'language' of an unknown speaker (similar *but idealized* to the task of a linguists learning a native's language). This account of interpretation without any previous knowledge of how to proceed is what gets to the core of linguistic competence according to Davidson (it is important to note that this is not about *acquisition* but about *description* of linguistic competence).
+
+The core of Davidson's theory of interpretation is that the process of interpreting utterances can be described by a theory that yields an interpretation expressed in the interpreter's language for each utterance. To understand someone we need to 'translate' his utterances into our own vocabulary. It becomes clear that some 'translation' is necessary even if we speak the same 'language' when we recognize that no two people assign exactly the same interpretations to all their words, so no two people will simply share the understanding of all their utterance, because they share a 'language'. What happens in the process of understanding each other is described by Davidson as the convergence of two speakers prior theories of interpretation into a passing theory of interpretation. The prior theory of interpretation of the interpreter is what we comes equipped with to interpret this particular speaker and for the speaker it is what informs his way of talking to this specific interpreter. The passing theory is what they converge on in their understanding that allows them to interpret the utterance in the same way.
+
+> "I have distinguished [...] the prior theory from [...] the passing theory. For the hearer, the prior theory expresses how he is prepared in advance to interpret an utterance of the speaker, while the passing theory is how he *does* interpret the utterance. For the speaker, the prior theory is what he believes the interpreter's prior theory to be, while his passing theory is the theory he *intends* the interpreter to use." [@Davidson:1986nd, p. 101]
+
+Sometimes our prior theories of interpretation for a sentence might already converge, but very often we need to do some mental work to arrive at a common passing theory (you might take basically any sentence from this paper as an example). Therefore *radical* interpretation of sorts is quite common in everyday life. What does it mean to have the same passing theory for an utterance? Well, it means that we assign the same meaning to an utterance. For Davidson this is true if the same truth conditions would be assigned to the utterance by speaker and interpreter [see -@Davidson:1965tm, more on this later]. Davidson's main question is not how we get a prior theory of interpretation in the first place (he assumes that we have some linguistic ability already), but how we converge on a passing theory of interpretation. "Linguistic ability is the ability to converge on a passing theory" [-@Davidson:1986nd, p. 107] of interpretation. Therefore, to account for linguistic competence we must have a meta-theory that describes how to transition a prior into a passing theory. This is where Davidson's holism comes in. We need to appeal to propositional attitudes like believe, preference, and intention to interpret the speaker. Davidson's description of such a meta-theory has two parts: In the first step we determine the syntax and logical form based on simple preferences and patterns. In the second step we determine the meanings of simple expressions through triangulation in a shared environment and then from there find the meanings of complex terms. It is important not to misunderstand Davidson as claiming that speakers or interpreters use theories to literally translate each other: "the point is not that speaker or hearer *has* a theory, but that they speak and understand *in accord with* a theory --- a theory that is needed *only* when we want to *describe* their abilities" [-@Davidson:1994sa, p. 113, emphasis added].
+
+Because of the distributed nature of Davidson's work, the reconstruction of his theory of interpretation is a bit cumbersome and controversial. Two of the most prominent traits of his theory that appear in his early and late essays are the rejection of meanings as entities sui generis or of expressions in a language of thought and an accompanying anti-conventionalism that holds that no rules known to speaker and hearer in advance can be enough to converge on a passing theory. As we have seen in the previous section about triangulation --- Davidson holds truth and communication as the elementary concepts which make meaning and conventions circumstantial. Nevertheless he thinks that Interpretation can be treated with formalisms and is as serious of a science as any. In the following I will discuss how these views fit together.
+
+
+
+[^linguistic-competence]: The term linguistic competence was introduced by Chomsky who makes a "fundamental distinction between competence (the speaker-hearer's knowledge of his language) and performance (the actual use of language in concrete situation)" [@Chomsky:2014at, p. 4]. While Davidson  criticizes the idea of linguistic competence as knowledge of a language, he adopts the term for the description of the interpreters essential competence that enables communication in 'A Nice Derangement of Epitaphs' [-@Davidson:1986nd].
+
+### The Social Aspect of Language beyond Conventions
+<!--
+- No a priori knowledge about language(-learning), only empirical knowledge [See @Davidson:1965tm]
+- Relation to Austin's perlocution and illocution
+- Arguments against conventionalism from impossibility of public sign for sincerity
+- Arguments for primacy of ideoloect over language, Malapropism examples
+- Wittgenstein's norm of actually getting it right in language
+- Truth only determined trough communication not other way round
+- Relation to Triangulation
+- Relation to Plato and Gadamer [@Davidson:1997gp, @Bertram:2012ta]
+- Relation to Derrida
+-->
+
+In his essays 'Communication and Convention' [-@Davidson:1984cc] Davidson examines the relation between meaning and use of language for communication. Since Austin [-@Austin:1956pu] pointed out that speech acts have not only a descriptive character but also a performative character that changes the state of the world, a main topic of the Philosophy of Language has been to describe how those two aspects are related. A common way to explain that relation is to appeal to conventions. Following @Austin:1962hw, Davidson distinguishes between three aspects of an utterance: locution (literal meaning), illocution (intended meaning), and perlocution (ulterior purpose) [-@Davidson:1984cc, p. 272]. He argues against the proposal that the relation between literal meaning and propositional attitudes (like purpose and intention) can be established by appeal to conventions. "Grammatical mood and illocutionary [and perlocutionary] force, no matter how closely related, cannot be related simply by convention. [...] Convention can [not] link what our words mean --- their literal semantic properties, including truth --- and our purposes [and intention] in using them" [-@Davidson:1984cc, p. 271].[^liar-argument]
+
+We should not be surprised by Davidson's anti-conventionalism since we have already seen that he rejects the idea that knowledge of other minds is reducible. But trying to explain illocution and perlocution which depend on propositional attitude with conventions in terms of the grammatical mood and meaning is trying to do just that. This becomes pretty clear if we think about using conventions to help a computer communicate without having any other means for interaction than linguistic ones --- which is what Davidson denies. He goes even further in denying "that the meaning of a word is conventional, that is, that it is a convention that we assign the meaning we do to individual words and sentences when they are uttered or written" [-@Davidson:1984cc, p. 276]. A regularity in assignment of meaning can only hold if speaker and hearer have the same assignment of meaning to the utterance prior to the speech act. However the prior and passing theory of interpretation is often not the same. Therefore no convention for the assignment of meaning exists, but the assignment develops in the act of communication.
+
+> "What must be shared for communication to succeed is the passing theory. For the passing theory is the one the interpreter actually uses to interpret an utterance, and it is the theory the speaker intends the interpreter to use. [...] But the passing theory cannot in general correspond to an interpreter's linguistic competence. [...] Every deviation from ordinary usage, as long as it is agreed on for the moment [...], is in the passing theory as a feature of what the words mean on that occasion. Such meanings [...] are what I have called first meanings. [...] Of course things previously learned were essential to arriving at the passing theory, but what was learned could not have been the passing theory." [@Davidson:1986nd, p. 102--103]
+>
+> "As the speaker speaks his piece the interpreter alters his theory, entering hypotheses about new names, altering the interpretation of familiar predicates, and revising past interpretations of particular utterances in the light of new evidence. [...We can not have all this knowledge previous to the utterance, because] a speaker may provide us with information relevant to interpreting an utterance in the course of making the utterance." [@Davidson:1986nd, p. 101]
+
+Any prior shared practice, convention, or meaning is not essential for understanding, because there is "no reason [...] why speakers who understand each other ever need to speak [...] as anyone else speaks" [-@Davidson:1994sa, p. 115].[^malapropisms] The only notion of a shared practice that Davidson accepts is the assumption "that two speakers couldn't understand each other if each couldn't (pretty well) say in his way what the other says in his" [-@Davidson:1994sa, p. 115--116]. In his essay 'The Social Aspect of Language' [-@Davidson:1994sa], Davidson clarifies what he takes to be the underlying reason for this rejection. Any linguistic "conformity is contingent on the desire to be understood. [...] The threat of failure to communicate is the reason for conforming" [-@Davidson:1994sa, p. 118] to any linguistic rules, not the other way round. "If we want to be understood, all we need to worry about is how our actual audience will take our words. [...] I would not speak the words I do if I thought they would not be understood" [-@Davidson:1994sa, p. 118 & 123]. Without basic linguistic abilities no shared practice can be established nothing is more basic than successful communication, meaning emerges from it, not the other way round.
+
+> "The intention to be taken to mean what one wants to be taken to mean is [...] clearly the only aim that is common to all verbal behavior [...]. Success in communicating propositional contents [...] is what we need to understand before we ask about the nature of meaning or of language [...]. Meaning [...] gets its life from those situations in which someone intends that his words will be understood in a certain way, and they are. [...] Where understanding matches intent we can, if we please, speak of ‘the’ meaning; but it is understanding that gives life to meaning, not the other way around." [@Davidson:1994sa, p. 121--122]
+
+Knowing a language, i.e. the shared and previously mastered "ability to operate in accord with a precise and specifiable set of syntactic and semantic rules [..., is] neither necessary nor sufficient for successful linguistic communication" [-@Davidson:1994sa, p. 110].[^language] Wittgenstein's problem how to distinguish between using words correctly and merely thinking one is using them correctly can only be solved by appeal to a social environment, Davidson agrees. But he disagrees that the norm for getting it right is given by conventions or shared practices. As we have seen in \autoref{traingulation} it is solved by Triangulation which does not require any shared practice but does depend on interactions in a shared world and in tern does not depend on the ability to interpret but gives rise to it.[^relations]
+
+Even though Davidson rejects that convention has any essential role in explaining interpretation, it is "a practical crutch to interpretation, a crutch we cannot in practice afford to do without --- but a crutch which [...] we can in the end throw away, and could in theory have done without from the start" [-@Davidson:1984cc, p. 279]. Especially for determining syntax and grammatical mood convention are often used, since grammar is way more socially stable than semantics. "If we can apply our general method of interpretation to a speaker [...it is] because we can treat his structure-forming devices as we treat ours [..., fixing] the logical form of his sentences, and [determining] the parts of speech." [-@Davidson:1984cc, p. 279]
+
+
+
+[^liar-argument]: The core of the arguments Davidson establishes against a conventional connection between illocutions or perlocutions and meanings takes assertion as an example and shows that there can not be a convention (public sign) that signals that an utterance is sincere (claims the truth): "In making an assertion, the asserter [...] must intend that [his] intention [to make an assertion] be recognized by his audience. [...] So it is natural to think it would be useful if there were a convention, as a convenience in making our assertive intentions clear. But Frege was surely right when he said, 'There is no word or sign in language whose function is simply to assert something.' [...] Imagine this: [an] actor is acting a scene in which there is supposed to be a fire. [...] And now a real fire breaks out, and the actor tries vainly to warn the real audience. [...] Convention cannot connect what may always be secret ---- the intention to say what is true --- with what must be public --- making an assertion" [-@Davidson:1984cc, p. 269--270]. But without a convention that connects truth values with intentions or purposes of an utterances there is no hope in explaining meaning (a function from utterances to truth values) by those properties of utterances and conventions or the other way round. This is not to be confused with "the (correct) thesis that every utterance of an imperative [or declaration of believe] labels itself (truly or falsely) an order [or assertion]" [-@Davidson:1984cc, p. 275].
+
+[^malapropisms]: Davidson's prime example for instances where the ability to interpret only arises in the moment of the utterance are Malapropisms. "Malapropisms introduce expressions not covered by prior learning, [...they] fall into a different category, one that may include such things as our ability to perceive a well-formed sentence when the actual utterance was incomplete or grammatically garbled, our ability to interpret words we have never heard before, to correct slips of the tongue, or to cope with new idiolects." [@Davidson:1986nd, p. 94--95]
+
+[^language]: Davidson has become famous for claiming "that *there is no such thing as a language* [...]. We must give up the idea of a clearly defined shared structure which language-users acquire and then apply to cases." [-@Davidson:1986nd, p. 107, emphasis added]. Our discussion should illuminate what he means by that. Of course he does not argue that the word 'language' is meaningless. He says "speakers share a language if and only if they tend to use the same words to mean the same thing[. Which leaves...] defining a language as the philosophically rather unimportant task of grouping idiolects." [-@Davidson:1994sa, p. 111]
+
+[^relations]: Relation to Plato and Gadamer [@Davidson:1997gp, @Bertram:2012ta]. Relation to Derrida. ???
 
 
 
 
-[^davidsons-program]: His idea that truth conditions (T-Sentences) are all that is needed to explain interpretation, and any more fundamental notion of meaning is misconceived, has also led to what is known as Davidson's Program: The attempt to give an account of the interpretation of utterances purely with the means of first order logic.
+
+### A recursive and empirical Theory of Interpretation
+<--
+- Davidson's Program
+- Davidson is interested in a formal specification of his theory which he especially develops in 'Truth and Meaning' and 'Unified Theory of Thought, Meaning, and Action'.
+- No a priori knowledge about language(-learning), only empirical knowledge, finite set of linguistic primitives gives rise to infinite linguistic expressions [See @Davidson:1965tm]
+- Representation of Meaning/Linguistic Content: Meaning as Language (not things in world, not entities sui generis)
+- 3 step theory of determining logical structure (unified theory and Tarski), simple semantics (Triangulation), and complex semantics
+- Davidson's proof how prefering truth is enough
+- Principle of Coherence = only perfect logicians in unified theory
+- Principle of Correspondece = Triangulation possible
+-->
+
+[^proof]
+
 
 Descision theory: Sprang from his early times at Stanford when collaborating with Patrick Suppes and JJC McKinsey. [@Lepore:2009d, p. 2]
 
 See also [@Rescorla:2013rc] for discussion of unified theory
 
+
+[^behaviorism]
+
+
+Linguistic behavior has the essential aim of communicating ones thoughts. Therefore it does not make sense to look for a fixed meaning of expressions (or even meanings as entities). On the one hand expressions mean what the speaker intends to communicate with them, but on the other we don’t have any access to that type of meaning. All we have is our interpretation of what the speaker intends to communicate. We use evidence from the shared world to identify wether we got it right. Even though the interpreter has no theory of interpretation and doesn’t need to be able to translate the speakers thought’s into his own language to understand him; if we are trying to develop a theory about the essential aspect of linguistic behavior (not about how people usually communicate), we need a formal device to capture the interpreted meaning. Since language is essentially about world, truth conditions are the obvious device to formally capture the interpretation of an utterance. Davidson introduces truth conditions, because they are formalized and can be part of a theory, not because our understanding actually relies on identifying the truth conditions or because they represent meaning in any essential way.
+
+In that way the Truth conditions are not the meaning of a sentence but the description of the meaning of the sentence. The meaning is the communicative purpose and according to Davidson depends on the world, which is exactly why Truth conditions are helpful for the formalization.
+
+
+
+
+
+
+
+Davidson's theory can be traced back to his rejection of meaning and idea that interpretation can be described as a process of 'translating' utterances into truth conditions based on assumptions about the believes of the speaker using the principle of Charity, which he develops in 'Truth and Meaning'[^davidsons-program] [@Davidson:1967tm] and 'Radical Interpretation' [@Davidson:1973ri].
+
+
 'Theories of Meaning and Learnable Languages' [@Davidson:1965tm]
 
 in first order logic[^action]
 
+[^davidsons-program]: His idea that truth conditions (T-Sentences) are all that is needed to explain interpretation, and any more fundamental notion of meaning is misconceived, has also led to what is known as Davidson's Program: The attempt to give an account of the interpretation of utterances purely with the means of first order logic.
+
 [^action]: Davidson's contribution to the analysis of action sentences with first order logic has gained widespread use by computational linguists. "Action sentences present a problem for semantics because of their capacity to take an endless variety of adverbial phrase, which themselves can be endlessly complex. [...] The event analysis that Davidson introduced treats action verbs as introducing an implicit existential quantifier over events, and the adverbs as contributing predicates of it." [@Lepore:2009d, p. 16] The sentence "Brutus stabbed Caesar violently with a knife" for example can analyzed as: ${\scriptstyle \exists}$ *e* : *e* = 'event of stabbing by Brutus of Caesar' : UsingKnife(*e*) ${\scriptstyle \land}$ Violent(*e*).
 
+[^behaviorism]: Davidson has sometimes been accused of behaviorism [@Chomsky:1992li] for his account of radical interpretation. This is clearly mistaken, as Davidson sees behavior purely as evidence and holds that intentional terms are irreducible to behavioristic vocabulary. He says "Chomsky has accused me [...] of supposing that all we know about language must be based on behavioristic evidence. I would certainly deny the accusation [...]. But I do share with Quine the conviction that our understanding of what speakers mean by what they say is partly based, directly or indirectly, on what we can learn or pick up from perceiving what they do. No matter how much grammar we come equipped with from the cradle, we must learn what the words of any particular language mean [...]; we must pick up our first language from those who already speak it. (The behaviorism I speak of is not, incidentally, reductive in nature: I do not expect any basic intentional predicates to be defined in non-intentional terms. The point simply concerns evidence.)" [@Davidson:1995ct, p. 132]
+
+[^proof]: Davidson uses Bayesian decision theory in the form developed by Richard Jeffrey which allows "to extract subjective probabilities and values from preferences that propositions [or in Davidson's modification sentences] be true" [@Davidson:1980tu, p. 160]. This allows to construct a formal theory that assigns values of probability that an agent believes in a sentences and values of desirability of the truth of a sentence for an agent. The clue is that these values do not have to be measured directly; "once the truth-functional connectives have been identified, Jeffrey has shown how to fix [...] the subjective desirabilities and probabilities of all sentences" [-@Davidson:1980tu, p. 161]. Davidson formally shows how we can determine which logical connective has the meaning of the Sheffer stroke ('not both') based purely on the knowledge wether a speaker prefers the truth of one sentence over that of another [-@Davidson:1980tu, p. 161--163]. Since all logical operators can be reduced to the Sheffer stroke this means we have already determined all logical operators. From there "the relative desirabilities of all sentences" are determined [p. 164] and from the patterns of those sentences the logical quantifiers can be identified. Uncovering "logical form in general, that is, to learn how sentences are made up of predicates, singular terms, quantifiers, variables, and the like" [-@Davidson:1980tu, p. 165] only based on observations wether an agent prefers the truth of one sentence over that of another.
+
+    However, as "ingenious and sophisticated [as this proof is, …the] three-place relation between the speaker and any two sentences [preferring the truth of one over the other...] is not an attitude we are familiar with [...] without knowing what the speaker thinks or means" [@Glock:2003qd, p. 192--193]. What is gained until this problem is solved? More than @Glock:2003qd suggests, I would say. If we are inclined to believe that the relation could be observed, for example in the kind of betting scenarios Davidson describes [-@Davidson:1980tu, p. 161--162], we have a guarantee of identifying the logical structure in the unknown language of a coherent speaker and have a foundation of a theory of interpretation in the three basic concepts of believe, desire, and meaning (in a Tarskian style). Unfortunately it seems that little work has been done to find ways of specifying how the preference relationship can be observed or in testing the empirical strength of Davidson's theory, so this discussion remains largely speculative. It is also important to note that --- as we have seen in \autoref{supervenience} --- Davidson does not think that the whole theory can be captured in strict laws, so some degree of looseness is to be expected.
 
 
-### The recursive and empirical nature of interpretation
 
-- No a priori knowledge about language(-learning), only empirical knowledge
-- Finite set of linguistic primitives gives rise to infinite linguistic expressions
-- Representation of Meaning/Linguistic Content: Meaning as Language (E3.14, E2.2) (not things in world, not entities sui generis)
+
+
+
+
+
+
+
+
+
+
+### Linguistic Competence, Practice, and Meta-Theory
+<--
+- Distinction between sufficient and necessary conditions of linguistic competence
+  - relation to term linguistic competence and linguistic performence
+  - relation to *radical* interpretation
+  - analogy to physics not being able to describe actual natural systems but only systems under ideal conditions
+  - Davidson's transition from a formal (logical/mathematical) theory of meaning (that describes how to derive meaning) to an empirical theory of meaning (that judges interpretation as evidence) is essential here.
+  - See (E4.8, E5.8)
+- Relation to Davidson's Philosophy
+  - truth conditions as a formal language
+  - Unified Theory, Radical Interpretation
+  - Sucessfull Communication & Anti-Conventionalism & Holims of knowledge
+- How is the anomalism of the mental connected to our linguistic competences (or maybe just to our effectiveness?), how does the unified theory account for it.
+-->
+
+
+
+
+
+
+
+> "we have erased the boundary between knowing a language and knowing our way around in the world generally. For there are no rules for arriving at passing theories, no rules in any strict sense, as opposed to rough maxims and methodological generalities. A passing theory really is like a theory at least in this, that it is derived by wit, luck, and wisdom from a private vocabulary and grammar, knowledge of the ways people get their point across, and rules of thumb for figuring out what deviations from the dictionary are most likely. There is no more chance of regularising, or teaching, this process than there is of regularising or teaching the process of creating new theories to cope with new data in any field—for that is what this process involves." [@Davidson:1986nd, p. 107]
+
+The theory is not supposed to explain how we interpret in practice, nor how we
+
+
+> "The approach to the problems of meaning, belief, and desire that I have outlined is not, I am sure it is clear, meant to throw any direct light on how in real life we come to understand each other, much less how we master our first concepts and our first language. I have been engaged in a conceptual exercise aimed at revealing the dependencies among our basic propositional attitudes at a level fundamental enough to avoid the assumption that we can come to grasp them --- or intelligibly attribute them to others—one at a time. My way of performing this exercise has been to show how it is in principle possible to arrive at all of them at once." [@Davidson:1980tu, p. 166]
+
+The unified theory can formalize a way to derive syntax, but not to derive semantics.
+
+> "The fact that radical interpretation is so commonplace [...] is hidden from us by many things, foremost among them being that syntax is so much more social than semantics. The reason for this, roughly stated, is that what forms the skeleton of what we call a language is the pattern of inference and structure created by the logical constants [...]. formal methods are at their best applied to syntax [...]. What we cannot expect, however, is that we can formalize the considerations that lead us to adjust our theory to fit the inflow of new information. [...T]here is no saying what someone must know who knows the language; for intuition, luck, and skill must play as essential a role here as in devising a new theory in any field; and taste and sympathy a larger role." [@Davidson:1984cc, p. 279]
+
+The linguistic competence is incorporated in the ability of arising at the passing theory of interpretation. Therefor to account for linguistic competence we must have a meta-theory that describes how to transition a prior into a passing theory. Such a theory can not be formalized according to Davidson.
+
+
+> "In linguistic communication nothing corresponds to a linguistic competence as often described: that is, as summarised by principles (1)–(3). The solution is to give up the principles. Principles (1) and (2) survive when understood in rather unusual ways, but principle (3) cannot stand, and it is unclear what can take its place."
+
+
+How not to misunderstand Davidson:
+
+>"I do not think I have ever conflated the (empirical) question how we actually go about understanding a speaker with the (philosophical) question what is necessary and sufficient for such understanding. I have focused on the latter question [...]. If I ask how someone interpreted an utterance of the sentence 'Snow is white', and am told that she interpreted it as meaning that snow is white (or as being true if and only if snow is white), my question was not, as the answer shows, what other words the hearer might have substituted for the sentence 'Snow is white.' I am asking how the person understood the utterance of those words. Of course I must use words to say how she understood those words, since I must use words to say anything, but my words are not offered as the interpretation; they merely help describe it. [...] I agree with Michael that 'one who...understands a sentence need not be able to say how he understands it. He does not have to be able to say it even to himself' \[@Dummett:1986nd, p. 464, ...]. It would obviously have been absurd of me to have claimed [...] that whenever we understand a speaker we translate his words into our own. Translation is no part of the transaction between speaker and hearer that I call interpretation. Where translation of a sort may be involved is in the description the philosopher gives in his language of what the hearer makes of the speaker's utterances. [...Similarly] the point is not that speaker or hearer has a theory, but that they speak and understand in accord with a theory—a theory that is needed only when we want to describe their abilities and performance." [@Davidson:1994sa, p. 111--113]
+
+
+
+
+## Davidson's Test and the Theory of Intellectual\ and\ Linguistic Competence {#theory}
+
+
+- Interpreting Davidson's Test as a Test for a Unified Theory 'machine'
 
 
 
 ### What is Meaning: Interpretationism and Externalism
-
+<--
 - Davidson rejects that we need meaning, it ought to be replaced with translation
 - His interpretationism seems to not sit well with his externalism, but the test provides a solution
 - Meaning is not primary to communication, but the other way round. (see next section)
 - Davidson rejects Putnams physical externalism with Anomalous monism, thoughts are in the head (see Bernecker)
 - Davidson rejects Burge's social externalism with his anti-conventionalism
+- The Underlying Ontology and Metaphysics
+  - Ontology of only objects and events (E3.14, E5.4)
+  - Directness of knowledge of world
+    - no intermediary entities (5.3, E5.4, E3.10)
+    - no mentales, language only through communication, meaning given causally by objects events (E5.9)
+  - Truth as elementary non-reducible concept (E5.2, E2.I)
+-->
 
 "an externalist view [...] is a straightforward consequence of his interpretationist stance, together with the view that evidence is [given by] distal, not proximal stimuli" [@Hahn:2003sa, p. 35]
 
@@ -652,82 +811,6 @@ Other than Hahn suggests this interpretation is explicitly the one Davidson take
 [^swampman]: The discussion about these issues often takes Davidson's Swampman example [-@Davidson:1987ko] as a starting point. I will not go any deeper into the example since Davidson himself later regretted using it since it caused more confusion than anything else: "As with Swampman, I regret these sorties into science fiction [...] the case can be made without [such sorties], and better" [-@Davidson:1999rg, p. 192].
 
 > "The intention to be taken to mean what one wants to be taken to mean is [...] clearly the only aim that is common to all verbal behavior […]. Success in communicating propositional contents [...] is what we need to understand before we ask about the nature of meaning or of language […]. Meaning [...] gets its life from those situations in which someone intends that his words will be understood in a certain way, and they are. […] Where understanding matches intent we can, if we please, speak of ‘the’ meaning; but it is understanding that gives life to meaning, not the other way around." [@Davidson:1994sa, p. 121--122]
-
-
-
-- The Underlying Ontology and Metaphysics
-  - Ontology of only objects and events (E3.14, E5.4)
-  - Directness of knowledge of world
-    - no intermediary entities (5.3, E5.4, E3.10)
-    - no mentales, language only through communication, meaning given causally by objects events (E5.9)
-  - Truth as elementary non-reducible concept (E5.2, E2.I)
-
-
-
-
-### The Social Aspect of Language beyond Conventions
-
-- arguments against conventionalism:
-  - impossibility of public sign for sincerity
-  - language game analogy (+E5.8)
-- Remarks about how understanding does work
-  - At the end of [-@Davidson:1984cc], Davidson says that understanding can't be formally described
-  - Relation to distinction linguistic between competence and prerformence
-
-
-
-
-
-
-
-The Social Aspect of Language {#social-language}
-
-- The Primacy of Ideolect
-  - relevance of interpretation rather than meaning (+E2.2)
-    - see similarities to Gadamer's Hermeneutics of Wirkungsgeschichte (Bertram 2012)
-  - Relevance of Intention in communication (+E5.10)
-  - Arguments for primacy of ideoloect over language
-    - Malapropisms and the like (E5.7)
-- Why is language necessarily Social
-  - Wittgenstein's norm of actually getting it right in language
-    - also see language game analogy in anti conventionalism (2.18)
-    - and importance of disctinction between true and false beliefs in triangulation (E3.14)
-  - Truth only determined trough communication
-    - see also Plato, socrates (E5.16)
-
-### Distinction between Linguistic Competence and Performance {#linguistic-competence}
-
-- Distinction between sufficient and necessary conditions of linguistic competence
-  - relation to term linguistic competence and linguistic performence
-  - relation to *radical* interpretation
-  - analogy to physics not being able to describe actual natural systems but only systems under ideal conditions
-  - Davidson's transition from a formal (logical/mathematical) theory of meaning (that describes how to derive meaning) to an empirical theory of meaning (that judges interpretation as evidence) is essential here.
-  - See (E4.8, E5.8)
-- Relation to Davidson's Philosophy
-  - truth conditions as a formal language
-  - Unified Theory, Radical Interpretation
-  - Sucessfull Communication & Anti-Conventionalism & Holims of knowledge
-- How is the anomalism of the mental connected to our linguistic competences (or maybe just to our effectiveness?), how does the unified theory account for it.
-
-
-
-
-
-
-
-> "we have erased the boundary between knowing a language and knowing our way around in the world generally. For there are no rules for arriving at passing theories, no rules in any strict sense, as opposed to rough maxims and methodological generalities. A passing theory really is like a theory at least in this, that it is derived by wit, luck, and wisdom from a private vocabulary and grammar, knowledge of the ways people get their point across, and rules of thumb for figuring out what deviations from the dictionary are most likely. There is no more chance of regularising, or teaching, this process than there is of regularising or teaching the process of creating new theories to cope with new data in any field—for that is what this process involves." [@Davidson:1986nd, p. 107]
-
-I use the term *linguistic competence*[^linguistic-competence] here to refer to Davidson's idea of the essential aspect of understanding language vs. the practical understanding of language.
-
-
-[^linguistic-competence]: The term linguistic competence was introduced by Chomsky who makes a "fundamental distinction between competence (the speaker-hearer's knowledge of his language) and performance (the actual use of language in concrete situation)" [@Chomsky:2014at, p. 4]. While Davidson  criticizes the idea of linguistic competence as knowledge of a language, he adopts the term for the description of his theory that describes the interpreters essential competence in 'A Nice Derangement of Epitaphs' [-@Davidson:1986nd].
-
-
-
-## Davidson's Test and the Theory of Intellectual\ and\ Linguistic Competence {#theory}
-
-
-- Interpreting Davidson's Test as a Test for a Unified Theory 'machine'
 
 
 
@@ -785,6 +868,8 @@ Davidson to Gadamer, [@Davidson:1997gp]
 
 
 
+Davidson's theory investigates "what it is about propositional thoughts [...] that makes them intelligible to others. This is a question about the nature of thought and meaning which cannot be answered by discovering neural mechanisms, studying the evolution of the brain, or finding evidence that explains the incredible ease and rapidity with which we come to have a first language." [@Davidson:1995ct, p. 133]
+
 ## Davidson's Theory and Machine Learning {-}
 
 
@@ -816,7 +901,8 @@ While it currently seems more probable that Turing’s Test and also Davidson’
 
 
 
-
+# Notes {-}
+\theendnotes
 
 # Acknowledgements {-}
 
