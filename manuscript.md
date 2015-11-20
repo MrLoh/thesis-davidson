@@ -901,8 +901,7 @@ While it currently seems more probable that Turing’s Test and also Davidson’
 
 
 
-# Notes {-}
-\theendnotes
+\printendnotes[custom]
 
 # Acknowledgements {-}
 

@@ -49,12 +49,15 @@ $endif$
 }
 \makeatother
 
+\usepackage[inline]{enumitem}
+\setlist[description]{leftmargin=0.25em,labelsep=0pt}
+
 $if(endnotes)$
-    \usepackage{endnotes}
+    \usepackage{enotez}
     \let\footnote=\endnote
-    \renewcommand\enoteformat{\theenmark\;– }
-    \def\enotesize{\normalsize}
-    \renewcommand\enoteheading{}
+    \setenotez{backref=true, totoc=section}
+
+    \DeclareInstance{enotez-list}{custom}{list}{format=\normalfont, number=#1 —\;, list-type=description}
 $endif$
 
 
@@ -325,7 +328,8 @@ $if(lof)$
 $endif$
 
 \begin{multicols}{2}
-      $body$
+    \setcounter{page}{1}
+    $body$
 \end{multicols}
 
 $if(natbib)$
