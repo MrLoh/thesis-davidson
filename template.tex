@@ -50,14 +50,13 @@ $endif$
 \makeatother
 
 \usepackage[inline]{enumitem}
-\setlist[description]{leftmargin=0.25em,labelsep=0pt}
+\setlist[description]{leftmargin=0pt,labelsep=0pt}
 
+\usepackage{enotez}
+\setenotez{backref=true, totoc=section}
+\DeclareInstance{enotez-list}{custom}{list}{format=\normalfont, number=#1 —\;, list-type=description}
 $if(endnotes)$
-    \usepackage{enotez}
     \let\footnote=\endnote
-    \setenotez{backref=true, totoc=section}
-
-    \DeclareInstance{enotez-list}{custom}{list}{format=\normalfont, number=#1 —\;, list-type=description}
 $endif$
 
 
