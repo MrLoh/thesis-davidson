@@ -7,7 +7,7 @@ date: \today
 papersize: a4paper
 toc: true
 toc-depth: 2
-endnotes: true
+<!-- endnotes: true -->
 
 bibliography: references.bib
 link-citations: true
@@ -455,7 +455,7 @@ At the end I have given a characterization of Davidson's Test that requires not 
 
 
 
-The goal of this section is to relate Davidson's arguments which we have touched on in his discussion of the Turing Test to the main characteristics of his view of ([3.1](#supervenience)) the relation between the mental and the physical, ([3.2](#triangulation)) his epistemology, and ([3.3](#interpretation)) his theory of linguistic competence. We will see how all those aspects come together and how they relate to Davidson's Test. I will wrap this up with a short discussion how Davidson's view might fit into the more recent debate between connectionist and representational views in the computational theory of mind.
+The goal of this section is to relate Davidson's arguments which we have touched on in his discussion of the Turing Test to the main characteristics of his view of ([3.1](#supervenience)) the relation between the mental and the physical, ([3.2](#triangulation)) his epistemology, and ([3.3](#interpretation)) his theory of linguistic competence. We will see how all those aspects come together and how they relate to Davidson's Test.
 
 ## The Meaning of Programs and Anomalous Monism {#supervenience}
 
@@ -797,25 +797,6 @@ Davidson's Test is an expression of his theory of intellectual and linguistic co
 
 
 
-### Davidson and the Computational Theory of Mind
-<!--
-- status of program not interpretable
-- non-deterministic in some way
-- externalistic because of data dependence
-- Davidson as a connectionist, rejects classicist Computational Theory of Mind, agrees with computability of mind
-- Also externalist, anomalous monism solves problem of external dependence of mind, even though brain is in the scull
--->
-
-We have seen in our discussion of Davidson's essays 'Turing's Test' [-@Davidson:1990tt], 'Representation and Interpretation' [-@Davidson:1990ri], and 'What Thought Requires' [-@Davidson:2001wt] in the previous subsections that Davidson takes questions about the design and judgement of artificial intelligence as a starting point to explain his Philosophy of Mind and Language. Even thought those essays haven't received much attention, I think they provide very informative insights into Davidson's philosophy.
-
-In recent decades many philosophers have taken this idea even further, investigating "the prospect that the mind itself is [at least in some sense described well as] a computational system --- a position known as the *computational theory of mind*" [-@Schubert:2015cl]. The classical account of this theory holds that "mental representations are symbolic structures, which typically have semantically evaluable constituents, and that mental processes are rule-governed manipulations of them that are sensitive to their constituent structure" [@Pitt:2000mr, p. 20]. The most prominent proponent of this view is @Fodor:1975lt who takes the mind as operating on meanings expressed in a *language of thought*. We have already learned that Davidson rejects such an representationist approach, even though the formal account of his unified theory might include some language of thought like expressions of truth conditions alongside with information about observed preferences. However, Davidson disagrees that such representations could be expressions of meaning since they are only interpretable holistically and need to be adjusted for each speaker individually.
-
-There is another stance on the computational theory of mind "that hopes to explain intellectual abilities using artificial neural networks"[^neural-nets] [@Garson:1997c, p. 1] which is usually referred to as *connectionism*. Connectionists "hold that mental representations are realized by patterns of activation in a network of simple processors ('nodes') and that mental processes consist of the spreading activation of such patterns. The nodes themselves are, typically, not taken to be semantically evaluable; nor do the patterns have semantically evaluable constituents" [@Pitt:2000mr, p. 20]. Davidson himself seems to have never payed much attention to this debate, even though he sees artificial intelligence as possible. This might be due to his Anomalous Monism which denies that explanations of the brain can help in explaining the mental. Neural networks should not be too easily identified with brain simulations thought and are interesting for their simplification and observability. Neural networks should be fascinating to Davidson for various reasons: For one, they are most likely to be able to provide empirical evidence for the Anomalous Monism, if it could be shown that mental types cannot be identified with activation patterns of the network. On another note, they similarity to Bayesian modeling might also make them interesting candidates for an implementation of the unified theory and they more explicitly exhibit the holism that Davidson sees as crucial since they represent informations as patterns and connection weights.
-
-
-
-[^neural-nets]: "A neural network is a collection of interconnected nodes. Nodes fall into three categories: input nodes, output nodes, and hidden nodes (which mediate between input and output nodes). Nodes have activation values, given by real numbers. One node can bear a weighted connection to another node, also given by a real number. Activations of input nodes are determined exogenously: these are the inputs to computation" [@Rescorla:2015ct]. Deep convolutional neural networks (with many hidden nodes) are currently applied very successfully for entity recognition in images but also becoming increasingly popular for tasks in Natural Language Processing.
-
 
 
 # Conclusion {-}
@@ -836,7 +817,41 @@ Davidson's theory investigates "what it is about propositional thoughts [...] th
 
 While Davidson is skeptical about the possibility of explaining our linguistic performance. He believes that there is a pragmatic and empirical theory about the essence of linguistic competence.
 
-## Implications for Artificial Intelligence and\ Computer\ Linguistics
+## Davidson and the Computational Theory of Mind {-}
+
+
+<--
+- status of program not interpretable
+- non-deterministic in some way
+- externalistic because of data dependence
+- Davidson as a connectionist, rejects classicist Computational Theory of Mind, agrees with computability of mind
+- Also externalist, anomalous monism solves problem of external dependence of mind, even though brain is in the scull
+-->
+
+We have seen that Davidson takes questions about the design and judgement of artificial intelligence as a starting point to explain his Philosophy of Mind and Language in his essays 'Turing's Test' [-@Davidson:1990tt], 'Representation and Interpretation' [-@Davidson:1990ri], and 'What Thought Requires' [-@Davidson:2001wt]. Even thought those essays haven't received much attention, I have tried to show how they provide a good overview of Davidson's philosophy.
+
+In recent decades many philosophers have taken this idea even further, investigating "the prospect that the mind itself is [at least in some sense described well as] a computational system --- a position known as the *computational theory of mind*" [-@Schubert:2015cl]. The classical account of this theory holds that "mental representations are symbolic structures, which typically have semantically evaluable constituents, and that mental processes are rule-governed manipulations of them that are sensitive to their constituent structure" [@Pitt:2000mr, p. 20]. The most prominent proponent of this view is @Fodor:1975lt who takes the mind as operating on meanings expressed in a *language of thought*. We have already learned that Davidson rejects such an representationist approach, even though the formal account of his unified theory might include some language of thought like expressions of truth conditions alongside with information about observed preferences. However, Davidson disagrees that such representations could be expressions of meaning since they are only interpretable holistically and need to be adjusted for each speaker individually.
+
+There is another stance on the computational theory of mind "that hopes to explain intellectual abilities using artificial neural networks"[@Garson:1997c, p. 1].[^neural-nets]  This account is usually referred to as *connectionism* and holds "that mental representations are realized by patterns of activation in a network of simple processors ('nodes') and that mental processes consist of the spreading activation of such patterns. The nodes themselves are, typically, not taken to be semantically evaluable; nor do the patterns have semantically evaluable constituents" [@Pitt:2000mr, p. 20]. Davidson would certainly agree with eliminative connectionists that take "the mind as a computing system of a radically different kind than the Turing machine" [@Rescorla:2015ct] which implements operations described by strict rules on representational symbols.
+
+But Davidson himself seems to have never payed much attention to this debate, even though he sees artificial intelligence as possible. This might be due to his Anomalous Monism which denies that explanations of the brain can help in explaining the mental. However, neural networks are the most likely candidates for provide empirical evidence for Anomalous Monism. For if the behavior of such networks can be taken as similar to the functioning of the brain, one could observe wether mental types can or cannot be identified with activated neurons, weight distributions or activation patterns of the network which could be interpreted as physical types. There is a lively debate about representation in connectionist networks [see for example: @Gelder:1990cc, @Clark:1994dw, @Ramsey:1997cr, and @Garson:1997c, p. 13--16 for an overview of the literature].
+
+Neural networks should, however, not be too easily identified with brain simulations and are interesting in their own right as a simplified and observable model for distributed information processing. Some connectionists are explicitly working towards a unified science of mind and action, treating brains as a hierarchical prediction machines  [@Clark:2013wn]. The similarities to Bayesian modeling might make them interesting candidates for an implementation of Davidson's unified theory as well. This could be especially interesting since such networks have several characteristics that Davidson values:
+
+> "Connectionist systems [...] solve problems (including categorization and recognition problems) by 'settling into' a state that fits well with the constraints that constitute the problem. A state that accommodates the constraints as a whole may violate some of those constraints individually. [...] Typically there are no [hard representation level] rules that would make it possible to predict [a system's final state] from a complete representation-level description of a system's initial state. [...]
+>
+> Information can be said to be tacitly present in [...] the weighted connections [as...] *representation-forming dispositions*[, ...] it is *potentially* active. I.e., the weighted connections dispose the system to generate, in appropriate circumstances, active representations with this information as their content. Remembering, on this view, is not a matter of retrieving a representation from a mental file cabinet called memory. Rather, memory information is a species of potentially present information." [@Horgan:1989rw, p. 163--164]
+
+So neural networks (1) can model the ceteris paribus laws that are characteristic to the mind according to Davidson, (2) exhibit the dispositional character which mental properties have according to Davidson, and (3) represent information in a holistic way as an influence on the weights of the network, not as stored memories. So neural networks seem like an interesting candidate to implement a model of propositional attitudes as holistically evaluable causal dispositions like the one Davidson proposes.
+
+There is a big difference between Davidson and connectionists though. It lies in his emphasis on the interdependent nature of thoughts, actions, and world and the primacy of successful communication over meanings. Davidson would disagree with most versions of the computational theory of mind because it underestimates the importance of performative aspects of language. It neglects the reasons for which Davidson modifies Turing's Test to add the aspect of interactions in a shared world as an essential condition to exhibit intellect. Maybe Davidson's point is reflected in the fact that a good representation of linguistic input for natural language processing with neural networks [see for some different approaches @Zhang:2015cc] has proven to be much harder than it is in the case of image recognition with neural networks. Linguistic competence requires a much deeper understanding of world and interaction than visual pattern recognition. Progress in natural language processing will depend on improving the understanding of the interdependent nature of knowledge of world, other minds, and ones own thoughts as an essential aspect of language. Davidson's arguments show that mind is at the heart of language not the other way round.
+
+
+
+[^neural-nets]: "A neural network is a collection of interconnected nodes. Nodes fall into three categories: input nodes, output nodes, and hidden nodes (which mediate between input and output nodes). Nodes have activation values, given by real numbers. One node can bear a weighted connection to another node, also given by a real number. Activations of input nodes are determined exogenously: these are the inputs to computation" [@Rescorla:2015ct]. Deep convolutional neural networks (with many hidden nodes) are currently applied very successfully for entity recognition in images but also becoming increasingly popular for tasks in Natural Language Processing.
+
+## Davidson and Computer Linguistics {-}
+
 
 - Possibility of AI and the importance of Language
     - Davidson sees artificial intelligence as possible.
