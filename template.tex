@@ -24,6 +24,7 @@ $endif$
 \usepackage{etoolbox}
 \patchcmd{\quote}{\rightmargin\leftmargin}{\leftmargin 1em}{}{}
 
+
 % Floatable Figure
 \makeatletter
 \renewenvironment{figure}[1][\fps@figure]{
@@ -267,10 +268,10 @@ $endfor$
 % Headings
 \setcounter{secnumdepth}{2}
 \usepackage{titlesec}
-\titleformat{\section}{\LARGE\bfseries\raggedright}{\thesection\;\raggedleft}{4em}{\hspace{-4em}}{}
-\titleformat{name=\section,numberless}{\LARGE\bfseries\raggedright}{}{4em}{\hspace{-4em}}{}
-\titleformat{\subsection}{\large\bfseries\raggedright}{\thesubsection\;}{1em}{\hspace{-1em}}{}
-\titleformat{name=\subsection,numberless}{\large\bfseries\raggedright}{}{1em}{\hspace{-1em}}{}
+\titleformat{\section}[block]{\LARGE\bfseries\raggedright}{\thesection\;\raggedleft}{0em}{}{}
+\titleformat{name=\section,numberless}[block]{\LARGE\bfseries\raggedright}{}{0em}{}{}
+\titleformat{\subsection}[block]{\large\bfseries\raggedright}{\thesubsection\;}{0em}{}{}
+\titleformat{name=\subsection,numberless}[block]{\large\bfseries\raggedright}{}{0em}{}{}
 \titleformat*{\subsubsection}{\small\bfseries\uppercase}
 \titlelabel{\thetitle.\ }
 
