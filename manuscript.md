@@ -7,7 +7,7 @@ date: \today
 papersize: a4paper
 toc: true
 toc-depth: 2
-endnotes: true
+<!-- endnotes: true -->
 
 bibliography: references.bib
 link-citations: true
@@ -15,7 +15,7 @@ citation-style: style.csl
 nocite: '@*'
 
 abstract: |
-  This article argues that questions arising from the Turing Test [@Turing:1950cm] provide a unique perspective for understanding Davidson's philosophy. It focuses on Davidson's critique of 'Turing's Test' [-@Davidson:1990tt] and points out some similarities between Turing's interest in Machine Learning and Davidson's critique. Furthermore, it argues that the modified version of Turing's Test which Davidson proposes in this essay, provides an operational definition of intelligence which reflects Davidson's Unified Theory of intellectucal and linguistic competence. Along the lines of the two relatively overlooked Davidson essays: 'Representation and Interpretation' [-@Davidson:1990ri] and 'What Thought Requires' [-@Davidson:2001wt], it is reconstructed how Davidson takes questions arising from the Turing Test to provide instructive explanations of his view on the relation between the mental and the physical and his triangular Epistemology. It is shown how Davidson's interpretationism and externalism, which respectively results from these views, come together in his theory of interpretation and are clearly expressed as interdependent concepts in Davidson's modified Turing Test. The discusssion concludes with a brief outlook of how Davidson's ideas relate to the debate between Representationists and Connectionists in the prominent Computational Theory of Mind and which impulses it might provide for Computational Linguistics that would deserve further investigation. 
+  This article argues that questions arising from the Turing Test [@Turing:1950cm] provide a unique perspective for understanding Davidson's philosophy. It focuses on Davidson's discussion in his essay 'Turing's Test' [-@Davidson:1990tt] and points out some similarities between Turing's interest in Machine Learning and Davidson's critique. Furthermore, it argues that the modified version of Turing's Test which Davidson proposes in this essay, provides an operational definition of intelligence which reflects Davidson's Unified Theory of intellectucal and linguistic competence. Along the lines of the two relatively overlooked Davidson essays 'Representation and Interpretation' [-@Davidson:1990ri] and 'What Thought Requires' [-@Davidson:2001wt], it is reconstructed how Davidson takes questions arising from the Turing Test to provide instructive explanations of his view on the relation between the mental and the physical and his triangular Epistemology. It is shown how Davidson's interpretationism and externalism, which respectively results from these views, come together in his theory of interpretation and are clearly expressed as interdependent concepts in Davidson's modified Turing Test. The discusssion concludes with a brief outlook of how Davidson's ideas relate to the debate between Representationists and Connectionists in the prominent Computational Theory of Mind and which impulses it might provide for Computational Linguistics that would deserve further investigation.
 
 
 keywords: |
@@ -40,7 +40,7 @@ After a short introduction to Davidson, this article is structured into three ma
 
 [**Section 3**](#section3) follows two Davidson essays which are related to his critique of the Turing Test and present a good introduction to two main points of his philosophy: the supervenience of the mental and the idea that knowledge of world, self, and others can only be acquired interdependently. Finally, I outline Davidson's empirical anti-conventionalist theory of interpretation and show how it relates to his other philosophical points to form a theory of linguistic and intellectual competence that is also expressed in his proposal for a modified test.
 
-[I conclude][Conclusion] with a summary of the core agreements and distinctions between Davidson and Turing and a brief discussion of the relation between Davidson's ideas and the Computational theory of Mind and some implications of his ideas for Computer Linguistics.
+[I conclude][Conclusion] with a summary of the core agreements and distinctions between Davidson and Turing and a brief discussion of the relation between Davidson's ideas and the Computational Theory of Mind and some implications of his ideas for Computational Linguistics.
 
 
 
@@ -50,7 +50,7 @@ Introduction to Donald Davidson {-}
 
 Donald Davidson (1917--2003) "was one of the most important philosophers of the latter half of the twentieth century [...] with a reception and influence that, of American philosophers, is perhaps matched only by that of [his friend, mentor, and colleague] W. V. O. Quine" [@Malpas:2015dd, p. 1]. Davidson's philosophy is a unique and intriguing melange of analytical methods, empirical ideals, and a holistic approach to the big topics of philosophy. His thoughts are exposed through a collection of densely written essays (published from 1963--2001)[^life] which "form a mosaic out of which emerges a unified and surprisingly elegant overall view of the mind and its relation to the world. It sees our *nature as linguistic beings* as the key to the possibility of thought, to the objectivity of the world [...], and to how the mind moves us to action in a [physical] world" [@Lepore:2009d, p. 1, emphasis added].
 
-![Donald Davidson by David Levine in Forum Gallery, New York](donald-davidson.jpg)
+<!-- ![Donald Davidson by David Levine in Forum Gallery, New York](donald-davidson.jpg) -->
 
 Davidson's first renonwned work was in the Philosophy of Action, where his investigation of the causal connection between thoughts and actions [-@Davidson:1963ar] led him to an argument for the supervenience of the mental --- a position he calls  Anomalous Monism which reconciles physical substance monism with the irreducibility of the mental [-@Davidson:1970me]. In parallel he developed the argument that semantic theories for natural languages must be recursive and empirical [-@Davidson:1965tm] and that meanings and propositions could be replace by truth conditions and distal stimuli respectively [-@Davidson:1967tm]. Based on Quine's idea of Radical Translation, he developed his view of interpretation as the process of adapting a theory about both meaning and belief of the speaker based on empirical evidence [-@Davidson:1973ri]. However, he rejected conventionalism as a means by which the gap between performative and descriptive aspects of language can be bridged or the indeterminancy of meaning can be fixed [-@Davidson:1984cc], and instead put a normative Principle of Charity at the heart of the interpretative process. The theory of interpretation must be adapted for the speaker's ideolect in each situation and the social aspect of language is relocated into epistemology [-@Davidson:1994sa]. This led to his rejection of positivist and Cartesian epistemology, and his reinterpretation of knowledge of self, world, and others as interdependent [-@Davidson:1991tv]. His influential ideas about mind, language, and action are connected in his sketch of a Unified Theory [-@Davidson:1980tu] which leverages formal methods to show how an empirical theory of the rational abilities must be based on normative principles.
 
@@ -344,7 +344,7 @@ In the end I gave a characterization of Davidson's Test which requires not only 
 
 
 
-Davidson's Theory of Intellectual and\ Linguistic Competence {#section3}
+Davidson's Theory of Intellectual and\ Linguistic\ Competence {#section3}
 =======================================================================================
 
 The goal of this section is to relate Davidson's critique of Turing's Test to the main characteristics of his view of (\ref{supervenience}) the relation between the mental and the physical, (\ref{triangulation}) his epistemology, and ([3.3](#interpretation)) his theory of linguistic competence. We will see (\ref{theory}) how these aspects come together and how they relate to Davidson's Test and provide the background for the arguments from the previous section.
@@ -661,19 +661,19 @@ If Davidson's anti-conventionalist externalism is correct, statistical modeling 
 
 Another point is Davidson's emphasis on the importance of ideolects over languages and the fact that the passing theory is essential for interpretation not the prior theory. This could also provide impulses to develop more adaptable language models which exhibit some level of micro learning from word to word. Most importantly, Davidson's philosophy implies that Computational Linguistics and Artificial Intelligence are very closely related fields. Mind, language, and action are inseperable. Communication abilities cannot be separated from general abilities to interact intelligently with other agents in the world, they are interdependent.
 
-A further investigation of these Davidsonian impulses for Computational Linguistics and Machine Learning would be an interesting endeavor. |
+A further investigation of these Davidsonian impulses for Computational Linguistics and Machine Learning would be an interesting endeavor.
 
 
 
 ---------------------------------------------------------------------------------------
 
-\printendnotes[custom]
+<!-- \printendnotes[custom] -->
 
 
 
 ### Acknowledgements
 
-Many thanks to my fiance Anika Williams, and my mother Christiane Lohse for reading this article and helping me to smooth out orthographic, linguistic, and structural problems. I am also greatful to Professor Georg Bertram for his great seminar about Philosophy of Language that got me interested in Davidson and for his supervision of this Bachelor Thesis.
+Many thanks to my fiancée Anika Williams, and my mother Christiane Lohse for reading this article and helping me to smooth out orthographic, linguistic, and structural problems. I am also greatful to Professor Georg Bertram for his great seminar about Philosophy of Language that got me interested in Davidson and for his supervision of this Bachelor Thesis.
 
 ### Colophon
 
