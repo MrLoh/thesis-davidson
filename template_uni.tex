@@ -1,6 +1,6 @@
 \documentclass[twoside,12pt,a4paper]{$documentclass$}
 
-\usepackage[top=1.5cm, bottom=2cm, outer=2cm, inner=4cm]{geometry}
+\usepackage[top=1.25cm, bottom=1.75cm, outer=1.75cm, inner=4.75cm]{geometry}
 
 $if(fontfamily)$
   \usepackage[$fontfamilyoptions$]{$fontfamily$}
@@ -9,7 +9,7 @@ $else$
 $endif$
 
 \usepackage{etoolbox}
-\patchcmd{\quote}{\rightmargin\leftmargin}{\leftmargin 1em}{}{}
+\patchcmd{\quote}{\rightmargin\leftmargin}{\leftmargin 1em \small}{}{}
 
 
 % Floatable Figure
