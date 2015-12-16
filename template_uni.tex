@@ -1,6 +1,6 @@
-\documentclass[twoside,12pt,a4paper]{$documentclass$}
+\documentclass[twoside,11pt,a4paper]{$documentclass$}
 
-\usepackage[top=1.25cm, bottom=1.75cm, outer=1.75cm, inner=4.75cm]{geometry}
+\usepackage[top=1.5cm, bottom=2cm, outer=2.25cm, inner=5cm]{geometry}
 
 $if(fontfamily)$
   \usepackage[$fontfamilyoptions$]{$fontfamily$}
@@ -214,7 +214,6 @@ $endif$
 
 $if(title)$
   \title{
-    \vspace{-1.5cm}
     \newfontfamily{\title}{title.ttf}
     {\fontsize{52}{52}\selectfont\title $title$}
     $if(subtitle)$
@@ -236,7 +235,9 @@ $if(author)$
   }}
 $endif$
 
+$if(date)$
 \date{\vspace{-1em} \LARGE\bfseries\MakeUppercase $date$}
+$endif$
 $for(header-includes)$
 $header-includes$
 $endfor$
@@ -269,6 +270,7 @@ $endfor$
 \exhyphenpenalty=100000
 \lefthyphenmin=3
 \righthyphenmin=3
+\usepackage{hyphenat}
 
 \begin{document}
 
@@ -276,13 +278,26 @@ $endfor$
   \maketitle
   \thispagestyle{empty}
   \vspace{0.5cm}
+  $if(abstract)$
   \begin{center}\textbf{Abstract}\\\end{center}\vspace{-1em}
   $abstract$
   \\
-  \begin{center}\textbf{Keywords}\\\end{center}\vspace{-1em}
-  $keywords$
+  $endif$
+  $if(intro)$
+  \begin{addmargin}[1cm]{1cm}
+  \begin{center}\textbf{ZUSAMMENFASSUNG}\\\end{center}
+  \nohyphens{$intro$}
+  \end{addmargin}
+  $endif$
+  $if(keywords)$
+  \begin{center}\textbf{Keywords}\\
+  \nohyphens{$keywords$}
+  \end{center}
+  $endif$
   \newpage
 
+$if(toc)$
+\newgeometry{top=1.5cm, bottom=1.5cm, left=3cm, right=3cm}
 \thispagestyle{empty}
 {
   \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
@@ -291,6 +306,7 @@ $endfor$
 }
 \restoregeometry
 \newpage
+$endif$
 
 $if(lot)$
 \listoftables

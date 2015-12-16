@@ -6,7 +6,7 @@ date: \today
 
 papersize: a4paper
 toc: true
-toc-depth: 2
+toc-depth: 3
 <!-- endnotes: true -->
 
 bibliography: references.bib
@@ -19,7 +19,7 @@ abstract: |
 
 
 keywords: |
-  Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Turing\ Test, Artificial\ Intelligence, Computational\ Theory\ of\ Mind, Computational\ Linguistics
+  Donald\ Davidson, Philosophy\ of\ Mind, Philosophy\ of\ Language, Interpretation, Turing\ Test, Artificial\ Intelligence, Computational\ Theory\ of\ Mind, Computational\ Linguistics
 
 ---
 
@@ -63,9 +63,9 @@ This empirical and fairly formal anti-reductionist account of the mind --- which
     Davidson's life and career are actually quite inspiring, *fascinating*, and unconventional. Davidson started out in the History of Philosophy and ventured into psychology and economy during his studies and as a professor. Certainly it is no coincidence that he was cited by continental and analytical philosophers and even computer scientists alike. To learn more about Davidson's life I recommend to read Lepore's 'Interview with Donald Davidson' [-@Davidson:2004id] and Davidson's own 'Intellectual Autobiography' [-@Davidson:1999ia]
 
 
-### Historical Context
+<!-- ### Historical Context
 
-Language has been a philosophical topic since Plato, but it especially gained attention in the so-called 'Linguistic Turn' of the 20th century when it was recognized as the medium for our rational access to the world. Names like Frege, Russel, the early Wittgenstein, and the Vienna Circle stand for the earlier Ideal Language Philosophy and Logical Empiricism which hoped to solve problems of Metaphysics through a *definite logical analysis* of meaning. However, this approach did not turn out very successfully. Led by Austin, Ryle, and the late Wittgenstein, analytical philosophy paid more attention to Natural Language, focusing on the importance of *social and performative aspects*. Quine and Davidson stand at the resolution of this tension with an approach that recognizes linguistic behavior in its context while leveraging the formal methods for their analysis. Through Davidson the analytical tradition also became linkable to the 'continental' Hermeneutic traditions, contributing to the dissolution of the philosophical divide of the 20th century [@Malpas:2015dd, p. 2].
+Language has been a philosophical topic since Plato, but it especially gained attention in the so-called 'Linguistic Turn' of the 20th century when it was recognized as the medium for our rational access to the world. Names like Frege, Russel, the early Wittgenstein, and the Vienna Circle stand for the earlier Ideal Language Philosophy and Logical Empiricism which hoped to solve problems of Metaphysics through a *definite logical analysis* of meaning. However, this approach did not turn out very successfully. Led by Austin, Ryle, and the late Wittgenstein, analytical philosophy paid more attention to Natural Language, focusing on the importance of *social and performative aspects*. Quine and Davidson stand at the resolution of this tension with an approach that recognizes linguistic behavior in its context while leveraging the formal methods for their analysis. Through Davidson the analytical tradition also became linkable to the 'continental' Hermeneutic traditions, contributing to the dissolution of the philosophical divide of the 20th century [@Malpas:2015dd, p. 2]. -->
 
 
 
@@ -672,15 +672,20 @@ A further investigation of these Davidsonian impulses for Computational Linguist
 ---------------------------------------------------------------------------------------
 
 <!-- \printendnotes[custom] -->
+\vfill
 
-
-### Acknowledgements
+**Acknowledgements**
 
 Many thanks to my fiancée Anika Williams, and my mother Christiane Lohse for reading this article and helping me to smooth out orthographic, linguistic, and structural problems. I am also greatful to Professor Georg Bertram for his great seminar about Philosophy of Language that got me interested in Davidson and for his supervision of this Bachelor Thesis.
 
-### Colophon
+**Colophon**
 
 This paper was written with [Gingko](https://gingkoapp.com) in [Pandoc Markdown](http://pandoc.org) and typeset using [XeTeX](http://xetex.sourceforge.net) in Gotham Narrow. My research process is inspired by Luhmann's Zettelkasten methodology, using [Evernote](https://evernote.com). If you are interested, you can find an article about my research and writing process on my blog (<http://MrLoh.se/2015/10/research-and-scientific-writing-process>).
 
+\newpage
+\pagestyle{empty}
+\newgeometry{top=1.5cm, bottom=1.5cm, left=2.25cm, right=2.25cm}
+\setlength{\columnsep}{1cm}
+\twocolumn
 
 # References {-}
